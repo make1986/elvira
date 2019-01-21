@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Play:400,700&subset=cyrillic");
+$color_secondary: #82cde7;
+$color_general: #f7c9df;
+$color_grey: #ebebeb;
+$color_font: #1a1a1a;
+$max_width: 1440px;
+$content_width: 1140px;
+$font_title: "Play", sans-serif;
+$font_general: "Montserrat", sans-serif;
+$header_height: 90px;
+
+body {
+  margin: 0;
+  font-family: $font_general;
+}
+a {
+  text-decoration: none;
+}
+@import "../shared/index";
