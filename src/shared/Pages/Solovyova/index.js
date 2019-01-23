@@ -1,7 +1,28 @@
 import React from "react";
-
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faIgloo,
+  faBullseye,
+  faChild,
+  faBurn,
+  faSuitcase,
+  faUsers,
+  faMapMarkerAlt
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faThumbsUp,
+  faStar,
+  faEdit,
+  faHeart,
+  faSmile,
+  faGem,
+  faSun,
+  faClock
+} from "@fortawesome/free-regular-svg-icons";
 import { IMAGES_PREFIX } from "../../../etc/config";
 
+library.add(faIgloo);
 export default class Solovyova extends React.Component {
   constructor(props) {
     super(props);
@@ -11,91 +32,178 @@ export default class Solovyova extends React.Component {
       <div className="page__container event-page">
         <div
           style={{
-            background: `url(${IMAGES_PREFIX}/solo-page.jpg) 50% 50%/cover no-repeat`
+            background: `url(${IMAGES_PREFIX}/solo.jpg) 50% 50%/cover no-repeat`
           }}
           className="event-page__top"
         >
           <div className="wrap">
             <h1>Стратегия счастья</h1>
-            <p>г. Краснодар</p>
-            <p>24 марта</p>
+            <p>13 апреля, г. Краснодар</p>
+            <a href="http://localhost:3000/solotatiana" target="_blank">
+              Участвовать
+            </a>
           </div>
         </div>
-        <div className="event-page__speaker">
-          <div className="speaker">
-            <div className="img">
-              <img src={`${IMAGES_PREFIX}/solov.jpg`} />
+        <div className="event-page__top-slogan">
+          <span>Слушай свое сердце и ты найдешь верный путь</span>
+        </div>
+        <div className="event-page__section1">
+          <h2>Что произойдет в результате семинара:</h2>
+          <div className="list">
+            <div className="list__item">
+              <FontAwesomeIcon icon={faThumbsUp} />
+              <p>Научишься избавляться от страхов и ограничивающих убеждений</p>
             </div>
-            <h2>Татяна Соловьева</h2>
-          </div>
-          <p>
-            Сертифицированный тренер по программе Тони Роббинса «Академия
-            лидерства», бизнесвумен, основатель благотворительного фонда,
-            специалист по психологии лидерства и НЛП.
-          </p>
-          <p>
-            Приехав в 19 лет в Петербург из небольшого города в Белоруссии,
-            Татьяна уже в 24 года добилась успеха в бизнесе, основав творческое
-            объединение «Салют талантов» — сейчас компанию-лидера на российском
-            рынке по организации детских фестивалей и конкурсов.
-          </p>
-          <p>
-            Вдохновлённая желанием делиться своими навыками и опытом, пройдя
-            курсы обучения у Тони Роббинса, Фрэнка Пьюселика, Брайана Трейси и
-            многих других, Татьяна создала свою авторскую программу семинаров по
-            личностному росту, самореализации и достижению успеха. Тренинги,
-            вебинары и мотивационные передачи на канале Татьяны в YouTube учат в
-            первую очередь тому, как найти себя, как жить, максимально реализуя
-            свой потенциал. Другими словами — как быть счастливыми!
-          </p>
-          <p>
-            Следуя своей социальной миссии и желанию помогать людям, в 2017 году
-            Татьяна создала благотворительный фонд «Живу с культурой»,
-            призванного помогать воспитанникам детских домов по всей России
-            развивать свои творческие способности и становиться
-            социально-адаптивными личностями, а в последствии находить своё
-            место в жизни.
-          </p>
-        </div>
-        <div className="event-page__event">
-          <h2>Стратегия счастья</h2>
-          <p>
-            Мы будем учиться тому, как быть счастливыми. Не ждать этого
-            состояния в будущем и не «зависать» в прошлом. Радоваться всем
-            ситуациям и обстоятельствам, которые приходят в нашу жизнь. Вместе
-            определим, какие чувства, мысли и события тебя мотивируют и как этим
-            управлять.
-          </p>
-        </div>
-        <div className="event-page__exp">
-          <h2>Что произойдет в результате семинара</h2>
-          <div>
-            <span>
-              Научишься избавляться от страхов и ограничивающих убеждений
-            </span>
-            <span>Получишь мотивацию для изменений в жизни </span>
-            <span>
-              Поймешь, что тебя останавливало всё это время, и как это
-              преодолеть
-            </span>
-            <span>
-              Научишься контролировать и переключать свое состояние для принятия
-              правильных решений
-            </span>
-            <span>
-              Научишься наполняться счастьем и удерживать это состояние,
-              независимо от событий
-            </span>
-            <span>
-              Уйдешь наполненным сил и энергией, желанием действовать, не
-              откладывая на потом
-            </span>
+            <div className="list__item">
+              <FontAwesomeIcon icon={faStar} />
+              <p>Получишь мотивацию для изменений в жизни </p>
+            </div>
+            <div className="list__item">
+              <FontAwesomeIcon icon={faEdit} />
+              <p>
+                Поймешь, что тебя останавливало всё это время, и как это
+                преодолеть
+              </p>
+            </div>
+            <div className="list__item">
+              <FontAwesomeIcon icon={faBullseye} />
+              <p>
+                Научишься контролировать и переключать свое состояние для
+                принятия правильных решений
+              </p>
+            </div>
+            <div className="list__item">
+              <FontAwesomeIcon icon={faHeart} />
+              <p>
+                Научишься наполняться счастьем и удерживать это состояние,
+                независимо от событий
+              </p>
+            </div>
+            <div className="list__item">
+              <FontAwesomeIcon icon={faChild} />
+              <p>
+                Уйдешь наполненным сил и энергией, желанием действовать, не
+                откладывая на потом
+              </p>
+            </div>
           </div>
         </div>
-        <div className="event-page__buy">
-          <p>г. Краснодар, ул. Красная, 91 (гостиница Интурист)</p>
-          <p>24 марта в 19:00</p>
-          <a href="timepad.ru">Участвовать</a>
+        <div className="event-page__section2">
+          <div className="wrap">
+            <h2>На этом семинаре</h2>
+            <p>
+              Мы будем учиться тому, как быть счастливыми. Не ждать этого
+              состояния в будущем и не «зависать» в прошлом. Радоваться всем
+              ситуациям и обстоятельствам, которые приходят в нашу жизнь. Вместе
+              определим, какие чувства, мысли и события тебя мотивируют и как
+              этим управлять.
+            </p>
+          </div>
+        </div>
+        <div className="event-page__section3">
+          <div className="wrap">
+            <div className="img">
+              <img src={`${IMAGES_PREFIX}/tat.jpg`} />
+            </div>
+            <div className="info">
+              <h3>Спикер</h3>
+              <h2>Татьяна Соловьева</h2>
+              <p>
+                — ученица Тони Роббинса, Фрэнка Пьюселика, Брайна Трейси и др.
+                мировых тренеров;
+              </p>
+              <p>— успешный опыт управления бизнесом более 10 лет;</p>
+              <p>— бизнес-тренер «Центра поддержки предпринимательства»;</p>
+              <p>
+                — основатель и идеолог благотворительного проекта «Живу с
+                Культурой» и социального проекта «Живу с Победой»;
+              </p>
+              <p>— автор популярного планировщика «Здесь и Сейчас»;</p>
+              <p>— более 3000 учеников прошедших офлайн и онлайн обучение.</p>
+            </div>
+          </div>
+        </div>
+        <div className="event-page__section4">
+          <h2>Этот семинар для тех, кто хочет:</h2>
+          <div className="list">
+            <div className="list__item">
+              <FontAwesomeIcon icon={faBurn} />
+              <p>Зарядиться энергией и мотивацией</p>
+            </div>
+            <div className="list__item">
+              <FontAwesomeIcon icon={faSmile} />
+              <p>Проработать страхи и ограничивающие убеждения</p>
+            </div>
+            <div className="list__item">
+              <FontAwesomeIcon icon={faGem} />
+              <p>Начать действовать вне зависимости от обстоятельств</p>
+            </div>
+            <div className="list__item">
+              <FontAwesomeIcon icon={faSun} />
+              <p>Входить в ресурсное состояние и оставаться в нем постоянно</p>
+            </div>
+          </div>
+        </div>
+        <div className="event-page__section5">
+          <h2>Пакеты</h2>
+          <div className="list">
+            <div className="list__item">
+              <h4>Базовый</h4>
+              <h3>3 400₽</h3>
+              <p>Свободная рассадка</p>
+              <p>Пакет участника</p>
+              <p>Кофе брейк</p>
+              <a href="http://solotatiana.ru/seminar/razbudi-schastie/">
+                Записаться
+              </a>
+            </div>
+            <div className="list__item">
+              <h4>Премиум</h4>
+              <h3>5 400₽</h3>
+              <p>Еженедельник Татьяны Соловьевой «Здесь и сейчас»</p>
+              <p>Пакет участника</p>
+              <p>Кофе брейк</p>
+              <a href="http://solotatiana.ru/seminar/razbudi-schastie/">
+                Записаться
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="event-page__section4">
+          <h2>Формат обучения</h2>
+          <div className="list">
+            <div className="list__item">
+              <FontAwesomeIcon icon={faClock} />
+              <p>
+                Восемь часов живого общения с 11:00 до 19:00 с перерывом на обед
+              </p>
+            </div>
+            <div className="list__item">
+              <FontAwesomeIcon icon={faSuitcase} />
+              <p>Разбор вопросов и реальных кейсов участников</p>
+            </div>
+            <div className="list__item">
+              <FontAwesomeIcon icon={faUsers} />
+              <p>
+                Работа в группе единомышленников с практическими заданиями и
+                упражнениями
+              </p>
+            </div>
+            <div className="list__item">
+              <FontAwesomeIcon icon={faMapMarkerAlt} />
+              <p>Адрес проведения: ул. Гаврилова 1А </p>
+            </div>
+          </div>
+        </div>
+        <div className="event-page__section6">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/nvcWKQbIUvo"
+            frameBorder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
         </div>
       </div>
     );

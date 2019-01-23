@@ -14,8 +14,8 @@ const routes = [
   {
     path: "/",
     exact: true,
-    component: Home,
-    title: "Names. Люди, которые вдохновляют."
+    component: Solovyova,
+    title: "Names. Татьяна Соловьева."
   },
   {
     path: "/solotatiana",

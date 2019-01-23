@@ -121,8 +121,8 @@ function getParams(path, noparams) {
 var routes = [{
   path: "/",
   exact: true,
-  component: _Home2.default,
-  title: "Names. Люди, которые вдохновляют."
+  component: _Solovyova2.default,
+  title: "Names. Татьяна Соловьева."
 }, {
   path: "/solotatiana",
   exact: false,
@@ -291,19 +291,19 @@ var _routes2 = _interopRequireDefault(_routes);
 
 var _config = __webpack_require__(1);
 
-var _ = __webpack_require__(18);
+var _ = __webpack_require__(21);
 
 var _2 = _interopRequireDefault(_);
 
-var _Header = __webpack_require__(19);
+var _Header = __webpack_require__(22);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Footer = __webpack_require__(20);
+var _Footer = __webpack_require__(23);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
-var _Error = __webpack_require__(23);
+var _Error = __webpack_require__(26);
 
 var _Error2 = _interopRequireDefault(_Error);
 
@@ -731,6 +731,14 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _fontawesomeSvgCore = __webpack_require__(18);
+
+var _reactFontawesome = __webpack_require__(19);
+
+var _freeSolidSvgIcons = __webpack_require__(20);
+
+var _freeRegularSvgIcons = __webpack_require__(27);
+
 var _config = __webpack_require__(1);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -740,6 +748,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+_fontawesomeSvgCore.library.add(_freeSolidSvgIcons.faIgloo);
 
 var Solovyova = function (_React$Component) {
   _inherits(Solovyova, _React$Component);
@@ -760,7 +770,7 @@ var Solovyova = function (_React$Component) {
           "div",
           {
             style: {
-              background: "url(" + _config.IMAGES_PREFIX + "/solo-page.jpg) 50% 50%/cover no-repeat"
+              background: "url(" + _config.IMAGES_PREFIX + "/solo.jpg) 50% 50%/cover no-repeat"
             },
             className: "event-page__top"
           },
@@ -775,128 +785,370 @@ var Solovyova = function (_React$Component) {
             _react2.default.createElement(
               "p",
               null,
-              "\u0433. \u041A\u0440\u0430\u0441\u043D\u043E\u0434\u0430\u0440"
+              "13 \u0430\u043F\u0440\u0435\u043B\u044F, \u0433. \u041A\u0440\u0430\u0441\u043D\u043E\u0434\u0430\u0440"
+            ),
+            _react2.default.createElement(
+              "a",
+              { href: "http://localhost:3000/solotatiana", target: "_blank" },
+              "\u0423\u0447\u0430\u0441\u0442\u0432\u043E\u0432\u0430\u0442\u044C"
+            )
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "event-page__top-slogan" },
+          _react2.default.createElement(
+            "span",
+            null,
+            "\u0421\u043B\u0443\u0448\u0430\u0439 \u0441\u0432\u043E\u0435 \u0441\u0435\u0440\u0434\u0446\u0435 \u0438 \u0442\u044B \u043D\u0430\u0439\u0434\u0435\u0448\u044C \u0432\u0435\u0440\u043D\u044B\u0439 \u043F\u0443\u0442\u044C"
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "event-page__section1" },
+          _react2.default.createElement(
+            "h2",
+            null,
+            "\u0427\u0442\u043E \u043F\u0440\u043E\u0438\u0437\u043E\u0439\u0434\u0435\u0442 \u0432 \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442\u0435 \u0441\u0435\u043C\u0438\u043D\u0430\u0440\u0430:"
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "list" },
+            _react2.default.createElement(
+              "div",
+              { className: "list__item" },
+              _react2.default.createElement(_reactFontawesome.FontAwesomeIcon, { icon: _freeRegularSvgIcons.faThumbsUp }),
+              _react2.default.createElement(
+                "p",
+                null,
+                "\u041D\u0430\u0443\u0447\u0438\u0448\u044C\u0441\u044F \u0438\u0437\u0431\u0430\u0432\u043B\u044F\u0442\u044C\u0441\u044F \u043E\u0442 \u0441\u0442\u0440\u0430\u0445\u043E\u0432 \u0438 \u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0438\u0432\u0430\u044E\u0449\u0438\u0445 \u0443\u0431\u0435\u0436\u0434\u0435\u043D\u0438\u0439"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "list__item" },
+              _react2.default.createElement(_reactFontawesome.FontAwesomeIcon, { icon: _freeRegularSvgIcons.faStar }),
+              _react2.default.createElement(
+                "p",
+                null,
+                "\u041F\u043E\u043B\u0443\u0447\u0438\u0448\u044C \u043C\u043E\u0442\u0438\u0432\u0430\u0446\u0438\u044E \u0434\u043B\u044F \u0438\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u0439 \u0432 \u0436\u0438\u0437\u043D\u0438 "
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "list__item" },
+              _react2.default.createElement(_reactFontawesome.FontAwesomeIcon, { icon: _freeRegularSvgIcons.faEdit }),
+              _react2.default.createElement(
+                "p",
+                null,
+                "\u041F\u043E\u0439\u043C\u0435\u0448\u044C, \u0447\u0442\u043E \u0442\u0435\u0431\u044F \u043E\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u043B\u043E \u0432\u0441\u0451 \u044D\u0442\u043E \u0432\u0440\u0435\u043C\u044F, \u0438 \u043A\u0430\u043A \u044D\u0442\u043E \u043F\u0440\u0435\u043E\u0434\u043E\u043B\u0435\u0442\u044C"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "list__item" },
+              _react2.default.createElement(_reactFontawesome.FontAwesomeIcon, { icon: _freeSolidSvgIcons.faBullseye }),
+              _react2.default.createElement(
+                "p",
+                null,
+                "\u041D\u0430\u0443\u0447\u0438\u0448\u044C\u0441\u044F \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u0438 \u043F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0430\u0442\u044C \u0441\u0432\u043E\u0435 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u0435 \u0434\u043B\u044F \u043F\u0440\u0438\u043D\u044F\u0442\u0438\u044F \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0445 \u0440\u0435\u0448\u0435\u043D\u0438\u0439"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "list__item" },
+              _react2.default.createElement(_reactFontawesome.FontAwesomeIcon, { icon: _freeRegularSvgIcons.faHeart }),
+              _react2.default.createElement(
+                "p",
+                null,
+                "\u041D\u0430\u0443\u0447\u0438\u0448\u044C\u0441\u044F \u043D\u0430\u043F\u043E\u043B\u043D\u044F\u0442\u044C\u0441\u044F \u0441\u0447\u0430\u0441\u0442\u044C\u0435\u043C \u0438 \u0443\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0442\u044C \u044D\u0442\u043E \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u0435, \u043D\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E \u043E\u0442 \u0441\u043E\u0431\u044B\u0442\u0438\u0439"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "list__item" },
+              _react2.default.createElement(_reactFontawesome.FontAwesomeIcon, { icon: _freeSolidSvgIcons.faChild }),
+              _react2.default.createElement(
+                "p",
+                null,
+                "\u0423\u0439\u0434\u0435\u0448\u044C \u043D\u0430\u043F\u043E\u043B\u043D\u0435\u043D\u043D\u044B\u043C \u0441\u0438\u043B \u0438 \u044D\u043D\u0435\u0440\u0433\u0438\u0435\u0439, \u0436\u0435\u043B\u0430\u043D\u0438\u0435\u043C \u0434\u0435\u0439\u0441\u0442\u0432\u043E\u0432\u0430\u0442\u044C, \u043D\u0435 \u043E\u0442\u043A\u043B\u0430\u0434\u044B\u0432\u0430\u044F \u043D\u0430 \u043F\u043E\u0442\u043E\u043C"
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "event-page__section2" },
+          _react2.default.createElement(
+            "div",
+            { className: "wrap" },
+            _react2.default.createElement(
+              "h2",
+              null,
+              "\u041D\u0430 \u044D\u0442\u043E\u043C \u0441\u0435\u043C\u0438\u043D\u0430\u0440\u0435"
             ),
             _react2.default.createElement(
               "p",
               null,
-              "24 \u043C\u0430\u0440\u0442\u0430"
+              "\u041C\u044B \u0431\u0443\u0434\u0435\u043C \u0443\u0447\u0438\u0442\u044C\u0441\u044F \u0442\u043E\u043C\u0443, \u043A\u0430\u043A \u0431\u044B\u0442\u044C \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u044B\u043C\u0438. \u041D\u0435 \u0436\u0434\u0430\u0442\u044C \u044D\u0442\u043E\u0433\u043E \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F \u0432 \u0431\u0443\u0434\u0443\u0449\u0435\u043C \u0438 \u043D\u0435 \xAB\u0437\u0430\u0432\u0438\u0441\u0430\u0442\u044C\xBB \u0432 \u043F\u0440\u043E\u0448\u043B\u043E\u043C. \u0420\u0430\u0434\u043E\u0432\u0430\u0442\u044C\u0441\u044F \u0432\u0441\u0435\u043C \u0441\u0438\u0442\u0443\u0430\u0446\u0438\u044F\u043C \u0438 \u043E\u0431\u0441\u0442\u043E\u044F\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u0430\u043C, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043F\u0440\u0438\u0445\u043E\u0434\u044F\u0442 \u0432 \u043D\u0430\u0448\u0443 \u0436\u0438\u0437\u043D\u044C. \u0412\u043C\u0435\u0441\u0442\u0435 \u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0438\u043C, \u043A\u0430\u043A\u0438\u0435 \u0447\u0443\u0432\u0441\u0442\u0432\u0430, \u043C\u044B\u0441\u043B\u0438 \u0438 \u0441\u043E\u0431\u044B\u0442\u0438\u044F \u0442\u0435\u0431\u044F \u043C\u043E\u0442\u0438\u0432\u0438\u0440\u0443\u044E\u0442 \u0438 \u043A\u0430\u043A \u044D\u0442\u0438\u043C \u0443\u043F\u0440\u0430\u0432\u043B\u044F\u0442\u044C."
             )
           )
         ),
         _react2.default.createElement(
           "div",
-          { className: "event-page__speaker" },
+          { className: "event-page__section3" },
           _react2.default.createElement(
             "div",
-            { className: "speaker" },
+            { className: "wrap" },
             _react2.default.createElement(
               "div",
               { className: "img" },
-              _react2.default.createElement("img", { src: _config.IMAGES_PREFIX + "/solov.jpg" })
+              _react2.default.createElement("img", { src: _config.IMAGES_PREFIX + "/tat.jpg" })
             ),
             _react2.default.createElement(
-              "h2",
-              null,
-              "\u0422\u0430\u0442\u044F\u043D\u0430 \u0421\u043E\u043B\u043E\u0432\u044C\u0435\u0432\u0430"
+              "div",
+              { className: "info" },
+              _react2.default.createElement(
+                "h3",
+                null,
+                "\u0421\u043F\u0438\u043A\u0435\u0440"
+              ),
+              _react2.default.createElement(
+                "h2",
+                null,
+                "\u0422\u0430\u0442\u044C\u044F\u043D\u0430 \u0421\u043E\u043B\u043E\u0432\u044C\u0435\u0432\u0430"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "\u2014 \u0443\u0447\u0435\u043D\u0438\u0446\u0430 \u0422\u043E\u043D\u0438 \u0420\u043E\u0431\u0431\u0438\u043D\u0441\u0430, \u0424\u0440\u044D\u043D\u043A\u0430 \u041F\u044C\u044E\u0441\u0435\u043B\u0438\u043A\u0430, \u0411\u0440\u0430\u0439\u043D\u0430 \u0422\u0440\u0435\u0439\u0441\u0438 \u0438 \u0434\u0440. \u043C\u0438\u0440\u043E\u0432\u044B\u0445 \u0442\u0440\u0435\u043D\u0435\u0440\u043E\u0432;"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "\u2014 \u0443\u0441\u043F\u0435\u0448\u043D\u044B\u0439 \u043E\u043F\u044B\u0442 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u0431\u0438\u0437\u043D\u0435\u0441\u043E\u043C \u0431\u043E\u043B\u0435\u0435 10 \u043B\u0435\u0442;"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "\u2014 \u0431\u0438\u0437\u043D\u0435\u0441-\u0442\u0440\u0435\u043D\u0435\u0440 \xAB\u0426\u0435\u043D\u0442\u0440\u0430 \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u043A\u0438 \u043F\u0440\u0435\u0434\u043F\u0440\u0438\u043D\u0438\u043C\u0430\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u0430\xBB;"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "\u2014 \u043E\u0441\u043D\u043E\u0432\u0430\u0442\u0435\u043B\u044C \u0438 \u0438\u0434\u0435\u043E\u043B\u043E\u0433 \u0431\u043B\u0430\u0433\u043E\u0442\u0432\u043E\u0440\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0433\u043E \u043F\u0440\u043E\u0435\u043A\u0442\u0430 \xAB\u0416\u0438\u0432\u0443 \u0441 \u041A\u0443\u043B\u044C\u0442\u0443\u0440\u043E\u0439\xBB \u0438 \u0441\u043E\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0433\u043E \u043F\u0440\u043E\u0435\u043A\u0442\u0430 \xAB\u0416\u0438\u0432\u0443 \u0441 \u041F\u043E\u0431\u0435\u0434\u043E\u0439\xBB;"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "\u2014 \u0430\u0432\u0442\u043E\u0440 \u043F\u043E\u043F\u0443\u043B\u044F\u0440\u043D\u043E\u0433\u043E \u043F\u043B\u0430\u043D\u0438\u0440\u043E\u0432\u0449\u0438\u043A\u0430 \xAB\u0417\u0434\u0435\u0441\u044C \u0438 \u0421\u0435\u0439\u0447\u0430\u0441\xBB;"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "\u2014 \u0431\u043E\u043B\u0435\u0435 3000 \u0443\u0447\u0435\u043D\u0438\u043A\u043E\u0432 \u043F\u0440\u043E\u0448\u0435\u0434\u0448\u0438\u0445 \u043E\u0444\u043B\u0430\u0439\u043D \u0438 \u043E\u043D\u043B\u0430\u0439\u043D \u043E\u0431\u0443\u0447\u0435\u043D\u0438\u0435."
+              )
             )
-          ),
-          _react2.default.createElement(
-            "p",
-            null,
-            "\u0421\u0435\u0440\u0442\u0438\u0444\u0438\u0446\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439 \u0442\u0440\u0435\u043D\u0435\u0440 \u043F\u043E \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0435 \u0422\u043E\u043D\u0438 \u0420\u043E\u0431\u0431\u0438\u043D\u0441\u0430 \xAB\u0410\u043A\u0430\u0434\u0435\u043C\u0438\u044F \u043B\u0438\u0434\u0435\u0440\u0441\u0442\u0432\u0430\xBB, \u0431\u0438\u0437\u043D\u0435\u0441\u0432\u0443\u043C\u0435\u043D, \u043E\u0441\u043D\u043E\u0432\u0430\u0442\u0435\u043B\u044C \u0431\u043B\u0430\u0433\u043E\u0442\u0432\u043E\u0440\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0433\u043E \u0444\u043E\u043D\u0434\u0430, \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u0438\u0441\u0442 \u043F\u043E \u043F\u0441\u0438\u0445\u043E\u043B\u043E\u0433\u0438\u0438 \u043B\u0438\u0434\u0435\u0440\u0441\u0442\u0432\u0430 \u0438 \u041D\u041B\u041F."
-          ),
-          _react2.default.createElement(
-            "p",
-            null,
-            "\u041F\u0440\u0438\u0435\u0445\u0430\u0432 \u0432 19 \u043B\u0435\u0442 \u0432 \u041F\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u0438\u0437 \u043D\u0435\u0431\u043E\u043B\u044C\u0448\u043E\u0433\u043E \u0433\u043E\u0440\u043E\u0434\u0430 \u0432 \u0411\u0435\u043B\u043E\u0440\u0443\u0441\u0441\u0438\u0438, \u0422\u0430\u0442\u044C\u044F\u043D\u0430 \u0443\u0436\u0435 \u0432 24 \u0433\u043E\u0434\u0430 \u0434\u043E\u0431\u0438\u043B\u0430\u0441\u044C \u0443\u0441\u043F\u0435\u0445\u0430 \u0432 \u0431\u0438\u0437\u043D\u0435\u0441\u0435, \u043E\u0441\u043D\u043E\u0432\u0430\u0432 \u0442\u0432\u043E\u0440\u0447\u0435\u0441\u043A\u043E\u0435 \u043E\u0431\u044A\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u0435 \xAB\u0421\u0430\u043B\u044E\u0442 \u0442\u0430\u043B\u0430\u043D\u0442\u043E\u0432\xBB \u2014 \u0441\u0435\u0439\u0447\u0430\u0441 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u044E-\u043B\u0438\u0434\u0435\u0440\u0430 \u043D\u0430 \u0440\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u043E\u043C \u0440\u044B\u043D\u043A\u0435 \u043F\u043E \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u0438 \u0434\u0435\u0442\u0441\u043A\u0438\u0445 \u0444\u0435\u0441\u0442\u0438\u0432\u0430\u043B\u0435\u0439 \u0438 \u043A\u043E\u043D\u043A\u0443\u0440\u0441\u043E\u0432."
-          ),
-          _react2.default.createElement(
-            "p",
-            null,
-            "\u0412\u0434\u043E\u0445\u043D\u043E\u0432\u043B\u0451\u043D\u043D\u0430\u044F \u0436\u0435\u043B\u0430\u043D\u0438\u0435\u043C \u0434\u0435\u043B\u0438\u0442\u044C\u0441\u044F \u0441\u0432\u043E\u0438\u043C\u0438 \u043D\u0430\u0432\u044B\u043A\u0430\u043C\u0438 \u0438 \u043E\u043F\u044B\u0442\u043E\u043C, \u043F\u0440\u043E\u0439\u0434\u044F \u043A\u0443\u0440\u0441\u044B \u043E\u0431\u0443\u0447\u0435\u043D\u0438\u044F \u0443 \u0422\u043E\u043D\u0438 \u0420\u043E\u0431\u0431\u0438\u043D\u0441\u0430, \u0424\u0440\u044D\u043D\u043A\u0430 \u041F\u044C\u044E\u0441\u0435\u043B\u0438\u043A\u0430, \u0411\u0440\u0430\u0439\u0430\u043D\u0430 \u0422\u0440\u0435\u0439\u0441\u0438 \u0438 \u043C\u043D\u043E\u0433\u0438\u0445 \u0434\u0440\u0443\u0433\u0438\u0445, \u0422\u0430\u0442\u044C\u044F\u043D\u0430 \u0441\u043E\u0437\u0434\u0430\u043B\u0430 \u0441\u0432\u043E\u044E \u0430\u0432\u0442\u043E\u0440\u0441\u043A\u0443\u044E \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0443 \u0441\u0435\u043C\u0438\u043D\u0430\u0440\u043E\u0432 \u043F\u043E \u043B\u0438\u0447\u043D\u043E\u0441\u0442\u043D\u043E\u043C\u0443 \u0440\u043E\u0441\u0442\u0443, \u0441\u0430\u043C\u043E\u0440\u0435\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u0438 \u0438 \u0434\u043E\u0441\u0442\u0438\u0436\u0435\u043D\u0438\u044E \u0443\u0441\u043F\u0435\u0445\u0430. \u0422\u0440\u0435\u043D\u0438\u043D\u0433\u0438, \u0432\u0435\u0431\u0438\u043D\u0430\u0440\u044B \u0438 \u043C\u043E\u0442\u0438\u0432\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0435 \u043F\u0435\u0440\u0435\u0434\u0430\u0447\u0438 \u043D\u0430 \u043A\u0430\u043D\u0430\u043B\u0435 \u0422\u0430\u0442\u044C\u044F\u043D\u044B \u0432 YouTube \u0443\u0447\u0430\u0442 \u0432 \u043F\u0435\u0440\u0432\u0443\u044E \u043E\u0447\u0435\u0440\u0435\u0434\u044C \u0442\u043E\u043C\u0443, \u043A\u0430\u043A \u043D\u0430\u0439\u0442\u0438 \u0441\u0435\u0431\u044F, \u043A\u0430\u043A \u0436\u0438\u0442\u044C, \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E \u0440\u0435\u0430\u043B\u0438\u0437\u0443\u044F \u0441\u0432\u043E\u0439 \u043F\u043E\u0442\u0435\u043D\u0446\u0438\u0430\u043B. \u0414\u0440\u0443\u0433\u0438\u043C\u0438 \u0441\u043B\u043E\u0432\u0430\u043C\u0438 \u2014 \u043A\u0430\u043A \u0431\u044B\u0442\u044C \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u044B\u043C\u0438!"
-          ),
-          _react2.default.createElement(
-            "p",
-            null,
-            "\u0421\u043B\u0435\u0434\u0443\u044F \u0441\u0432\u043E\u0435\u0439 \u0441\u043E\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0439 \u043C\u0438\u0441\u0441\u0438\u0438 \u0438 \u0436\u0435\u043B\u0430\u043D\u0438\u044E \u043F\u043E\u043C\u043E\u0433\u0430\u0442\u044C \u043B\u044E\u0434\u044F\u043C, \u0432 2017 \u0433\u043E\u0434\u0443 \u0422\u0430\u0442\u044C\u044F\u043D\u0430 \u0441\u043E\u0437\u0434\u0430\u043B\u0430 \u0431\u043B\u0430\u0433\u043E\u0442\u0432\u043E\u0440\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439 \u0444\u043E\u043D\u0434 \xAB\u0416\u0438\u0432\u0443 \u0441 \u043A\u0443\u043B\u044C\u0442\u0443\u0440\u043E\u0439\xBB, \u043F\u0440\u0438\u0437\u0432\u0430\u043D\u043D\u043E\u0433\u043E \u043F\u043E\u043C\u043E\u0433\u0430\u0442\u044C \u0432\u043E\u0441\u043F\u0438\u0442\u0430\u043D\u043D\u0438\u043A\u0430\u043C \u0434\u0435\u0442\u0441\u043A\u0438\u0445 \u0434\u043E\u043C\u043E\u0432 \u043F\u043E \u0432\u0441\u0435\u0439 \u0420\u043E\u0441\u0441\u0438\u0438 \u0440\u0430\u0437\u0432\u0438\u0432\u0430\u0442\u044C \u0441\u0432\u043E\u0438 \u0442\u0432\u043E\u0440\u0447\u0435\u0441\u043A\u0438\u0435 \u0441\u043F\u043E\u0441\u043E\u0431\u043D\u043E\u0441\u0442\u0438 \u0438 \u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0441\u044F \u0441\u043E\u0446\u0438\u0430\u043B\u044C\u043D\u043E-\u0430\u0434\u0430\u043F\u0442\u0438\u0432\u043D\u044B\u043C\u0438 \u043B\u0438\u0447\u043D\u043E\u0441\u0442\u044F\u043C\u0438, \u0430 \u0432 \u043F\u043E\u0441\u043B\u0435\u0434\u0441\u0442\u0432\u0438\u0438 \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u044C \u0441\u0432\u043E\u0451 \u043C\u0435\u0441\u0442\u043E \u0432 \u0436\u0438\u0437\u043D\u0438."
           )
         ),
         _react2.default.createElement(
           "div",
-          { className: "event-page__event" },
+          { className: "event-page__section4" },
           _react2.default.createElement(
             "h2",
             null,
-            "\u0421\u0442\u0440\u0430\u0442\u0435\u0433\u0438\u044F \u0441\u0447\u0430\u0441\u0442\u044C\u044F"
-          ),
-          _react2.default.createElement(
-            "p",
-            null,
-            "\u041C\u044B \u0431\u0443\u0434\u0435\u043C \u0443\u0447\u0438\u0442\u044C\u0441\u044F \u0442\u043E\u043C\u0443, \u043A\u0430\u043A \u0431\u044B\u0442\u044C \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u044B\u043C\u0438. \u041D\u0435 \u0436\u0434\u0430\u0442\u044C \u044D\u0442\u043E\u0433\u043E \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F \u0432 \u0431\u0443\u0434\u0443\u0449\u0435\u043C \u0438 \u043D\u0435 \xAB\u0437\u0430\u0432\u0438\u0441\u0430\u0442\u044C\xBB \u0432 \u043F\u0440\u043E\u0448\u043B\u043E\u043C. \u0420\u0430\u0434\u043E\u0432\u0430\u0442\u044C\u0441\u044F \u0432\u0441\u0435\u043C \u0441\u0438\u0442\u0443\u0430\u0446\u0438\u044F\u043C \u0438 \u043E\u0431\u0441\u0442\u043E\u044F\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u0430\u043C, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043F\u0440\u0438\u0445\u043E\u0434\u044F\u0442 \u0432 \u043D\u0430\u0448\u0443 \u0436\u0438\u0437\u043D\u044C. \u0412\u043C\u0435\u0441\u0442\u0435 \u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0438\u043C, \u043A\u0430\u043A\u0438\u0435 \u0447\u0443\u0432\u0441\u0442\u0432\u0430, \u043C\u044B\u0441\u043B\u0438 \u0438 \u0441\u043E\u0431\u044B\u0442\u0438\u044F \u0442\u0435\u0431\u044F \u043C\u043E\u0442\u0438\u0432\u0438\u0440\u0443\u044E\u0442 \u0438 \u043A\u0430\u043A \u044D\u0442\u0438\u043C \u0443\u043F\u0440\u0430\u0432\u043B\u044F\u0442\u044C."
-          )
-        ),
-        _react2.default.createElement(
-          "div",
-          { className: "event-page__exp" },
-          _react2.default.createElement(
-            "h2",
-            null,
-            "\u0427\u0442\u043E \u043F\u0440\u043E\u0438\u0437\u043E\u0439\u0434\u0435\u0442 \u0432 \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442\u0435 \u0441\u0435\u043C\u0438\u043D\u0430\u0440\u0430"
+            "\u042D\u0442\u043E\u0442 \u0441\u0435\u043C\u0438\u043D\u0430\u0440 \u0434\u043B\u044F \u0442\u0435\u0445, \u043A\u0442\u043E \u0445\u043E\u0447\u0435\u0442:"
           ),
           _react2.default.createElement(
             "div",
-            null,
+            { className: "list" },
             _react2.default.createElement(
-              "span",
-              null,
-              "\u041D\u0430\u0443\u0447\u0438\u0448\u044C\u0441\u044F \u0438\u0437\u0431\u0430\u0432\u043B\u044F\u0442\u044C\u0441\u044F \u043E\u0442 \u0441\u0442\u0440\u0430\u0445\u043E\u0432 \u0438 \u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0438\u0432\u0430\u044E\u0449\u0438\u0445 \u0443\u0431\u0435\u0436\u0434\u0435\u043D\u0438\u0439"
+              "div",
+              { className: "list__item" },
+              _react2.default.createElement(_reactFontawesome.FontAwesomeIcon, { icon: _freeSolidSvgIcons.faBurn }),
+              _react2.default.createElement(
+                "p",
+                null,
+                "\u0417\u0430\u0440\u044F\u0434\u0438\u0442\u044C\u0441\u044F \u044D\u043D\u0435\u0440\u0433\u0438\u0435\u0439 \u0438 \u043C\u043E\u0442\u0438\u0432\u0430\u0446\u0438\u0435\u0439"
+              )
             ),
             _react2.default.createElement(
-              "span",
-              null,
-              "\u041F\u043E\u043B\u0443\u0447\u0438\u0448\u044C \u043C\u043E\u0442\u0438\u0432\u0430\u0446\u0438\u044E \u0434\u043B\u044F \u0438\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u0439 \u0432 \u0436\u0438\u0437\u043D\u0438 "
+              "div",
+              { className: "list__item" },
+              _react2.default.createElement(_reactFontawesome.FontAwesomeIcon, { icon: _freeRegularSvgIcons.faSmile }),
+              _react2.default.createElement(
+                "p",
+                null,
+                "\u041F\u0440\u043E\u0440\u0430\u0431\u043E\u0442\u0430\u0442\u044C \u0441\u0442\u0440\u0430\u0445\u0438 \u0438 \u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0438\u0432\u0430\u044E\u0449\u0438\u0435 \u0443\u0431\u0435\u0436\u0434\u0435\u043D\u0438\u044F"
+              )
             ),
             _react2.default.createElement(
-              "span",
-              null,
-              "\u041F\u043E\u0439\u043C\u0435\u0448\u044C, \u0447\u0442\u043E \u0442\u0435\u0431\u044F \u043E\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u043B\u043E \u0432\u0441\u0451 \u044D\u0442\u043E \u0432\u0440\u0435\u043C\u044F, \u0438 \u043A\u0430\u043A \u044D\u0442\u043E \u043F\u0440\u0435\u043E\u0434\u043E\u043B\u0435\u0442\u044C"
+              "div",
+              { className: "list__item" },
+              _react2.default.createElement(_reactFontawesome.FontAwesomeIcon, { icon: _freeRegularSvgIcons.faGem }),
+              _react2.default.createElement(
+                "p",
+                null,
+                "\u041D\u0430\u0447\u0430\u0442\u044C \u0434\u0435\u0439\u0441\u0442\u0432\u043E\u0432\u0430\u0442\u044C \u0432\u043D\u0435 \u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E\u0441\u0442\u0438 \u043E\u0442 \u043E\u0431\u0441\u0442\u043E\u044F\u0442\u0435\u043B\u044C\u0441\u0442\u0432"
+              )
             ),
             _react2.default.createElement(
-              "span",
-              null,
-              "\u041D\u0430\u0443\u0447\u0438\u0448\u044C\u0441\u044F \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u0438 \u043F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0430\u0442\u044C \u0441\u0432\u043E\u0435 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u0435 \u0434\u043B\u044F \u043F\u0440\u0438\u043D\u044F\u0442\u0438\u044F \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0445 \u0440\u0435\u0448\u0435\u043D\u0438\u0439"
-            ),
-            _react2.default.createElement(
-              "span",
-              null,
-              "\u041D\u0430\u0443\u0447\u0438\u0448\u044C\u0441\u044F \u043D\u0430\u043F\u043E\u043B\u043D\u044F\u0442\u044C\u0441\u044F \u0441\u0447\u0430\u0441\u0442\u044C\u0435\u043C \u0438 \u0443\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0442\u044C \u044D\u0442\u043E \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u0435, \u043D\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E \u043E\u0442 \u0441\u043E\u0431\u044B\u0442\u0438\u0439"
-            ),
-            _react2.default.createElement(
-              "span",
-              null,
-              "\u0423\u0439\u0434\u0435\u0448\u044C \u043D\u0430\u043F\u043E\u043B\u043D\u0435\u043D\u043D\u044B\u043C \u0441\u0438\u043B \u0438 \u044D\u043D\u0435\u0440\u0433\u0438\u0435\u0439, \u0436\u0435\u043B\u0430\u043D\u0438\u0435\u043C \u0434\u0435\u0439\u0441\u0442\u0432\u043E\u0432\u0430\u0442\u044C, \u043D\u0435 \u043E\u0442\u043A\u043B\u0430\u0434\u044B\u0432\u0430\u044F \u043D\u0430 \u043F\u043E\u0442\u043E\u043C"
+              "div",
+              { className: "list__item" },
+              _react2.default.createElement(_reactFontawesome.FontAwesomeIcon, { icon: _freeRegularSvgIcons.faSun }),
+              _react2.default.createElement(
+                "p",
+                null,
+                "\u0412\u0445\u043E\u0434\u0438\u0442\u044C \u0432 \u0440\u0435\u0441\u0443\u0440\u0441\u043D\u043E\u0435 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u0435 \u0438 \u043E\u0441\u0442\u0430\u0432\u0430\u0442\u044C\u0441\u044F \u0432 \u043D\u0435\u043C \u043F\u043E\u0441\u0442\u043E\u044F\u043D\u043D\u043E"
+              )
             )
           )
         ),
         _react2.default.createElement(
           "div",
-          { className: "event-page__buy" },
+          { className: "event-page__section5" },
           _react2.default.createElement(
-            "p",
+            "h2",
             null,
-            "\u0433. \u041A\u0440\u0430\u0441\u043D\u043E\u0434\u0430\u0440, \u0443\u043B. \u041A\u0440\u0430\u0441\u043D\u0430\u044F, 91 (\u0433\u043E\u0441\u0442\u0438\u043D\u0438\u0446\u0430 \u0418\u043D\u0442\u0443\u0440\u0438\u0441\u0442)"
+            "\u041F\u0430\u043A\u0435\u0442\u044B"
           ),
           _react2.default.createElement(
-            "p",
-            null,
-            "24 \u043C\u0430\u0440\u0442\u0430 \u0432 19:00"
-          ),
-          _react2.default.createElement(
-            "a",
-            { href: "timepad.ru" },
-            "\u0423\u0447\u0430\u0441\u0442\u0432\u043E\u0432\u0430\u0442\u044C"
+            "div",
+            { className: "list" },
+            _react2.default.createElement(
+              "div",
+              { className: "list__item" },
+              _react2.default.createElement(
+                "h4",
+                null,
+                "\u0411\u0430\u0437\u043E\u0432\u044B\u0439"
+              ),
+              _react2.default.createElement(
+                "h3",
+                null,
+                "3 400\u20BD"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "\u0421\u0432\u043E\u0431\u043E\u0434\u043D\u0430\u044F \u0440\u0430\u0441\u0441\u0430\u0434\u043A\u0430"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "\u041F\u0430\u043A\u0435\u0442 \u0443\u0447\u0430\u0441\u0442\u043D\u0438\u043A\u0430"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "\u041A\u043E\u0444\u0435 \u0431\u0440\u0435\u0439\u043A"
+              ),
+              _react2.default.createElement(
+                "a",
+                { href: "http://solotatiana.ru/seminar/razbudi-schastie/" },
+                "\u0417\u0430\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "list__item" },
+              _react2.default.createElement(
+                "h4",
+                null,
+                "\u041F\u0440\u0435\u043C\u0438\u0443\u043C"
+              ),
+              _react2.default.createElement(
+                "h3",
+                null,
+                "5 400\u20BD"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "\u0415\u0436\u0435\u043D\u0435\u0434\u0435\u043B\u044C\u043D\u0438\u043A \u0422\u0430\u0442\u044C\u044F\u043D\u044B \u0421\u043E\u043B\u043E\u0432\u044C\u0435\u0432\u043E\u0439 \xAB\u0417\u0434\u0435\u0441\u044C \u0438 \u0441\u0435\u0439\u0447\u0430\u0441\xBB"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "\u041F\u0430\u043A\u0435\u0442 \u0443\u0447\u0430\u0441\u0442\u043D\u0438\u043A\u0430"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "\u041A\u043E\u0444\u0435 \u0431\u0440\u0435\u0439\u043A"
+              ),
+              _react2.default.createElement(
+                "a",
+                { href: "http://solotatiana.ru/seminar/razbudi-schastie/" },
+                "\u0417\u0430\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F"
+              )
+            )
           )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "event-page__section4" },
+          _react2.default.createElement(
+            "h2",
+            null,
+            "\u0424\u043E\u0440\u043C\u0430\u0442 \u043E\u0431\u0443\u0447\u0435\u043D\u0438\u044F"
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "list" },
+            _react2.default.createElement(
+              "div",
+              { className: "list__item" },
+              _react2.default.createElement(_reactFontawesome.FontAwesomeIcon, { icon: _freeRegularSvgIcons.faClock }),
+              _react2.default.createElement(
+                "p",
+                null,
+                "\u0412\u043E\u0441\u0435\u043C\u044C \u0447\u0430\u0441\u043E\u0432 \u0436\u0438\u0432\u043E\u0433\u043E \u043E\u0431\u0449\u0435\u043D\u0438\u044F \u0441 11:00 \u0434\u043E 19:00 \u0441 \u043F\u0435\u0440\u0435\u0440\u044B\u0432\u043E\u043C \u043D\u0430 \u043E\u0431\u0435\u0434"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "list__item" },
+              _react2.default.createElement(_reactFontawesome.FontAwesomeIcon, { icon: _freeSolidSvgIcons.faSuitcase }),
+              _react2.default.createElement(
+                "p",
+                null,
+                "\u0420\u0430\u0437\u0431\u043E\u0440 \u0432\u043E\u043F\u0440\u043E\u0441\u043E\u0432 \u0438 \u0440\u0435\u0430\u043B\u044C\u043D\u044B\u0445 \u043A\u0435\u0439\u0441\u043E\u0432 \u0443\u0447\u0430\u0441\u0442\u043D\u0438\u043A\u043E\u0432"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "list__item" },
+              _react2.default.createElement(_reactFontawesome.FontAwesomeIcon, { icon: _freeSolidSvgIcons.faUsers }),
+              _react2.default.createElement(
+                "p",
+                null,
+                "\u0420\u0430\u0431\u043E\u0442\u0430 \u0432 \u0433\u0440\u0443\u043F\u043F\u0435 \u0435\u0434\u0438\u043D\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u0438\u043A\u043E\u0432 \u0441 \u043F\u0440\u0430\u043A\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u043C\u0438 \u0437\u0430\u0434\u0430\u043D\u0438\u044F\u043C\u0438 \u0438 \u0443\u043F\u0440\u0430\u0436\u043D\u0435\u043D\u0438\u044F\u043C\u0438"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "list__item" },
+              _react2.default.createElement(_reactFontawesome.FontAwesomeIcon, { icon: _freeSolidSvgIcons.faMapMarkerAlt }),
+              _react2.default.createElement(
+                "p",
+                null,
+                "\u0410\u0434\u0440\u0435\u0441 \u043F\u0440\u043E\u0432\u0435\u0434\u0435\u043D\u0438\u044F: \u0443\u043B. \u0413\u0430\u0432\u0440\u0438\u043B\u043E\u0432\u0430 1\u0410 "
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "event-page__section6" },
+          _react2.default.createElement("iframe", {
+            width: "560",
+            height: "315",
+            src: "https://www.youtube.com/embed/nvcWKQbIUvo",
+            frameBorder: "0",
+            allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+            allowFullScreen: true
+          })
         )
       );
     }
@@ -909,6 +1161,24 @@ exports.default = Solovyova;
 
 /***/ }),
 /* 18 */
+/***/ (function(module, exports) {
+
+module.exports = require("@fortawesome/fontawesome-svg-core");
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports) {
+
+module.exports = require("@fortawesome/react-fontawesome");
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports) {
+
+module.exports = require("@fortawesome/free-solid-svg-icons");
+
+/***/ }),
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -967,7 +1237,7 @@ var P404 = function (_React$Component) {
 exports.default = P404;
 
 /***/ }),
-/* 19 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -993,38 +1263,15 @@ function Header(_ref) {
     "div",
     { className: "header" },
     _react2.default.createElement(
-      "div",
-      { className: "header__container" },
-      _react2.default.createElement(
-        _reactRouterDom.Link,
-        { to: "/" },
-        _react2.default.createElement("img", { src: image + "/logo.jpg" })
-      ),
-      _react2.default.createElement(
-        "div",
-        { className: "header-menu" },
-        _react2.default.createElement(
-          _reactRouterDom.Link,
-          { to: "/#events" },
-          "\u041C\u0435\u0440\u043E\u043F\u0440\u0438\u044F\u0442\u0438\u044F"
-        ),
-        _react2.default.createElement(
-          _reactRouterDom.Link,
-          { to: "/#partner" },
-          "\u041F\u0430\u0440\u0442\u043D\u0435\u0440\u0430\u043C"
-        ),
-        _react2.default.createElement(
-          _reactRouterDom.Link,
-          { to: "/#contacts" },
-          "\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B"
-        )
-      )
+      _reactRouterDom.Link,
+      { to: "/" },
+      _react2.default.createElement("img", { src: image + "/logo.jpg" })
     )
   );
 }
 
 /***/ }),
-/* 20 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1039,7 +1286,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Subscribe = __webpack_require__(21);
+var _Subscribe = __webpack_require__(24);
 
 var _Subscribe2 = _interopRequireDefault(_Subscribe);
 
@@ -1083,7 +1330,7 @@ function Footer(_ref) {
 }
 
 /***/ }),
-/* 21 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1099,7 +1346,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _axios = __webpack_require__(22);
+var _axios = __webpack_require__(25);
 
 var _axios2 = _interopRequireDefault(_axios);
 
@@ -1212,13 +1459,13 @@ var Subscribe = function (_React$Component) {
 exports.default = Subscribe;
 
 /***/ }),
-/* 22 */
+/* 25 */
 /***/ (function(module, exports) {
 
 module.exports = require("axios");
 
 /***/ }),
-/* 23 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1260,6 +1507,12 @@ function Error(_ref) {
     )
   );
 }
+
+/***/ }),
+/* 27 */
+/***/ (function(module, exports) {
+
+module.exports = require("@fortawesome/free-regular-svg-icons");
 
 /***/ })
 /******/ ]);
