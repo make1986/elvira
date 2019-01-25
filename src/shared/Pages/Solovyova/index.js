@@ -39,7 +39,7 @@ export default class Solovyova extends React.Component {
           <div className="wrap">
             <h1>Стратегия счастья</h1>
             <p>13 апреля, г. Краснодар</p>
-            <a href="http://localhost:3000/solotatiana" target="_blank">
+            <a href="https://names.timepad.ru/event/890123/" target="_blank">
               Участвовать
             </a>
           </div>
@@ -153,19 +153,16 @@ export default class Solovyova extends React.Component {
               <p>Свободная рассадка</p>
               <p>Пакет участника</p>
               <p>Кофе брейк</p>
-              <a href="http://solotatiana.ru/seminar/razbudi-schastie/">
-                Записаться
-              </a>
+              <a href="https://names.timepad.ru/event/890123/">Записаться</a>
             </div>
             <div className="list__item">
               <h4>Премиум</h4>
               <h3>5 400₽</h3>
+              <p>Первые ряды</p>
               <p>Еженедельник Татьяны Соловьевой «Здесь и сейчас»</p>
               <p>Пакет участника</p>
               <p>Кофе брейк</p>
-              <a href="http://solotatiana.ru/seminar/razbudi-schastie/">
-                Записаться
-              </a>
+              <a href="https://names.timepad.ru/event/890123/">Записаться</a>
             </div>
           </div>
         </div>

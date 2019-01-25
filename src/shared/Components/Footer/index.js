@@ -8,7 +8,7 @@ export default function Footer({ addError }) {
       <Subscribe addError={addError} />
       <div className="foot">
         <div className="foot__left">
-          <p>Faces. Люди, которые вдохновляют ®</p>
+          <p>Names. Люди, которые вдохновляют ®</p>
         </div>
         <div className="foot__right">
           <p>
