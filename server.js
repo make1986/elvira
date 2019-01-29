@@ -291,19 +291,19 @@ var _routes2 = _interopRequireDefault(_routes);
 
 var _config = __webpack_require__(1);
 
-var _ = __webpack_require__(21);
+var _ = __webpack_require__(22);
 
 var _2 = _interopRequireDefault(_);
 
-var _Header = __webpack_require__(22);
+var _Header = __webpack_require__(23);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Footer = __webpack_require__(23);
+var _Footer = __webpack_require__(24);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
-var _Error = __webpack_require__(26);
+var _Error = __webpack_require__(27);
 
 var _Error2 = _interopRequireDefault(_Error);
 
@@ -737,7 +737,7 @@ var _reactFontawesome = __webpack_require__(19);
 
 var _freeSolidSvgIcons = __webpack_require__(20);
 
-var _freeRegularSvgIcons = __webpack_require__(27);
+var _freeRegularSvgIcons = __webpack_require__(21);
 
 var _config = __webpack_require__(1);
 
@@ -789,7 +789,7 @@ var Solovyova = function (_React$Component) {
             ),
             _react2.default.createElement(
               "a",
-              { href: "http://localhost:3000/solotatiana", target: "_blank" },
+              { href: "https://names.timepad.ru/event/890123/", target: "_blank" },
               "\u0423\u0447\u0430\u0441\u0442\u0432\u043E\u0432\u0430\u0442\u044C"
             )
           )
@@ -1045,7 +1045,7 @@ var Solovyova = function (_React$Component) {
               ),
               _react2.default.createElement(
                 "a",
-                { href: "http://solotatiana.ru/seminar/razbudi-schastie/" },
+                { href: "https://names.timepad.ru/event/890123/" },
                 "\u0417\u0430\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F"
               )
             ),
@@ -1065,6 +1065,11 @@ var Solovyova = function (_React$Component) {
               _react2.default.createElement(
                 "p",
                 null,
+                "\u041F\u0435\u0440\u0432\u044B\u0435 \u0440\u044F\u0434\u044B"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
                 "\u0415\u0436\u0435\u043D\u0435\u0434\u0435\u043B\u044C\u043D\u0438\u043A \u0422\u0430\u0442\u044C\u044F\u043D\u044B \u0421\u043E\u043B\u043E\u0432\u044C\u0435\u0432\u043E\u0439 \xAB\u0417\u0434\u0435\u0441\u044C \u0438 \u0441\u0435\u0439\u0447\u0430\u0441\xBB"
               ),
               _react2.default.createElement(
@@ -1079,7 +1084,7 @@ var Solovyova = function (_React$Component) {
               ),
               _react2.default.createElement(
                 "a",
-                { href: "http://solotatiana.ru/seminar/razbudi-schastie/" },
+                { href: "https://names.timepad.ru/event/890123/" },
                 "\u0417\u0430\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F"
               )
             )
@@ -1179,6 +1184,12 @@ module.exports = require("@fortawesome/free-solid-svg-icons");
 
 /***/ }),
 /* 21 */
+/***/ (function(module, exports) {
+
+module.exports = require("@fortawesome/free-regular-svg-icons");
+
+/***/ }),
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1237,7 +1248,7 @@ var P404 = function (_React$Component) {
 exports.default = P404;
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1271,7 +1282,7 @@ function Header(_ref) {
 }
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1286,7 +1297,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Subscribe = __webpack_require__(24);
+var _Subscribe = __webpack_require__(25);
 
 var _Subscribe2 = _interopRequireDefault(_Subscribe);
 
@@ -1308,7 +1319,7 @@ function Footer(_ref) {
         _react2.default.createElement(
           "p",
           null,
-          "Faces. \u041B\u044E\u0434\u0438, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0432\u0434\u043E\u0445\u043D\u043E\u0432\u043B\u044F\u044E\u0442 \xAE"
+          "Names. \u041B\u044E\u0434\u0438, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0432\u0434\u043E\u0445\u043D\u043E\u0432\u043B\u044F\u044E\u0442 \xAE"
         )
       ),
       _react2.default.createElement(
@@ -1330,7 +1341,7 @@ function Footer(_ref) {
 }
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1346,7 +1357,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _axios = __webpack_require__(25);
+var _axios = __webpack_require__(26);
 
 var _axios2 = _interopRequireDefault(_axios);
 
@@ -1459,13 +1470,13 @@ var Subscribe = function (_React$Component) {
 exports.default = Subscribe;
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports) {
 
 module.exports = require("axios");
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1507,12 +1518,6 @@ function Error(_ref) {
     )
   );
 }
-
-/***/ }),
-/* 27 */
-/***/ (function(module, exports) {
-
-module.exports = require("@fortawesome/free-regular-svg-icons");
 
 /***/ })
 /******/ ]);

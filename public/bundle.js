@@ -314,7 +314,7 @@ if (process.env.NODE_ENV !== 'production') {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var bind = __webpack_require__(29);
-var isBuffer = __webpack_require__(91);
+var isBuffer = __webpack_require__(92);
 
 /*global toString:true*/
 
@@ -1699,7 +1699,7 @@ exports.default = matchPath;
 /* WEBPACK VAR INJECTION */(function(process) {
 
 var utils = __webpack_require__(3);
-var normalizeHeaderName = __webpack_require__(93);
+var normalizeHeaderName = __webpack_require__(94);
 
 var DEFAULT_CONTENT_TYPE = {
   'Content-Type': 'application/x-www-form-urlencoded'
@@ -4705,12 +4705,12 @@ module.exports = function bind(fn, thisArg) {
 /* WEBPACK VAR INJECTION */(function(process) {
 
 var utils = __webpack_require__(3);
-var settle = __webpack_require__(94);
-var buildURL = __webpack_require__(96);
-var parseHeaders = __webpack_require__(97);
-var isURLSameOrigin = __webpack_require__(98);
+var settle = __webpack_require__(95);
+var buildURL = __webpack_require__(97);
+var parseHeaders = __webpack_require__(98);
+var isURLSameOrigin = __webpack_require__(99);
 var createError = __webpack_require__(31);
-var btoa = typeof window !== 'undefined' && window.btoa && window.btoa.bind(window) || __webpack_require__(99);
+var btoa = typeof window !== 'undefined' && window.btoa && window.btoa.bind(window) || __webpack_require__(100);
 
 module.exports = function xhrAdapter(config) {
   return new Promise(function dispatchXhrRequest(resolve, reject) {
@@ -4803,7 +4803,7 @@ module.exports = function xhrAdapter(config) {
     // This is only done if running in a standard browser environment.
     // Specifically not if we're in a web worker, or react-native.
     if (utils.isStandardBrowserEnv()) {
-      var cookies = __webpack_require__(100);
+      var cookies = __webpack_require__(101);
 
       // Add xsrf header
       var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ? cookies.read(config.xsrfCookieName) : undefined;
@@ -4885,7 +4885,7 @@ module.exports = function xhrAdapter(config) {
 "use strict";
 
 
-var enhanceError = __webpack_require__(95);
+var enhanceError = __webpack_require__(96);
 
 /**
  * Create an Error with the specified message, config, error code, request and response.
@@ -17313,7 +17313,7 @@ exports = module.exports = __webpack_require__(73)(false);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Play:400,700&subset=cyrillic);", ""]);
 
 // module
-exports.push([module.i, "body {\n  margin: 0;\n  font-family: \"Montserrat\", sans-serif; }\n\na {\n  text-decoration: none; }\n\n.header {\n  width: 100%;\n  background-color: #fff;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 90px;\n  position: fixed;\n  left: 0;\n  top: 0;\n  z-index: 500; }\n\n.footer {\n  width: 100%; }\n  .footer .subscribe {\n    width: 100%;\n    height: 200px;\n    background-color: #f7c9df;\n    display: flex;\n    flex-direction: column; }\n    .footer .subscribe h4 {\n      padding-top: 40px;\n      margin: 0 auto;\n      width: 1140px;\n      color: #1a1a1a;\n      font-size: 24px;\n      font-family: \"Play\", sans-serif; }\n    .footer .subscribe form {\n      margin: 0 auto;\n      width: 1140px;\n      margin-top: 20px;\n      display: flex;\n      align-items: center;\n      justify-content: space-between; }\n      .footer .subscribe form input {\n        width: calc(100% / 3 - 70px);\n        border: none;\n        border-radius: 5px;\n        background-color: #fff;\n        height: 40px;\n        padding: 0 20px;\n        font-family: \"Montserrat\", sans-serif;\n        font-size: 14px; }\n      .footer .subscribe form button {\n        width: calc(100% / 3 - 30px);\n        border-radius: 5px;\n        background-color: #82cde7;\n        height: 40px;\n        cursor: pointer;\n        font-family: \"Montserrat\", sans-serif;\n        font-size: 14px;\n        color: #f7c9df;\n        font-weight: bold;\n        border: 1px solid #82cde7;\n        text-transform: uppercase; }\n        .footer .subscribe form button:hover {\n          background-color: #f7c9df;\n          color: #82cde7; }\n    .footer .subscribe p {\n      color: #1a1a1a;\n      width: 1140px;\n      margin: 0 auto;\n      margin-top: 15px;\n      font-size: 14px; }\n  .footer .foot {\n    width: 1140px;\n    margin: 0 auto;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    height: 90px; }\n    .footer .foot__left p {\n      margin: 0;\n      color: #1a1a1a;\n      font-size: 14px; }\n    .footer .foot__right p {\n      margin: 0;\n      color: #1a1a1a;\n      font-size: 14px;\n      width: 400px; }\n\n.home-page {\n  width: 100%; }\n  .home-page__top {\n    width: 100%;\n    height: calc(100vh - 90px);\n    background-color: #82cde7;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    flex-direction: column; }\n    .home-page__top h2 {\n      font-family: \"Play\", sans-serif;\n      color: #1a1a1a;\n      font-weight: bold;\n      font-size: 40px;\n      margin: 0;\n      width: 600px;\n      text-align: center; }\n    .home-page__top a {\n      width: 300px;\n      height: 40px;\n      border: 1px solid #fff;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      color: #fff;\n      border-radius: 3px;\n      margin-top: 40px;\n      font-weight: 600;\n      font-size: 16px;\n      text-transform: uppercase; }\n      .home-page__top a:hover {\n        background-color: #fff;\n        color: #82cde7; }\n  .home-page__events {\n    width: 1140px;\n    display: flex;\n    align-items: flex-start;\n    justify-content: space-between;\n    margin: auto;\n    padding-top: 80px;\n    padding-bottom: 80px; }\n    .home-page__events .speaker {\n      width: 500px;\n      height: 570px;\n      background-color: #82cde7;\n      overflow: hidden;\n      border-radius: 5px; }\n      .home-page__events .speaker:hover .speaker__img > .area {\n        display: flex; }\n      .home-page__events .speaker__img {\n        width: 100%;\n        height: 400px; }\n        .home-page__events .speaker__img .area {\n          margin: 0;\n          height: 100%;\n          background-color: rgba(0, 0, 0, 0.6);\n          align-items: center;\n          justify-content: center;\n          text-align: center;\n          color: #fff;\n          display: none;\n          padding: 0 30px; }\n      .home-page__events .speaker__info {\n        padding: 30px; }\n        .home-page__events .speaker__info .name {\n          margin: 0;\n          font-family: \"Play\", sans-serif;\n          color: #1a1a1a;\n          font-size: 28px;\n          font-weight: normal; }\n        .home-page__events .speaker__info .city {\n          margin: 0;\n          margin-top: 12px;\n          font-size: 16px;\n          color: #1a1a1a;\n          opacity: 0.8;\n          font-weight: bold; }\n        .home-page__events .speaker__info .date {\n          margin: 0;\n          margin-top: 8px;\n          font-size: 16px;\n          color: #1a1a1a;\n          opacity: 0.8;\n          font-weight: bold; }\n\n.event-page {\n  width: 100%; }\n  .event-page__top {\n    width: 100%;\n    height: 480px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .event-page__top .wrap {\n      width: 100%;\n      height: 100%;\n      background-color: rgba(0, 0, 0, 0.6);\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      flex-direction: column; }\n      .event-page__top .wrap h1 {\n        color: #fff;\n        font-family: \"Play\", sans-serif;\n        font-size: 42px;\n        margin: 0; }\n      .event-page__top .wrap p {\n        color: #fff;\n        margin: 0;\n        margin-top: 10px;\n        font-size: 20px; }\n      .event-page__top .wrap a {\n        background-color: #82cde7;\n        width: 200px;\n        height: 40px;\n        color: rgba(0, 0, 0, 0.6);\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        font-size: 14px;\n        text-transform: uppercase;\n        border-radius: 5px;\n        font-weight: bold;\n        border: 1px solid #82cde7;\n        margin-top: 20px; }\n        .event-page__top .wrap a:hover {\n          background: none;\n          color: #82cde7; }\n  .event-page__top-slogan {\n    width: 100%;\n    height: 80px;\n    background-color: #f7c9df;\n    display: flex;\n    align-items: center;\n    justify-content: center; }\n    .event-page__top-slogan span {\n      font-size: 18px;\n      color: #1a1a1a; }\n  .event-page__section1 {\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    padding-top: 60px;\n    padding-bottom: 60px; }\n    .event-page__section1 h2 {\n      margin: 0;\n      font-size: 32px;\n      color: #1a1a1a;\n      font-family: \"Play\", sans-serif; }\n    .event-page__section1 .list {\n      width: 1140px;\n      display: flex;\n      flex-wrap: wrap;\n      margin-top: 40px;\n      justify-content: space-between; }\n      .event-page__section1 .list__item {\n        width: calc(100% / 3 - 20px);\n        margin-bottom: 30px; }\n        .event-page__section1 .list__item svg {\n          width: 40px;\n          height: 40px;\n          color: #82cde7;\n          transition: all 0.4 linear; }\n        .event-page__section1 .list__item p {\n          margin: 0;\n          margin-top: 20px;\n          color: #1a1a1a;\n          font-size: 16px;\n          cursor: default; }\n        .event-page__section1 .list__item:hover svg {\n          color: #f7c9df; }\n  .event-page__section2 {\n    width: 100%;\n    background-color: #fff;\n    display: flex;\n    align-items: center;\n    justify-content: center; }\n    .event-page__section2 .wrap {\n      width: 1140px;\n      padding-top: 60px;\n      padding-bottom: 60px; }\n      .event-page__section2 .wrap h2 {\n        margin: 0;\n        font-size: 32px;\n        color: #1a1a1a;\n        font-family: \"Play\", sans-serif;\n        width: 100%;\n        text-align: center; }\n      .event-page__section2 .wrap p {\n        margin: 0;\n        margin-top: 40px;\n        color: #1a1a1a; }\n  .event-page__section3 {\n    width: 100%;\n    background-color: #f7c9df;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: 60px 0; }\n    .event-page__section3 .wrap {\n      width: 1140px;\n      display: flex; }\n      .event-page__section3 .wrap .img {\n        width: 50%;\n        display: flex;\n        align-items: center;\n        justify-content: center; }\n        .event-page__section3 .wrap .img img {\n          width: 360px; }\n      .event-page__section3 .wrap .info {\n        width: 50%; }\n        .event-page__section3 .wrap .info h3 {\n          font-size: 18px;\n          color: #1a1a1a;\n          opacity: 0.8;\n          text-transform: uppercase;\n          margin: 0; }\n        .event-page__section3 .wrap .info h2 {\n          font-size: 28px;\n          color: #1a1a1a;\n          font-family: \"Play\", sans-serif;\n          margin: 0; }\n        .event-page__section3 .wrap .info p {\n          font-size: 16px;\n          color: #1a1a1a;\n          opacity: 0.9;\n          margin: 0;\n          margin-top: 30px; }\n  .event-page__section4 {\n    width: 100%;\n    background-color: #fff;\n    padding: 60px 0;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .event-page__section4 h2 {\n      margin: 0;\n      font-size: 32px;\n      color: #1a1a1a;\n      font-family: \"Play\", sans-serif; }\n    .event-page__section4 .list {\n      width: 1140px;\n      display: flex;\n      align-items: flex-start;\n      justify-content: space-between;\n      margin-top: 40px; }\n      .event-page__section4 .list__item {\n        width: calc(100% / 4 - 20px); }\n        .event-page__section4 .list__item svg {\n          width: 40px;\n          height: 40px;\n          color: #82cde7;\n          transition: all 0.4 linear; }\n        .event-page__section4 .list__item p {\n          margin: 0;\n          margin-top: 20px;\n          color: #1a1a1a;\n          font-size: 16px;\n          cursor: default; }\n        .event-page__section4 .list__item:hover svg {\n          color: #f7c9df; }\n  .event-page__section5 {\n    width: 100%;\n    padding: 60px 0;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    flex-direction: column; }\n    .event-page__section5 h2 {\n      margin: 0;\n      font-size: 32px;\n      color: #1a1a1a;\n      font-family: \"Play\", sans-serif; }\n    .event-page__section5 .list {\n      width: 1140px;\n      display: flex;\n      align-items: flex-start;\n      justify-content: space-between;\n      margin-top: 40px; }\n      .event-page__section5 .list__item {\n        width: calc(100% / 2 - 20px);\n        background-color: #fff;\n        border-radius: 18px;\n        padding-top: 30px;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        flex-direction: column;\n        overflow: hidden; }\n        .event-page__section5 .list__item h4 {\n          margin: 0;\n          width: 100%;\n          text-transform: uppercase;\n          color: #1a1a1a;\n          opacity: 0.8;\n          font-size: 14px;\n          padding-bottom: 30px;\n          border-bottom: 1px solid #ebebeb;\n          display: flex;\n          align-items: center;\n          justify-content: center; }\n        .event-page__section5 .list__item h3 {\n          font-family: \"Play\", sans-serif;\n          color: #1a1a1a;\n          margin: 0;\n          margin-top: 20px;\n          font-size: 28px;\n          opacity: 0.95;\n          padding-bottom: 15px;\n          border-bottom: 1px solid #ebebeb;\n          width: 100%;\n          text-align: center; }\n        .event-page__section5 .list__item p {\n          margin: 0;\n          padding: 20px 0;\n          border-bottom: 1px solid #ebebeb;\n          width: 100%;\n          text-align: center; }\n        .event-page__section5 .list__item a {\n          width: 100%;\n          height: 80px;\n          background-color: #82cde7;\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          color: #fff;\n          font-size: 14px;\n          text-transform: uppercase;\n          font-weight: bold; }\n          .event-page__section5 .list__item a:hover {\n            background-color: #fff;\n            color: #82cde7; }\n        .event-page__section5 .list__item:hover {\n          -webkit-box-shadow: 0px 0px 14px 2px rgba(50, 50, 50, 0.2);\n          -moz-box-shadow: 0px 0px 14px 2px rgba(50, 50, 50, 0.2);\n          box-shadow: 0px 0px 14px 2px rgba(50, 50, 50, 0.2); }\n  .event-page__section6 {\n    width: 100%;\n    padding: 60px 0;\n    display: flex;\n    align-items: center;\n    justify-content: center; }\n\n@media screen and (min-device-width: 992px) and (max-device-width: 1199px) {\n  .event-page__section1 .list {\n    width: 90%; }\n  .event-page__section2 .wrap {\n    width: 90%; }\n  .event-page__section3 .wrap {\n    width: 90%; }\n  .event-page__section4 .list {\n    width: 90%; }\n  .event-page__section5 .list {\n    width: 90%; }\n  .footer .subscribe h4 {\n    width: 90%; }\n  .footer .subscribe form {\n    width: 90%; }\n  .footer .subscribe p {\n    width: 90%; }\n  .footer .foot {\n    width: 90%; } }\n\n@media screen and (min-device-width: 768px) and (max-device-width: 991px) {\n  .event-page__section1 .list {\n    width: 90%; }\n  .event-page__section2 .wrap {\n    width: 90%; }\n  .event-page__section3 .wrap {\n    width: 90%;\n    justify-content: center; }\n    .event-page__section3 .wrap .img {\n      width: 80px;\n      height: 80px;\n      overflow: hidden;\n      border-radius: 50%;\n      position: relative;\n      margin-right: 30px; }\n      .event-page__section3 .wrap .img img {\n        width: 100%;\n        position: absolute;\n        top: 0;\n        left: 0; }\n  .event-page__section4 .list {\n    width: 90%;\n    flex-wrap: wrap; }\n    .event-page__section4 .list__item {\n      width: calc(100% / 2 - 15px);\n      margin-bottom: 30px; }\n  .event-page__section5 .list {\n    width: 90%; }\n  .footer .subscribe h4 {\n    width: 90%; }\n  .footer .subscribe form {\n    width: 90%; }\n  .footer .subscribe p {\n    width: 90%; }\n  .footer .foot {\n    width: 90%; } }\n\n@media screen and (min-device-width: 481px) and (max-device-width: 767px) {\n  .event-page__section1 h2 {\n    width: 90%; }\n  .event-page__section1 .list {\n    width: 90%; }\n    .event-page__section1 .list__item {\n      width: calc(100% / 2 - 15px); }\n  .event-page__section2 .wrap {\n    width: 90%; }\n  .event-page__section3 .wrap {\n    width: 90%;\n    justify-content: center; }\n    .event-page__section3 .wrap .img {\n      width: 80px;\n      height: 80px;\n      overflow: hidden;\n      border-radius: 50%;\n      position: relative;\n      margin-right: 30px; }\n      .event-page__section3 .wrap .img img {\n        width: 100%;\n        position: absolute;\n        top: 0;\n        left: 0; }\n  .event-page__section4 h2 {\n    width: 90%; }\n  .event-page__section4 .list {\n    width: 90%;\n    flex-wrap: wrap; }\n    .event-page__section4 .list__item {\n      width: calc(100% / 2 - 15px);\n      margin-bottom: 30px; }\n  .event-page__section5 .list {\n    flex-direction: column;\n    width: 90%; }\n    .event-page__section5 .list__item {\n      width: 100%;\n      margin-bottom: 15px; }\n  .event-page__section6 iframe {\n    width: 400px;\n    height: 300px; }\n  .footer .subscribe {\n    height: auto;\n    padding-bottom: 30px; }\n    .footer .subscribe h4 {\n      width: 90%; }\n    .footer .subscribe form {\n      width: 90%;\n      flex-direction: column; }\n      .footer .subscribe form input {\n        width: calc(100% - 40px);\n        margin-bottom: 20px; }\n      .footer .subscribe form button {\n        width: 100%; }\n    .footer .subscribe p {\n      width: 90%; }\n  .footer .foot {\n    width: 90%;\n    height: auto;\n    flex-direction: column;\n    padding: 30px 0; }\n    .footer .foot__left {\n      margin-bottom: 15px; } }\n\n@media screen and (max-device-width: 480px) {\n  .event-page__top {\n    height: 300px; }\n    .event-page__top .wrap h1 {\n      width: 90%;\n      text-align: center; }\n    .event-page__top .wrap p {\n      width: 90%;\n      text-align: center; }\n  .event-page__top-slogan {\n    display: none; }\n  .event-page__section1 h2 {\n    width: 90%; }\n  .event-page__section1 .list {\n    width: 90%; }\n    .event-page__section1 .list__item {\n      width: 100%; }\n  .event-page__section2 .wrap {\n    width: 90%; }\n  .event-page__section3 .wrap {\n    width: 90%;\n    justify-content: center;\n    flex-direction: column;\n    align-items: center; }\n    .event-page__section3 .wrap .img {\n      width: 80px;\n      height: 80px;\n      overflow: hidden;\n      border-radius: 50%;\n      position: relative;\n      margin-right: 0;\n      margin-bottom: 30px; }\n      .event-page__section3 .wrap .img img {\n        width: 100%;\n        position: absolute;\n        top: 0;\n        left: 0; }\n    .event-page__section3 .wrap .info {\n      width: 100%; }\n      .event-page__section3 .wrap .info h3,\n      .event-page__section3 .wrap .info h2 {\n        text-align: center; }\n  .event-page__section4 h2 {\n    width: 90%;\n    text-align: center; }\n  .event-page__section4 .list {\n    width: 90%;\n    flex-wrap: wrap; }\n    .event-page__section4 .list__item {\n      width: 100%;\n      margin-bottom: 30px;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center; }\n      .event-page__section4 .list__item p {\n        text-align: center; }\n  .event-page__section5 .list {\n    flex-direction: column;\n    width: 90%; }\n    .event-page__section5 .list__item {\n      width: 100%;\n      margin-bottom: 15px; }\n  .event-page__section6 iframe {\n    width: 280px;\n    height: 140px; }\n  .footer .subscribe {\n    height: auto;\n    padding-bottom: 30px; }\n    .footer .subscribe h4 {\n      width: 90%; }\n    .footer .subscribe form {\n      width: 90%;\n      flex-direction: column; }\n      .footer .subscribe form input {\n        width: calc(100% - 40px);\n        margin-bottom: 20px; }\n      .footer .subscribe form button {\n        width: 100%; }\n    .footer .subscribe p {\n      width: 90%; }\n  .footer .foot {\n    width: 90%;\n    height: auto;\n    flex-direction: column;\n    padding: 30px 0; }\n    .footer .foot__left {\n      margin-bottom: 15px; }\n      .footer .foot__left p {\n        font-size: 12px; }\n    .footer .foot__right p {\n      width: 100%;\n      font-size: 12px;\n      text-align: center; } }\n\n.page {\n  margin: 0 auto;\n  width: 100%;\n  max-width: 1440px;\n  margin-top: 90px;\n  background-color: #ebebeb; }\n\n.error {\n  position: fixed;\n  width: 100%;\n  height: 100vh;\n  left: 0;\n  top: 0;\n  background-color: rgba(0, 0, 0, 0.7);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  z-index: 700; }\n  .error div {\n    padding: 30px;\n    background-color: #fff;\n    border-radius: 24px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .error div p {\n      color: #17181a;\n      font-size: 16px; }\n    .error div .button {\n      padding: 0;\n      border-radius: 100px;\n      background-color: #82cde7;\n      color: #fff;\n      height: 40px;\n      width: 100px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      font-weight: bold;\n      cursor: pointer; }\n      .error div .button:hover {\n        -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);\n        -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);\n        box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75); }\n", ""]);
+exports.push([module.i, "body {\n  margin: 0;\n  font-family: \"Montserrat\", sans-serif; }\n\na {\n  text-decoration: none; }\n\n.header {\n  width: 100%;\n  background-color: #fff;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 90px;\n  position: fixed;\n  left: 0;\n  top: 0;\n  z-index: 500; }\n\n.footer {\n  width: 100%; }\n  .footer .subscribe {\n    width: 100%;\n    height: 200px;\n    background-color: #f7c9df;\n    display: flex;\n    flex-direction: column; }\n    .footer .subscribe h4 {\n      padding-top: 40px;\n      margin: 0 auto;\n      width: 1140px;\n      color: #1a1a1a;\n      font-size: 24px;\n      font-family: \"Play\", sans-serif; }\n    .footer .subscribe form {\n      margin: 0 auto;\n      width: 1140px;\n      margin-top: 20px;\n      display: flex;\n      align-items: center;\n      justify-content: space-between; }\n      .footer .subscribe form input {\n        width: calc(100% / 3 - 70px);\n        border: none;\n        border-radius: 5px;\n        background-color: #fff;\n        height: 40px;\n        padding: 0 20px;\n        font-family: \"Montserrat\", sans-serif;\n        font-size: 14px; }\n      .footer .subscribe form button {\n        width: calc(100% / 3 - 30px);\n        border-radius: 5px;\n        background-color: #82cde7;\n        height: 40px;\n        cursor: pointer;\n        font-family: \"Montserrat\", sans-serif;\n        font-size: 14px;\n        color: #f7c9df;\n        font-weight: bold;\n        border: 1px solid #82cde7;\n        text-transform: uppercase; }\n        .footer .subscribe form button:hover {\n          background-color: #f7c9df;\n          color: #82cde7; }\n    .footer .subscribe p {\n      color: #1a1a1a;\n      width: 1140px;\n      margin: 0 auto;\n      margin-top: 15px;\n      font-size: 14px; }\n  .footer .foot {\n    width: 1140px;\n    margin: 0 auto;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    height: 90px; }\n    .footer .foot__left p {\n      margin: 0;\n      color: #1a1a1a;\n      font-size: 14px; }\n    .footer .foot__right p {\n      margin: 0;\n      color: #1a1a1a;\n      font-size: 14px;\n      width: 400px; }\n\n.home-page {\n  width: 100%; }\n  .home-page__top {\n    width: 100%;\n    height: calc(100vh - 90px);\n    background-color: #82cde7;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    flex-direction: column; }\n    .home-page__top h2 {\n      font-family: \"Play\", sans-serif;\n      color: #1a1a1a;\n      font-weight: bold;\n      font-size: 40px;\n      margin: 0;\n      width: 600px;\n      text-align: center; }\n    .home-page__top a {\n      width: 300px;\n      height: 40px;\n      border: 1px solid #fff;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      color: #fff;\n      border-radius: 3px;\n      margin-top: 40px;\n      font-weight: 600;\n      font-size: 16px;\n      text-transform: uppercase; }\n      .home-page__top a:hover {\n        background-color: #fff;\n        color: #82cde7; }\n  .home-page__events {\n    width: 1140px;\n    display: flex;\n    align-items: flex-start;\n    justify-content: space-between;\n    margin: auto;\n    padding-top: 80px;\n    padding-bottom: 80px; }\n    .home-page__events .speaker {\n      width: 500px;\n      height: 570px;\n      background-color: #82cde7;\n      overflow: hidden;\n      border-radius: 5px; }\n      .home-page__events .speaker:hover .speaker__img > .area {\n        display: flex; }\n      .home-page__events .speaker__img {\n        width: 100%;\n        height: 400px; }\n        .home-page__events .speaker__img .area {\n          margin: 0;\n          height: 100%;\n          background-color: rgba(0, 0, 0, 0.6);\n          align-items: center;\n          justify-content: center;\n          text-align: center;\n          color: #fff;\n          display: none;\n          padding: 0 30px; }\n      .home-page__events .speaker__info {\n        padding: 30px; }\n        .home-page__events .speaker__info .name {\n          margin: 0;\n          font-family: \"Play\", sans-serif;\n          color: #1a1a1a;\n          font-size: 28px;\n          font-weight: normal; }\n        .home-page__events .speaker__info .city {\n          margin: 0;\n          margin-top: 12px;\n          font-size: 16px;\n          color: #1a1a1a;\n          opacity: 0.8;\n          font-weight: bold; }\n        .home-page__events .speaker__info .date {\n          margin: 0;\n          margin-top: 8px;\n          font-size: 16px;\n          color: #1a1a1a;\n          opacity: 0.8;\n          font-weight: bold; }\n\n.event-page {\n  width: 100%; }\n  .event-page__top {\n    width: 100%;\n    height: 480px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .event-page__top .wrap {\n      width: 100%;\n      height: 100%;\n      background-color: rgba(0, 0, 0, 0.6);\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      flex-direction: column; }\n      .event-page__top .wrap h1 {\n        color: #fff;\n        font-family: \"Play\", sans-serif;\n        font-size: 42px;\n        margin: 0; }\n      .event-page__top .wrap p {\n        color: #fff;\n        margin: 0;\n        margin-top: 10px;\n        font-size: 20px; }\n      .event-page__top .wrap a {\n        background-color: #82cde7;\n        width: 200px;\n        height: 40px;\n        color: rgba(0, 0, 0, 0.6);\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        font-size: 14px;\n        text-transform: uppercase;\n        border-radius: 5px;\n        font-weight: bold;\n        border: 1px solid #82cde7;\n        margin-top: 20px; }\n        .event-page__top .wrap a:hover {\n          background: none;\n          color: #82cde7; }\n  .event-page__top-slogan {\n    width: 100%;\n    height: 80px;\n    background-color: #f7c9df;\n    display: flex;\n    align-items: center;\n    justify-content: center; }\n    .event-page__top-slogan span {\n      font-size: 18px;\n      color: #1a1a1a; }\n  .event-page__section1 {\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    padding-top: 60px;\n    padding-bottom: 60px; }\n    .event-page__section1 h2 {\n      margin: 0;\n      font-size: 32px;\n      color: #1a1a1a;\n      font-family: \"Play\", sans-serif; }\n    .event-page__section1 .list {\n      width: 1140px;\n      display: flex;\n      flex-wrap: wrap;\n      margin-top: 40px;\n      justify-content: space-between; }\n      .event-page__section1 .list__item {\n        width: calc(100% / 3 - 20px);\n        margin-bottom: 30px; }\n        .event-page__section1 .list__item svg {\n          width: 40px;\n          height: 40px;\n          color: #82cde7;\n          transition: all 0.4 linear; }\n        .event-page__section1 .list__item p {\n          margin: 0;\n          margin-top: 20px;\n          color: #1a1a1a;\n          font-size: 16px;\n          cursor: default; }\n        .event-page__section1 .list__item:hover svg {\n          color: #f7c9df; }\n  .event-page__section2 {\n    width: 100%;\n    background-color: #fff;\n    display: flex;\n    align-items: center;\n    justify-content: center; }\n    .event-page__section2 .wrap {\n      width: 1140px;\n      padding-top: 60px;\n      padding-bottom: 60px; }\n      .event-page__section2 .wrap h2 {\n        margin: 0;\n        font-size: 32px;\n        color: #1a1a1a;\n        font-family: \"Play\", sans-serif;\n        width: 100%;\n        text-align: center; }\n      .event-page__section2 .wrap p {\n        margin: 0;\n        margin-top: 40px;\n        color: #1a1a1a; }\n  .event-page__section3 {\n    width: 100%;\n    background-color: #f7c9df;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: 60px 0; }\n    .event-page__section3 .wrap {\n      width: 1140px;\n      display: flex; }\n      .event-page__section3 .wrap .img {\n        width: 50%;\n        display: flex;\n        align-items: center;\n        justify-content: center; }\n        .event-page__section3 .wrap .img img {\n          width: 360px; }\n      .event-page__section3 .wrap .info {\n        width: 50%; }\n        .event-page__section3 .wrap .info h3 {\n          font-size: 18px;\n          color: #1a1a1a;\n          opacity: 0.8;\n          text-transform: uppercase;\n          margin: 0; }\n        .event-page__section3 .wrap .info h2 {\n          font-size: 28px;\n          color: #1a1a1a;\n          font-family: \"Play\", sans-serif;\n          margin: 0; }\n        .event-page__section3 .wrap .info p {\n          font-size: 16px;\n          color: #1a1a1a;\n          opacity: 0.9;\n          margin: 0;\n          margin-top: 30px; }\n  .event-page__section4 {\n    width: 100%;\n    background-color: #fff;\n    padding: 60px 0;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .event-page__section4 h2 {\n      margin: 0;\n      font-size: 32px;\n      color: #1a1a1a;\n      font-family: \"Play\", sans-serif; }\n    .event-page__section4 .list {\n      width: 1140px;\n      display: flex;\n      align-items: flex-start;\n      justify-content: space-between;\n      margin-top: 40px; }\n      .event-page__section4 .list__item {\n        width: calc(100% / 4 - 20px); }\n        .event-page__section4 .list__item svg {\n          width: 40px;\n          height: 40px;\n          color: #82cde7;\n          transition: all 0.4 linear; }\n        .event-page__section4 .list__item p {\n          margin: 0;\n          margin-top: 20px;\n          color: #1a1a1a;\n          font-size: 16px;\n          cursor: default; }\n        .event-page__section4 .list__item:hover svg {\n          color: #f7c9df; }\n  .event-page__section5 {\n    width: 100%;\n    padding: 60px 0;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    flex-direction: column; }\n    .event-page__section5 h2 {\n      margin: 0;\n      font-size: 32px;\n      color: #1a1a1a;\n      font-family: \"Play\", sans-serif; }\n    .event-page__section5 .list {\n      width: 1140px;\n      display: flex;\n      align-items: flex-start;\n      justify-content: space-between;\n      margin-top: 40px; }\n      .event-page__section5 .list__item {\n        width: calc(100% / 2 - 20px);\n        background-color: #fff;\n        border-radius: 18px;\n        padding-top: 30px;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        flex-direction: column;\n        overflow: hidden; }\n        .event-page__section5 .list__item h4 {\n          margin: 0;\n          width: 100%;\n          text-transform: uppercase;\n          color: #1a1a1a;\n          opacity: 0.8;\n          font-size: 14px;\n          padding-bottom: 30px;\n          border-bottom: 1px solid #ebebeb;\n          display: flex;\n          align-items: center;\n          justify-content: center; }\n        .event-page__section5 .list__item h3 {\n          font-family: \"Play\", sans-serif;\n          color: #1a1a1a;\n          margin: 0;\n          margin-top: 20px;\n          font-size: 28px;\n          opacity: 0.95;\n          padding-bottom: 15px;\n          border-bottom: 1px solid #ebebeb;\n          width: 100%;\n          text-align: center; }\n        .event-page__section5 .list__item p {\n          margin: 0;\n          padding: 20px 0;\n          border-bottom: 1px solid #ebebeb;\n          width: 100%;\n          text-align: center; }\n        .event-page__section5 .list__item a {\n          width: 100%;\n          height: 80px;\n          background-color: #82cde7;\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          color: #fff;\n          font-size: 14px;\n          text-transform: uppercase;\n          font-weight: bold; }\n          .event-page__section5 .list__item a:hover {\n            background-color: #fff;\n            color: #82cde7; }\n        .event-page__section5 .list__item:hover {\n          -webkit-box-shadow: 0px 0px 14px 2px rgba(50, 50, 50, 0.2);\n          -moz-box-shadow: 0px 0px 14px 2px rgba(50, 50, 50, 0.2);\n          box-shadow: 0px 0px 14px 2px rgba(50, 50, 50, 0.2); }\n  .event-page__section6 {\n    width: 100%;\n    padding: 60px 0;\n    display: flex;\n    align-items: center;\n    justify-content: center; }\n\n@media screen and (min-device-width: 992px) and (max-device-width: 1199px) {\n  .event-page__section1 .list {\n    width: 90%; }\n  .event-page__section2 .wrap {\n    width: 90%; }\n  .event-page__section3 .wrap {\n    width: 90%; }\n  .event-page__section4 .list {\n    width: 90%; }\n  .event-page__section5 .list {\n    width: 90%; }\n  .footer .subscribe h4 {\n    width: 90%; }\n  .footer .subscribe form {\n    width: 90%; }\n  .footer .subscribe p {\n    width: 90%; }\n  .footer .foot {\n    width: 90%; } }\n\n@media screen and (min-device-width: 768px) and (max-device-width: 991px) {\n  .event-page__section1 .list {\n    width: 90%; }\n  .event-page__section2 .wrap {\n    width: 90%; }\n  .event-page__section3 .wrap {\n    width: 90%;\n    justify-content: center; }\n    .event-page__section3 .wrap .img {\n      width: 80px;\n      height: 80px;\n      overflow: hidden;\n      border-radius: 50%;\n      position: relative;\n      margin-right: 30px; }\n      .event-page__section3 .wrap .img img {\n        width: 100%;\n        position: absolute;\n        top: 0;\n        left: 0; }\n  .event-page__section4 .list {\n    width: 90%;\n    flex-wrap: wrap; }\n    .event-page__section4 .list__item {\n      width: calc(100% / 2 - 15px);\n      margin-bottom: 30px; }\n  .event-page__section5 .list {\n    width: 90%; }\n  .footer .subscribe h4 {\n    width: 90%; }\n  .footer .subscribe form {\n    width: 90%; }\n  .footer .subscribe p {\n    width: 90%; }\n  .footer .foot {\n    width: 90%; } }\n\n@media screen and (min-device-width: 481px) and (max-device-width: 767px) {\n  .event-page__section1 h2 {\n    width: 90%; }\n  .event-page__section1 .list {\n    width: 90%; }\n    .event-page__section1 .list__item {\n      width: calc(100% / 2 - 15px); }\n  .event-page__section2 .wrap {\n    width: 90%; }\n  .event-page__section3 .wrap {\n    width: 90%;\n    justify-content: center; }\n    .event-page__section3 .wrap .img {\n      width: 80px;\n      height: 80px;\n      overflow: hidden;\n      border-radius: 50%;\n      position: relative;\n      margin-right: 30px; }\n      .event-page__section3 .wrap .img img {\n        width: 175%;\n        position: absolute;\n        top: -14px;\n        left: -32px; }\n  .event-page__section4 h2 {\n    width: 90%; }\n  .event-page__section4 .list {\n    width: 90%;\n    flex-wrap: wrap; }\n    .event-page__section4 .list__item {\n      width: calc(100% / 2 - 15px);\n      margin-bottom: 30px; }\n  .event-page__section5 .list {\n    flex-direction: column;\n    width: 90%; }\n    .event-page__section5 .list__item {\n      width: 100%;\n      margin-bottom: 15px; }\n  .event-page__section6 iframe {\n    width: 400px;\n    height: 300px; }\n  .footer .subscribe {\n    height: auto;\n    padding-bottom: 30px; }\n    .footer .subscribe h4 {\n      width: 90%; }\n    .footer .subscribe form {\n      width: 90%;\n      flex-direction: column; }\n      .footer .subscribe form input {\n        width: calc(100% - 40px);\n        margin-bottom: 20px; }\n      .footer .subscribe form button {\n        width: 100%; }\n    .footer .subscribe p {\n      width: 90%; }\n  .footer .foot {\n    width: 90%;\n    height: auto;\n    flex-direction: column;\n    padding: 30px 0; }\n    .footer .foot__left {\n      margin-bottom: 15px; } }\n\n@media screen and (max-device-width: 480px) {\n  .event-page__top {\n    height: 300px; }\n    .event-page__top .wrap h1 {\n      width: 90%;\n      text-align: center; }\n    .event-page__top .wrap p {\n      width: 90%;\n      text-align: center; }\n  .event-page__top-slogan {\n    display: none; }\n  .event-page__section1 h2 {\n    width: 90%; }\n  .event-page__section1 .list {\n    width: 90%; }\n    .event-page__section1 .list__item {\n      width: 100%; }\n  .event-page__section2 .wrap {\n    width: 90%; }\n  .event-page__section3 .wrap {\n    width: 90%;\n    justify-content: center;\n    flex-direction: column;\n    align-items: center; }\n    .event-page__section3 .wrap .img {\n      width: 80px;\n      height: 80px;\n      overflow: hidden;\n      border-radius: 50%;\n      position: relative;\n      margin-right: 0;\n      margin-bottom: 30px; }\n      .event-page__section3 .wrap .img img {\n        width: 175%;\n        position: absolute;\n        top: -14px;\n        left: -32px; }\n    .event-page__section3 .wrap .info {\n      width: 100%; }\n      .event-page__section3 .wrap .info h3,\n      .event-page__section3 .wrap .info h2 {\n        text-align: center; }\n  .event-page__section4 h2 {\n    width: 90%;\n    text-align: center; }\n  .event-page__section4 .list {\n    width: 90%;\n    flex-wrap: wrap; }\n    .event-page__section4 .list__item {\n      width: 100%;\n      margin-bottom: 30px;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center; }\n      .event-page__section4 .list__item p {\n        text-align: center; }\n  .event-page__section5 .list {\n    flex-direction: column;\n    width: 90%; }\n    .event-page__section5 .list__item {\n      width: 100%;\n      margin-bottom: 15px; }\n  .event-page__section6 iframe {\n    width: 280px;\n    height: 140px; }\n  .footer .subscribe {\n    height: auto;\n    padding-bottom: 30px; }\n    .footer .subscribe h4 {\n      width: 90%; }\n    .footer .subscribe form {\n      width: 90%;\n      flex-direction: column; }\n      .footer .subscribe form input {\n        width: calc(100% - 40px);\n        margin-bottom: 20px; }\n      .footer .subscribe form button {\n        width: 100%; }\n    .footer .subscribe p {\n      width: 90%; }\n  .footer .foot {\n    width: 90%;\n    height: auto;\n    flex-direction: column;\n    padding: 30px 0; }\n    .footer .foot__left {\n      margin-bottom: 15px; }\n      .footer .foot__left p {\n        font-size: 12px; }\n    .footer .foot__right p {\n      width: 100%;\n      font-size: 12px;\n      text-align: center; } }\n\n.page {\n  margin: 0 auto;\n  width: 100%;\n  max-width: 1440px;\n  margin-top: 90px;\n  background-color: #ebebeb; }\n\n.error {\n  position: fixed;\n  width: 100%;\n  height: 100vh;\n  left: 0;\n  top: 0;\n  background-color: rgba(0, 0, 0, 0.7);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  z-index: 700; }\n  .error div {\n    padding: 30px;\n    background-color: #fff;\n    border-radius: 24px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .error div p {\n      color: #17181a;\n      font-size: 16px; }\n    .error div .button {\n      padding: 0;\n      border-radius: 100px;\n      background-color: #82cde7;\n      color: #fff;\n      height: 40px;\n      width: 100px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      font-weight: bold;\n      cursor: pointer; }\n      .error div .button:hover {\n        -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);\n        -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);\n        box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75); }\n", ""]);
 
 // exports
 
@@ -17928,19 +17928,19 @@ var _routes2 = _interopRequireDefault(_routes);
 
 var _config = __webpack_require__(12);
 
-var _ = __webpack_require__(85);
+var _ = __webpack_require__(86);
 
 var _2 = _interopRequireDefault(_);
 
-var _Header = __webpack_require__(86);
+var _Header = __webpack_require__(87);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Footer = __webpack_require__(87);
+var _Footer = __webpack_require__(88);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
-var _Error = __webpack_require__(108);
+var _Error = __webpack_require__(109);
 
 var _Error2 = _interopRequireDefault(_Error);
 
@@ -18418,7 +18418,7 @@ var _reactFontawesome = __webpack_require__(83);
 
 var _freeSolidSvgIcons = __webpack_require__(84);
 
-var _freeRegularSvgIcons = __webpack_require__(109);
+var _freeRegularSvgIcons = __webpack_require__(85);
 
 var _config = __webpack_require__(12);
 
@@ -18470,7 +18470,7 @@ var Solovyova = function (_React$Component) {
             ),
             _react2.default.createElement(
               "a",
-              { href: "http://localhost:3000/solotatiana", target: "_blank" },
+              { href: "https://names.timepad.ru/event/890123/", target: "_blank" },
               "\u0423\u0447\u0430\u0441\u0442\u0432\u043E\u0432\u0430\u0442\u044C"
             )
           )
@@ -18726,7 +18726,7 @@ var Solovyova = function (_React$Component) {
               ),
               _react2.default.createElement(
                 "a",
-                { href: "http://solotatiana.ru/seminar/razbudi-schastie/" },
+                { href: "https://names.timepad.ru/event/890123/" },
                 "\u0417\u0430\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F"
               )
             ),
@@ -18746,6 +18746,11 @@ var Solovyova = function (_React$Component) {
               _react2.default.createElement(
                 "p",
                 null,
+                "\u041F\u0435\u0440\u0432\u044B\u0435 \u0440\u044F\u0434\u044B"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
                 "\u0415\u0436\u0435\u043D\u0435\u0434\u0435\u043B\u044C\u043D\u0438\u043A \u0422\u0430\u0442\u044C\u044F\u043D\u044B \u0421\u043E\u043B\u043E\u0432\u044C\u0435\u0432\u043E\u0439 \xAB\u0417\u0434\u0435\u0441\u044C \u0438 \u0441\u0435\u0439\u0447\u0430\u0441\xBB"
               ),
               _react2.default.createElement(
@@ -18760,7 +18765,7 @@ var Solovyova = function (_React$Component) {
               ),
               _react2.default.createElement(
                 "a",
-                { href: "http://solotatiana.ru/seminar/razbudi-schastie/" },
+                { href: "https://names.timepad.ru/event/890123/" },
                 "\u0417\u0430\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F"
               )
             )
@@ -19311,1169 +19316,6 @@ Object.defineProperty(exports,"__esModule",{value:true});var prefix="fas";var fa
 
 /***/ }),
 /* 85 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var P404 = function (_React$Component) {
-  _inherits(P404, _React$Component);
-
-  function P404(props) {
-    _classCallCheck(this, P404);
-
-    return _possibleConstructorReturn(this, (P404.__proto__ || Object.getPrototypeOf(P404)).call(this, props));
-  }
-
-  _createClass(P404, [{
-    key: "render",
-    value: function render() {
-      return _react2.default.createElement(
-        "div",
-        null,
-        _react2.default.createElement(
-          "h2",
-          null,
-          "404"
-        ),
-        _react2.default.createElement(
-          "p",
-          null,
-          "\u0421\u0442\u0440\u0430\u043D\u0438\u0446\u044B \u043D\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u0435\u0442"
-        )
-      );
-    }
-  }]);
-
-  return P404;
-}(_react2.default.Component);
-
-exports.default = P404;
-
-/***/ }),
-/* 86 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Header;
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouterDom = __webpack_require__(9);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Header(_ref) {
-  var image = _ref.image;
-
-  return _react2.default.createElement(
-    "div",
-    { className: "header" },
-    _react2.default.createElement(
-      _reactRouterDom.Link,
-      { to: "/" },
-      _react2.default.createElement("img", { src: image + "/logo.jpg" })
-    )
-  );
-}
-
-/***/ }),
-/* 87 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Footer;
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _Subscribe = __webpack_require__(88);
-
-var _Subscribe2 = _interopRequireDefault(_Subscribe);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Footer(_ref) {
-  var addError = _ref.addError;
-
-  return _react2.default.createElement(
-    "div",
-    { className: "footer" },
-    _react2.default.createElement(_Subscribe2.default, { addError: addError }),
-    _react2.default.createElement(
-      "div",
-      { className: "foot" },
-      _react2.default.createElement(
-        "div",
-        { className: "foot__left" },
-        _react2.default.createElement(
-          "p",
-          null,
-          "Faces. \u041B\u044E\u0434\u0438, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0432\u0434\u043E\u0445\u043D\u043E\u0432\u043B\u044F\u044E\u0442 \xAE"
-        )
-      ),
-      _react2.default.createElement(
-        "div",
-        { className: "foot__right" },
-        _react2.default.createElement(
-          "p",
-          null,
-          "\u041F\u043E \u0432\u043E\u043F\u0440\u043E\u0441\u0430\u043C \u043F\u0440\u043E\u0432\u0435\u0434\u0435\u043D\u0438\u044F \u043C\u0435\u0440\u043E\u043F\u0440\u0438\u044F\u0442\u0438\u0439, \u0430 \u0442\u0430\u043A \u0436\u0435 \u043F\u043E \u0432\u043E\u043F\u0440\u043E\u0441\u0430\u043C \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u0447\u0435\u0441\u0442\u0432\u0430, \u0437\u0432\u043E\u043D\u0438\u0442\u0435 ",
-          _react2.default.createElement(
-            "strong",
-            null,
-            "8 903 410 77 34"
-          )
-        )
-      )
-    )
-  );
-}
-
-/***/ }),
-/* 88 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _axios = __webpack_require__(89);
-
-var _axios2 = _interopRequireDefault(_axios);
-
-var _config = __webpack_require__(12);
-
-var _config2 = _interopRequireDefault(_config);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Subscribe = function (_React$Component) {
-  _inherits(Subscribe, _React$Component);
-
-  function Subscribe(props) {
-    _classCallCheck(this, Subscribe);
-
-    var _this = _possibleConstructorReturn(this, (Subscribe.__proto__ || Object.getPrototypeOf(Subscribe)).call(this, props));
-
-    _this.state = {
-      name: "",
-      email: ""
-    };
-    _this.Submit = _this.Submit.bind(_this);
-    _this.Change = _this.Change.bind(_this);
-    return _this;
-  }
-
-  _createClass(Subscribe, [{
-    key: "Change",
-    value: function Change(event) {
-      var _event$target = event.target,
-          name = _event$target.name,
-          value = _event$target.value;
-
-      this.setState(_defineProperty({}, name, value));
-    }
-  }, {
-    key: "Submit",
-    value: function Submit(event) {
-      var _this2 = this;
-
-      event.preventDefault();
-      var _state = this.state,
-          name = _state.name,
-          email = _state.email;
-
-      if (!name || !email) {
-        this.props.addError("Должны быть указаны все поля!");
-      } else {
-        _axios2.default.post(_config2.default.API_PREFIX + "/api/addsubscriber", { name: name, email: email }).then(function (data) {
-          if (data.status === 200) {
-            _this2.props.addError(name + ", \u0432\u044B \u0443\u0441\u043F\u0435\u0448\u043D\u043E \u043F\u043E\u0434\u043F\u0438\u0441\u0430\u043B\u0438\u0441\u044C \u043D\u0430 \u0440\u0430\u0441\u0441\u044B\u043B\u043A\u0443!");
-          }
-        });
-      }
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      return _react2.default.createElement(
-        "div",
-        { className: "subscribe" },
-        _react2.default.createElement(
-          "h4",
-          null,
-          "\u041F\u043E\u043B\u0443\u0447\u0430\u0439\u0442\u0435 \u043D\u043E\u0432\u043E\u0441\u0442\u0438 \u043E \u043F\u0440\u0435\u0434\u0441\u0442\u043E\u044F\u0449\u0438\u0445 \u043C\u0435\u0440\u043E\u043F\u0440\u0438\u044F\u0442\u0438\u044F\u0445"
-        ),
-        _react2.default.createElement(
-          "form",
-          { onSubmit: this.Submit },
-          _react2.default.createElement("input", {
-            onChange: this.Change,
-            type: "text",
-            name: "name",
-            placeholder: "\u0418\u043C\u044F",
-            value: this.state.name
-          }),
-          _react2.default.createElement("input", {
-            onChange: this.Change,
-            type: "text",
-            name: "email",
-            placeholder: "Email",
-            value: this.state.email
-          }),
-          _react2.default.createElement(
-            "button",
-            { type: "submit" },
-            "\u041F\u043E\u0434\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F"
-          )
-        ),
-        _react2.default.createElement(
-          "p",
-          null,
-          "\u041D\u0430\u0436\u0438\u043C\u0430\u044F \"\u041F\u043E\u0434\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F\", \u0432\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C \u043D\u0430 \u0440\u0430\u0441\u0441\u044B\u043B\u043A\u0443 \u043E \u043F\u0440\u0435\u0434\u0441\u0442\u043E\u044F\u0449\u0438\u0445 \u043C\u0435\u0440\u043E\u043F\u0440\u0438\u044F\u0442\u0438\u044F\u0445"
-        )
-      );
-    }
-  }]);
-
-  return Subscribe;
-}(_react2.default.Component);
-
-exports.default = Subscribe;
-
-/***/ }),
-/* 89 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = __webpack_require__(90);
-
-/***/ }),
-/* 90 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var utils = __webpack_require__(3);
-var bind = __webpack_require__(29);
-var Axios = __webpack_require__(92);
-var defaults = __webpack_require__(20);
-
-/**
- * Create an instance of Axios
- *
- * @param {Object} defaultConfig The default config for the instance
- * @return {Axios} A new instance of Axios
- */
-function createInstance(defaultConfig) {
-  var context = new Axios(defaultConfig);
-  var instance = bind(Axios.prototype.request, context);
-
-  // Copy axios.prototype to instance
-  utils.extend(instance, Axios.prototype, context);
-
-  // Copy context to instance
-  utils.extend(instance, context);
-
-  return instance;
-}
-
-// Create the default instance to be exported
-var axios = createInstance(defaults);
-
-// Expose Axios class to allow class inheritance
-axios.Axios = Axios;
-
-// Factory for creating new instances
-axios.create = function create(instanceConfig) {
-  return createInstance(utils.merge(defaults, instanceConfig));
-};
-
-// Expose Cancel & CancelToken
-axios.Cancel = __webpack_require__(33);
-axios.CancelToken = __webpack_require__(106);
-axios.isCancel = __webpack_require__(32);
-
-// Expose all/spread
-axios.all = function all(promises) {
-  return Promise.all(promises);
-};
-axios.spread = __webpack_require__(107);
-
-module.exports = axios;
-
-// Allow use of default import syntax in TypeScript
-module.exports.default = axios;
-
-/***/ }),
-/* 91 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/*!
- * Determine if an object is a Buffer
- *
- * @author   Feross Aboukhadijeh <https://feross.org>
- * @license  MIT
- */
-
-// The _isBuffer check is for Safari 5-7 support, because it's missing
-// Object.prototype.constructor. Remove this eventually
-module.exports = function (obj) {
-  return obj != null && (isBuffer(obj) || isSlowBuffer(obj) || !!obj._isBuffer);
-};
-
-function isBuffer(obj) {
-  return !!obj.constructor && typeof obj.constructor.isBuffer === 'function' && obj.constructor.isBuffer(obj);
-}
-
-// For Node v0.10 support. Remove this eventually.
-function isSlowBuffer(obj) {
-  return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0));
-}
-
-/***/ }),
-/* 92 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var defaults = __webpack_require__(20);
-var utils = __webpack_require__(3);
-var InterceptorManager = __webpack_require__(101);
-var dispatchRequest = __webpack_require__(102);
-
-/**
- * Create a new instance of Axios
- *
- * @param {Object} instanceConfig The default config for the instance
- */
-function Axios(instanceConfig) {
-  this.defaults = instanceConfig;
-  this.interceptors = {
-    request: new InterceptorManager(),
-    response: new InterceptorManager()
-  };
-}
-
-/**
- * Dispatch a request
- *
- * @param {Object} config The config specific for this request (merged with this.defaults)
- */
-Axios.prototype.request = function request(config) {
-  /*eslint no-param-reassign:0*/
-  // Allow for axios('example/url'[, config]) a la fetch API
-  if (typeof config === 'string') {
-    config = utils.merge({
-      url: arguments[0]
-    }, arguments[1]);
-  }
-
-  config = utils.merge(defaults, { method: 'get' }, this.defaults, config);
-  config.method = config.method.toLowerCase();
-
-  // Hook up interceptors middleware
-  var chain = [dispatchRequest, undefined];
-  var promise = Promise.resolve(config);
-
-  this.interceptors.request.forEach(function unshiftRequestInterceptors(interceptor) {
-    chain.unshift(interceptor.fulfilled, interceptor.rejected);
-  });
-
-  this.interceptors.response.forEach(function pushResponseInterceptors(interceptor) {
-    chain.push(interceptor.fulfilled, interceptor.rejected);
-  });
-
-  while (chain.length) {
-    promise = promise.then(chain.shift(), chain.shift());
-  }
-
-  return promise;
-};
-
-// Provide aliases for supported request methods
-utils.forEach(['delete', 'get', 'head', 'options'], function forEachMethodNoData(method) {
-  /*eslint func-names:0*/
-  Axios.prototype[method] = function (url, config) {
-    return this.request(utils.merge(config || {}, {
-      method: method,
-      url: url
-    }));
-  };
-});
-
-utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
-  /*eslint func-names:0*/
-  Axios.prototype[method] = function (url, data, config) {
-    return this.request(utils.merge(config || {}, {
-      method: method,
-      url: url,
-      data: data
-    }));
-  };
-});
-
-module.exports = Axios;
-
-/***/ }),
-/* 93 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var utils = __webpack_require__(3);
-
-module.exports = function normalizeHeaderName(headers, normalizedName) {
-  utils.forEach(headers, function processHeader(value, name) {
-    if (name !== normalizedName && name.toUpperCase() === normalizedName.toUpperCase()) {
-      headers[normalizedName] = value;
-      delete headers[name];
-    }
-  });
-};
-
-/***/ }),
-/* 94 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var createError = __webpack_require__(31);
-
-/**
- * Resolve or reject a Promise based on response status.
- *
- * @param {Function} resolve A function that resolves the promise.
- * @param {Function} reject A function that rejects the promise.
- * @param {object} response The response.
- */
-module.exports = function settle(resolve, reject, response) {
-  var validateStatus = response.config.validateStatus;
-  // Note: status is not exposed by XDomainRequest
-  if (!response.status || !validateStatus || validateStatus(response.status)) {
-    resolve(response);
-  } else {
-    reject(createError('Request failed with status code ' + response.status, response.config, null, response.request, response));
-  }
-};
-
-/***/ }),
-/* 95 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/**
- * Update an Error with the specified config, error code, and response.
- *
- * @param {Error} error The error to update.
- * @param {Object} config The config.
- * @param {string} [code] The error code (for example, 'ECONNABORTED').
- * @param {Object} [request] The request.
- * @param {Object} [response] The response.
- * @returns {Error} The error.
- */
-
-module.exports = function enhanceError(error, config, code, request, response) {
-  error.config = config;
-  if (code) {
-    error.code = code;
-  }
-  error.request = request;
-  error.response = response;
-  return error;
-};
-
-/***/ }),
-/* 96 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var utils = __webpack_require__(3);
-
-function encode(val) {
-  return encodeURIComponent(val).replace(/%40/gi, '@').replace(/%3A/gi, ':').replace(/%24/g, '$').replace(/%2C/gi, ',').replace(/%20/g, '+').replace(/%5B/gi, '[').replace(/%5D/gi, ']');
-}
-
-/**
- * Build a URL by appending params to the end
- *
- * @param {string} url The base of the url (e.g., http://www.google.com)
- * @param {object} [params] The params to be appended
- * @returns {string} The formatted url
- */
-module.exports = function buildURL(url, params, paramsSerializer) {
-  /*eslint no-param-reassign:0*/
-  if (!params) {
-    return url;
-  }
-
-  var serializedParams;
-  if (paramsSerializer) {
-    serializedParams = paramsSerializer(params);
-  } else if (utils.isURLSearchParams(params)) {
-    serializedParams = params.toString();
-  } else {
-    var parts = [];
-
-    utils.forEach(params, function serialize(val, key) {
-      if (val === null || typeof val === 'undefined') {
-        return;
-      }
-
-      if (utils.isArray(val)) {
-        key = key + '[]';
-      } else {
-        val = [val];
-      }
-
-      utils.forEach(val, function parseValue(v) {
-        if (utils.isDate(v)) {
-          v = v.toISOString();
-        } else if (utils.isObject(v)) {
-          v = JSON.stringify(v);
-        }
-        parts.push(encode(key) + '=' + encode(v));
-      });
-    });
-
-    serializedParams = parts.join('&');
-  }
-
-  if (serializedParams) {
-    url += (url.indexOf('?') === -1 ? '?' : '&') + serializedParams;
-  }
-
-  return url;
-};
-
-/***/ }),
-/* 97 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var utils = __webpack_require__(3);
-
-// Headers whose duplicates are ignored by node
-// c.f. https://nodejs.org/api/http.html#http_message_headers
-var ignoreDuplicateOf = ['age', 'authorization', 'content-length', 'content-type', 'etag', 'expires', 'from', 'host', 'if-modified-since', 'if-unmodified-since', 'last-modified', 'location', 'max-forwards', 'proxy-authorization', 'referer', 'retry-after', 'user-agent'];
-
-/**
- * Parse headers into an object
- *
- * ```
- * Date: Wed, 27 Aug 2014 08:58:49 GMT
- * Content-Type: application/json
- * Connection: keep-alive
- * Transfer-Encoding: chunked
- * ```
- *
- * @param {String} headers Headers needing to be parsed
- * @returns {Object} Headers parsed into an object
- */
-module.exports = function parseHeaders(headers) {
-  var parsed = {};
-  var key;
-  var val;
-  var i;
-
-  if (!headers) {
-    return parsed;
-  }
-
-  utils.forEach(headers.split('\n'), function parser(line) {
-    i = line.indexOf(':');
-    key = utils.trim(line.substr(0, i)).toLowerCase();
-    val = utils.trim(line.substr(i + 1));
-
-    if (key) {
-      if (parsed[key] && ignoreDuplicateOf.indexOf(key) >= 0) {
-        return;
-      }
-      if (key === 'set-cookie') {
-        parsed[key] = (parsed[key] ? parsed[key] : []).concat([val]);
-      } else {
-        parsed[key] = parsed[key] ? parsed[key] + ', ' + val : val;
-      }
-    }
-  });
-
-  return parsed;
-};
-
-/***/ }),
-/* 98 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var utils = __webpack_require__(3);
-
-module.exports = utils.isStandardBrowserEnv() ?
-
-// Standard browser envs have full support of the APIs needed to test
-// whether the request URL is of the same origin as current location.
-function standardBrowserEnv() {
-  var msie = /(msie|trident)/i.test(navigator.userAgent);
-  var urlParsingNode = document.createElement('a');
-  var originURL;
-
-  /**
-  * Parse a URL to discover it's components
-  *
-  * @param {String} url The URL to be parsed
-  * @returns {Object}
-  */
-  function resolveURL(url) {
-    var href = url;
-
-    if (msie) {
-      // IE needs attribute set twice to normalize properties
-      urlParsingNode.setAttribute('href', href);
-      href = urlParsingNode.href;
-    }
-
-    urlParsingNode.setAttribute('href', href);
-
-    // urlParsingNode provides the UrlUtils interface - http://url.spec.whatwg.org/#urlutils
-    return {
-      href: urlParsingNode.href,
-      protocol: urlParsingNode.protocol ? urlParsingNode.protocol.replace(/:$/, '') : '',
-      host: urlParsingNode.host,
-      search: urlParsingNode.search ? urlParsingNode.search.replace(/^\?/, '') : '',
-      hash: urlParsingNode.hash ? urlParsingNode.hash.replace(/^#/, '') : '',
-      hostname: urlParsingNode.hostname,
-      port: urlParsingNode.port,
-      pathname: urlParsingNode.pathname.charAt(0) === '/' ? urlParsingNode.pathname : '/' + urlParsingNode.pathname
-    };
-  }
-
-  originURL = resolveURL(window.location.href);
-
-  /**
-  * Determine if a URL shares the same origin as the current location
-  *
-  * @param {String} requestURL The URL to test
-  * @returns {boolean} True if URL shares the same origin, otherwise false
-  */
-  return function isURLSameOrigin(requestURL) {
-    var parsed = utils.isString(requestURL) ? resolveURL(requestURL) : requestURL;
-    return parsed.protocol === originURL.protocol && parsed.host === originURL.host;
-  };
-}() :
-
-// Non standard browser envs (web workers, react-native) lack needed support.
-function nonStandardBrowserEnv() {
-  return function isURLSameOrigin() {
-    return true;
-  };
-}();
-
-/***/ }),
-/* 99 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-// btoa polyfill for IE<10 courtesy https://github.com/davidchambers/Base64.js
-
-var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
-
-function E() {
-  this.message = 'String contains an invalid character';
-}
-E.prototype = new Error();
-E.prototype.code = 5;
-E.prototype.name = 'InvalidCharacterError';
-
-function btoa(input) {
-  var str = String(input);
-  var output = '';
-  for (
-  // initialize result and counter
-  var block, charCode, idx = 0, map = chars;
-  // if the next str index does not exist:
-  //   change the mapping table to "="
-  //   check if d has no fractional digits
-  str.charAt(idx | 0) || (map = '=', idx % 1);
-  // "8 - idx % 1 * 8" generates the sequence 2, 4, 6, 8
-  output += map.charAt(63 & block >> 8 - idx % 1 * 8)) {
-    charCode = str.charCodeAt(idx += 3 / 4);
-    if (charCode > 0xFF) {
-      throw new E();
-    }
-    block = block << 8 | charCode;
-  }
-  return output;
-}
-
-module.exports = btoa;
-
-/***/ }),
-/* 100 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var utils = __webpack_require__(3);
-
-module.exports = utils.isStandardBrowserEnv() ?
-
-// Standard browser envs support document.cookie
-function standardBrowserEnv() {
-  return {
-    write: function write(name, value, expires, path, domain, secure) {
-      var cookie = [];
-      cookie.push(name + '=' + encodeURIComponent(value));
-
-      if (utils.isNumber(expires)) {
-        cookie.push('expires=' + new Date(expires).toGMTString());
-      }
-
-      if (utils.isString(path)) {
-        cookie.push('path=' + path);
-      }
-
-      if (utils.isString(domain)) {
-        cookie.push('domain=' + domain);
-      }
-
-      if (secure === true) {
-        cookie.push('secure');
-      }
-
-      document.cookie = cookie.join('; ');
-    },
-
-    read: function read(name) {
-      var match = document.cookie.match(new RegExp('(^|;\\s*)(' + name + ')=([^;]*)'));
-      return match ? decodeURIComponent(match[3]) : null;
-    },
-
-    remove: function remove(name) {
-      this.write(name, '', Date.now() - 86400000);
-    }
-  };
-}() :
-
-// Non standard browser env (web workers, react-native) lack needed support.
-function nonStandardBrowserEnv() {
-  return {
-    write: function write() {},
-    read: function read() {
-      return null;
-    },
-    remove: function remove() {}
-  };
-}();
-
-/***/ }),
-/* 101 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var utils = __webpack_require__(3);
-
-function InterceptorManager() {
-  this.handlers = [];
-}
-
-/**
- * Add a new interceptor to the stack
- *
- * @param {Function} fulfilled The function to handle `then` for a `Promise`
- * @param {Function} rejected The function to handle `reject` for a `Promise`
- *
- * @return {Number} An ID used to remove interceptor later
- */
-InterceptorManager.prototype.use = function use(fulfilled, rejected) {
-  this.handlers.push({
-    fulfilled: fulfilled,
-    rejected: rejected
-  });
-  return this.handlers.length - 1;
-};
-
-/**
- * Remove an interceptor from the stack
- *
- * @param {Number} id The ID that was returned by `use`
- */
-InterceptorManager.prototype.eject = function eject(id) {
-  if (this.handlers[id]) {
-    this.handlers[id] = null;
-  }
-};
-
-/**
- * Iterate over all the registered interceptors
- *
- * This method is particularly useful for skipping over any
- * interceptors that may have become `null` calling `eject`.
- *
- * @param {Function} fn The function to call for each interceptor
- */
-InterceptorManager.prototype.forEach = function forEach(fn) {
-  utils.forEach(this.handlers, function forEachHandler(h) {
-    if (h !== null) {
-      fn(h);
-    }
-  });
-};
-
-module.exports = InterceptorManager;
-
-/***/ }),
-/* 102 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var utils = __webpack_require__(3);
-var transformData = __webpack_require__(103);
-var isCancel = __webpack_require__(32);
-var defaults = __webpack_require__(20);
-var isAbsoluteURL = __webpack_require__(104);
-var combineURLs = __webpack_require__(105);
-
-/**
- * Throws a `Cancel` if cancellation has been requested.
- */
-function throwIfCancellationRequested(config) {
-  if (config.cancelToken) {
-    config.cancelToken.throwIfRequested();
-  }
-}
-
-/**
- * Dispatch a request to the server using the configured adapter.
- *
- * @param {object} config The config that is to be used for the request
- * @returns {Promise} The Promise to be fulfilled
- */
-module.exports = function dispatchRequest(config) {
-  throwIfCancellationRequested(config);
-
-  // Support baseURL config
-  if (config.baseURL && !isAbsoluteURL(config.url)) {
-    config.url = combineURLs(config.baseURL, config.url);
-  }
-
-  // Ensure headers exist
-  config.headers = config.headers || {};
-
-  // Transform request data
-  config.data = transformData(config.data, config.headers, config.transformRequest);
-
-  // Flatten headers
-  config.headers = utils.merge(config.headers.common || {}, config.headers[config.method] || {}, config.headers || {});
-
-  utils.forEach(['delete', 'get', 'head', 'post', 'put', 'patch', 'common'], function cleanHeaderConfig(method) {
-    delete config.headers[method];
-  });
-
-  var adapter = config.adapter || defaults.adapter;
-
-  return adapter(config).then(function onAdapterResolution(response) {
-    throwIfCancellationRequested(config);
-
-    // Transform response data
-    response.data = transformData(response.data, response.headers, config.transformResponse);
-
-    return response;
-  }, function onAdapterRejection(reason) {
-    if (!isCancel(reason)) {
-      throwIfCancellationRequested(config);
-
-      // Transform response data
-      if (reason && reason.response) {
-        reason.response.data = transformData(reason.response.data, reason.response.headers, config.transformResponse);
-      }
-    }
-
-    return Promise.reject(reason);
-  });
-};
-
-/***/ }),
-/* 103 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var utils = __webpack_require__(3);
-
-/**
- * Transform the data for a request or a response
- *
- * @param {Object|String} data The data to be transformed
- * @param {Array} headers The headers for the request or response
- * @param {Array|Function} fns A single function or Array of functions
- * @returns {*} The resulting transformed data
- */
-module.exports = function transformData(data, headers, fns) {
-  /*eslint no-param-reassign:0*/
-  utils.forEach(fns, function transform(fn) {
-    data = fn(data, headers);
-  });
-
-  return data;
-};
-
-/***/ }),
-/* 104 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/**
- * Determines whether the specified URL is absolute
- *
- * @param {string} url The URL to test
- * @returns {boolean} True if the specified URL is absolute, otherwise false
- */
-
-module.exports = function isAbsoluteURL(url) {
-  // A URL is considered absolute if it begins with "<scheme>://" or "//" (protocol-relative URL).
-  // RFC 3986 defines scheme name as a sequence of characters beginning with a letter and followed
-  // by any combination of letters, digits, plus, period, or hyphen.
-  return (/^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(url)
-  );
-};
-
-/***/ }),
-/* 105 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/**
- * Creates a new URL by combining the specified URLs
- *
- * @param {string} baseURL The base URL
- * @param {string} relativeURL The relative URL
- * @returns {string} The combined URL
- */
-
-module.exports = function combineURLs(baseURL, relativeURL) {
-  return relativeURL ? baseURL.replace(/\/+$/, '') + '/' + relativeURL.replace(/^\/+/, '') : baseURL;
-};
-
-/***/ }),
-/* 106 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var Cancel = __webpack_require__(33);
-
-/**
- * A `CancelToken` is an object that can be used to request cancellation of an operation.
- *
- * @class
- * @param {Function} executor The executor function.
- */
-function CancelToken(executor) {
-  if (typeof executor !== 'function') {
-    throw new TypeError('executor must be a function.');
-  }
-
-  var resolvePromise;
-  this.promise = new Promise(function promiseExecutor(resolve) {
-    resolvePromise = resolve;
-  });
-
-  var token = this;
-  executor(function cancel(message) {
-    if (token.reason) {
-      // Cancellation has already been requested
-      return;
-    }
-
-    token.reason = new Cancel(message);
-    resolvePromise(token.reason);
-  });
-}
-
-/**
- * Throws a `Cancel` if cancellation has been requested.
- */
-CancelToken.prototype.throwIfRequested = function throwIfRequested() {
-  if (this.reason) {
-    throw this.reason;
-  }
-};
-
-/**
- * Returns an object that contains a new `CancelToken` and a function that, when called,
- * cancels the `CancelToken`.
- */
-CancelToken.source = function source() {
-  var cancel;
-  var token = new CancelToken(function executor(c) {
-    cancel = c;
-  });
-  return {
-    token: token,
-    cancel: cancel
-  };
-};
-
-module.exports = CancelToken;
-
-/***/ }),
-/* 107 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/**
- * Syntactic sugar for invoking a function and expanding an array for arguments.
- *
- * Common use case would be to use `Function.prototype.apply`.
- *
- *  ```js
- *  function f(x, y, z) {}
- *  var args = [1, 2, 3];
- *  f.apply(null, args);
- *  ```
- *
- * With `spread` this example can be re-written.
- *
- *  ```js
- *  spread(function(x, y, z) {})([1, 2, 3]);
- *  ```
- *
- * @param {Function} callback
- * @returns {Function}
- */
-
-module.exports = function spread(callback) {
-  return function wrap(arr) {
-    return callback.apply(null, arr);
-  };
-};
-
-/***/ }),
-/* 108 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Error;
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Error(_ref) {
-  var error = _ref.error,
-      ok = _ref.ok;
-
-  return _react2.default.createElement(
-    "div",
-    { className: "error" },
-    _react2.default.createElement(
-      "div",
-      null,
-      _react2.default.createElement(
-        "p",
-        null,
-        error
-      ),
-      _react2.default.createElement(
-        "div",
-        { onClick: function onClick() {
-            return ok("");
-          }, className: "button" },
-        "\u041E\u043A"
-      )
-    )
-  );
-}
-
-/***/ }),
-/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21552,6 +20394,1169 @@ exports.faWindowClose = faWindowClose;
 exports.faWindowMaximize = faWindowMaximize;
 exports.faWindowMinimize = faWindowMinimize;
 exports.faWindowRestore = faWindowRestore;
+
+/***/ }),
+/* 86 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var P404 = function (_React$Component) {
+  _inherits(P404, _React$Component);
+
+  function P404(props) {
+    _classCallCheck(this, P404);
+
+    return _possibleConstructorReturn(this, (P404.__proto__ || Object.getPrototypeOf(P404)).call(this, props));
+  }
+
+  _createClass(P404, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement(
+          "h2",
+          null,
+          "404"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "\u0421\u0442\u0440\u0430\u043D\u0438\u0446\u044B \u043D\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u0435\u0442"
+        )
+      );
+    }
+  }]);
+
+  return P404;
+}(_react2.default.Component);
+
+exports.default = P404;
+
+/***/ }),
+/* 87 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Header;
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(9);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Header(_ref) {
+  var image = _ref.image;
+
+  return _react2.default.createElement(
+    "div",
+    { className: "header" },
+    _react2.default.createElement(
+      _reactRouterDom.Link,
+      { to: "/" },
+      _react2.default.createElement("img", { src: image + "/logo.jpg" })
+    )
+  );
+}
+
+/***/ }),
+/* 88 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Footer;
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Subscribe = __webpack_require__(89);
+
+var _Subscribe2 = _interopRequireDefault(_Subscribe);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Footer(_ref) {
+  var addError = _ref.addError;
+
+  return _react2.default.createElement(
+    "div",
+    { className: "footer" },
+    _react2.default.createElement(_Subscribe2.default, { addError: addError }),
+    _react2.default.createElement(
+      "div",
+      { className: "foot" },
+      _react2.default.createElement(
+        "div",
+        { className: "foot__left" },
+        _react2.default.createElement(
+          "p",
+          null,
+          "Names. \u041B\u044E\u0434\u0438, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0432\u0434\u043E\u0445\u043D\u043E\u0432\u043B\u044F\u044E\u0442 \xAE"
+        )
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "foot__right" },
+        _react2.default.createElement(
+          "p",
+          null,
+          "\u041F\u043E \u0432\u043E\u043F\u0440\u043E\u0441\u0430\u043C \u043F\u0440\u043E\u0432\u0435\u0434\u0435\u043D\u0438\u044F \u043C\u0435\u0440\u043E\u043F\u0440\u0438\u044F\u0442\u0438\u0439, \u0430 \u0442\u0430\u043A \u0436\u0435 \u043F\u043E \u0432\u043E\u043F\u0440\u043E\u0441\u0430\u043C \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u0447\u0435\u0441\u0442\u0432\u0430, \u0437\u0432\u043E\u043D\u0438\u0442\u0435 ",
+          _react2.default.createElement(
+            "strong",
+            null,
+            "8 903 410 77 34"
+          )
+        )
+      )
+    )
+  );
+}
+
+/***/ }),
+/* 89 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _axios = __webpack_require__(90);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+var _config = __webpack_require__(12);
+
+var _config2 = _interopRequireDefault(_config);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Subscribe = function (_React$Component) {
+  _inherits(Subscribe, _React$Component);
+
+  function Subscribe(props) {
+    _classCallCheck(this, Subscribe);
+
+    var _this = _possibleConstructorReturn(this, (Subscribe.__proto__ || Object.getPrototypeOf(Subscribe)).call(this, props));
+
+    _this.state = {
+      name: "",
+      email: ""
+    };
+    _this.Submit = _this.Submit.bind(_this);
+    _this.Change = _this.Change.bind(_this);
+    return _this;
+  }
+
+  _createClass(Subscribe, [{
+    key: "Change",
+    value: function Change(event) {
+      var _event$target = event.target,
+          name = _event$target.name,
+          value = _event$target.value;
+
+      this.setState(_defineProperty({}, name, value));
+    }
+  }, {
+    key: "Submit",
+    value: function Submit(event) {
+      var _this2 = this;
+
+      event.preventDefault();
+      var _state = this.state,
+          name = _state.name,
+          email = _state.email;
+
+      if (!name || !email) {
+        this.props.addError("Должны быть указаны все поля!");
+      } else {
+        _axios2.default.post(_config2.default.API_PREFIX + "/api/addsubscriber", { name: name, email: email }).then(function (data) {
+          if (data.status === 200) {
+            _this2.props.addError(name + ", \u0432\u044B \u0443\u0441\u043F\u0435\u0448\u043D\u043E \u043F\u043E\u0434\u043F\u0438\u0441\u0430\u043B\u0438\u0441\u044C \u043D\u0430 \u0440\u0430\u0441\u0441\u044B\u043B\u043A\u0443!");
+          }
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        { className: "subscribe" },
+        _react2.default.createElement(
+          "h4",
+          null,
+          "\u041F\u043E\u043B\u0443\u0447\u0430\u0439\u0442\u0435 \u043D\u043E\u0432\u043E\u0441\u0442\u0438 \u043E \u043F\u0440\u0435\u0434\u0441\u0442\u043E\u044F\u0449\u0438\u0445 \u043C\u0435\u0440\u043E\u043F\u0440\u0438\u044F\u0442\u0438\u044F\u0445"
+        ),
+        _react2.default.createElement(
+          "form",
+          { onSubmit: this.Submit },
+          _react2.default.createElement("input", {
+            onChange: this.Change,
+            type: "text",
+            name: "name",
+            placeholder: "\u0418\u043C\u044F",
+            value: this.state.name
+          }),
+          _react2.default.createElement("input", {
+            onChange: this.Change,
+            type: "text",
+            name: "email",
+            placeholder: "Email",
+            value: this.state.email
+          }),
+          _react2.default.createElement(
+            "button",
+            { type: "submit" },
+            "\u041F\u043E\u0434\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F"
+          )
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "\u041D\u0430\u0436\u0438\u043C\u0430\u044F \"\u041F\u043E\u0434\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F\", \u0432\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C \u043D\u0430 \u0440\u0430\u0441\u0441\u044B\u043B\u043A\u0443 \u043E \u043F\u0440\u0435\u0434\u0441\u0442\u043E\u044F\u0449\u0438\u0445 \u043C\u0435\u0440\u043E\u043F\u0440\u0438\u044F\u0442\u0438\u044F\u0445"
+        )
+      );
+    }
+  }]);
+
+  return Subscribe;
+}(_react2.default.Component);
+
+exports.default = Subscribe;
+
+/***/ }),
+/* 90 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = __webpack_require__(91);
+
+/***/ }),
+/* 91 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(3);
+var bind = __webpack_require__(29);
+var Axios = __webpack_require__(93);
+var defaults = __webpack_require__(20);
+
+/**
+ * Create an instance of Axios
+ *
+ * @param {Object} defaultConfig The default config for the instance
+ * @return {Axios} A new instance of Axios
+ */
+function createInstance(defaultConfig) {
+  var context = new Axios(defaultConfig);
+  var instance = bind(Axios.prototype.request, context);
+
+  // Copy axios.prototype to instance
+  utils.extend(instance, Axios.prototype, context);
+
+  // Copy context to instance
+  utils.extend(instance, context);
+
+  return instance;
+}
+
+// Create the default instance to be exported
+var axios = createInstance(defaults);
+
+// Expose Axios class to allow class inheritance
+axios.Axios = Axios;
+
+// Factory for creating new instances
+axios.create = function create(instanceConfig) {
+  return createInstance(utils.merge(defaults, instanceConfig));
+};
+
+// Expose Cancel & CancelToken
+axios.Cancel = __webpack_require__(33);
+axios.CancelToken = __webpack_require__(107);
+axios.isCancel = __webpack_require__(32);
+
+// Expose all/spread
+axios.all = function all(promises) {
+  return Promise.all(promises);
+};
+axios.spread = __webpack_require__(108);
+
+module.exports = axios;
+
+// Allow use of default import syntax in TypeScript
+module.exports.default = axios;
+
+/***/ }),
+/* 92 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/*!
+ * Determine if an object is a Buffer
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */
+
+// The _isBuffer check is for Safari 5-7 support, because it's missing
+// Object.prototype.constructor. Remove this eventually
+module.exports = function (obj) {
+  return obj != null && (isBuffer(obj) || isSlowBuffer(obj) || !!obj._isBuffer);
+};
+
+function isBuffer(obj) {
+  return !!obj.constructor && typeof obj.constructor.isBuffer === 'function' && obj.constructor.isBuffer(obj);
+}
+
+// For Node v0.10 support. Remove this eventually.
+function isSlowBuffer(obj) {
+  return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0));
+}
+
+/***/ }),
+/* 93 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var defaults = __webpack_require__(20);
+var utils = __webpack_require__(3);
+var InterceptorManager = __webpack_require__(102);
+var dispatchRequest = __webpack_require__(103);
+
+/**
+ * Create a new instance of Axios
+ *
+ * @param {Object} instanceConfig The default config for the instance
+ */
+function Axios(instanceConfig) {
+  this.defaults = instanceConfig;
+  this.interceptors = {
+    request: new InterceptorManager(),
+    response: new InterceptorManager()
+  };
+}
+
+/**
+ * Dispatch a request
+ *
+ * @param {Object} config The config specific for this request (merged with this.defaults)
+ */
+Axios.prototype.request = function request(config) {
+  /*eslint no-param-reassign:0*/
+  // Allow for axios('example/url'[, config]) a la fetch API
+  if (typeof config === 'string') {
+    config = utils.merge({
+      url: arguments[0]
+    }, arguments[1]);
+  }
+
+  config = utils.merge(defaults, { method: 'get' }, this.defaults, config);
+  config.method = config.method.toLowerCase();
+
+  // Hook up interceptors middleware
+  var chain = [dispatchRequest, undefined];
+  var promise = Promise.resolve(config);
+
+  this.interceptors.request.forEach(function unshiftRequestInterceptors(interceptor) {
+    chain.unshift(interceptor.fulfilled, interceptor.rejected);
+  });
+
+  this.interceptors.response.forEach(function pushResponseInterceptors(interceptor) {
+    chain.push(interceptor.fulfilled, interceptor.rejected);
+  });
+
+  while (chain.length) {
+    promise = promise.then(chain.shift(), chain.shift());
+  }
+
+  return promise;
+};
+
+// Provide aliases for supported request methods
+utils.forEach(['delete', 'get', 'head', 'options'], function forEachMethodNoData(method) {
+  /*eslint func-names:0*/
+  Axios.prototype[method] = function (url, config) {
+    return this.request(utils.merge(config || {}, {
+      method: method,
+      url: url
+    }));
+  };
+});
+
+utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
+  /*eslint func-names:0*/
+  Axios.prototype[method] = function (url, data, config) {
+    return this.request(utils.merge(config || {}, {
+      method: method,
+      url: url,
+      data: data
+    }));
+  };
+});
+
+module.exports = Axios;
+
+/***/ }),
+/* 94 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(3);
+
+module.exports = function normalizeHeaderName(headers, normalizedName) {
+  utils.forEach(headers, function processHeader(value, name) {
+    if (name !== normalizedName && name.toUpperCase() === normalizedName.toUpperCase()) {
+      headers[normalizedName] = value;
+      delete headers[name];
+    }
+  });
+};
+
+/***/ }),
+/* 95 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var createError = __webpack_require__(31);
+
+/**
+ * Resolve or reject a Promise based on response status.
+ *
+ * @param {Function} resolve A function that resolves the promise.
+ * @param {Function} reject A function that rejects the promise.
+ * @param {object} response The response.
+ */
+module.exports = function settle(resolve, reject, response) {
+  var validateStatus = response.config.validateStatus;
+  // Note: status is not exposed by XDomainRequest
+  if (!response.status || !validateStatus || validateStatus(response.status)) {
+    resolve(response);
+  } else {
+    reject(createError('Request failed with status code ' + response.status, response.config, null, response.request, response));
+  }
+};
+
+/***/ }),
+/* 96 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * Update an Error with the specified config, error code, and response.
+ *
+ * @param {Error} error The error to update.
+ * @param {Object} config The config.
+ * @param {string} [code] The error code (for example, 'ECONNABORTED').
+ * @param {Object} [request] The request.
+ * @param {Object} [response] The response.
+ * @returns {Error} The error.
+ */
+
+module.exports = function enhanceError(error, config, code, request, response) {
+  error.config = config;
+  if (code) {
+    error.code = code;
+  }
+  error.request = request;
+  error.response = response;
+  return error;
+};
+
+/***/ }),
+/* 97 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(3);
+
+function encode(val) {
+  return encodeURIComponent(val).replace(/%40/gi, '@').replace(/%3A/gi, ':').replace(/%24/g, '$').replace(/%2C/gi, ',').replace(/%20/g, '+').replace(/%5B/gi, '[').replace(/%5D/gi, ']');
+}
+
+/**
+ * Build a URL by appending params to the end
+ *
+ * @param {string} url The base of the url (e.g., http://www.google.com)
+ * @param {object} [params] The params to be appended
+ * @returns {string} The formatted url
+ */
+module.exports = function buildURL(url, params, paramsSerializer) {
+  /*eslint no-param-reassign:0*/
+  if (!params) {
+    return url;
+  }
+
+  var serializedParams;
+  if (paramsSerializer) {
+    serializedParams = paramsSerializer(params);
+  } else if (utils.isURLSearchParams(params)) {
+    serializedParams = params.toString();
+  } else {
+    var parts = [];
+
+    utils.forEach(params, function serialize(val, key) {
+      if (val === null || typeof val === 'undefined') {
+        return;
+      }
+
+      if (utils.isArray(val)) {
+        key = key + '[]';
+      } else {
+        val = [val];
+      }
+
+      utils.forEach(val, function parseValue(v) {
+        if (utils.isDate(v)) {
+          v = v.toISOString();
+        } else if (utils.isObject(v)) {
+          v = JSON.stringify(v);
+        }
+        parts.push(encode(key) + '=' + encode(v));
+      });
+    });
+
+    serializedParams = parts.join('&');
+  }
+
+  if (serializedParams) {
+    url += (url.indexOf('?') === -1 ? '?' : '&') + serializedParams;
+  }
+
+  return url;
+};
+
+/***/ }),
+/* 98 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(3);
+
+// Headers whose duplicates are ignored by node
+// c.f. https://nodejs.org/api/http.html#http_message_headers
+var ignoreDuplicateOf = ['age', 'authorization', 'content-length', 'content-type', 'etag', 'expires', 'from', 'host', 'if-modified-since', 'if-unmodified-since', 'last-modified', 'location', 'max-forwards', 'proxy-authorization', 'referer', 'retry-after', 'user-agent'];
+
+/**
+ * Parse headers into an object
+ *
+ * ```
+ * Date: Wed, 27 Aug 2014 08:58:49 GMT
+ * Content-Type: application/json
+ * Connection: keep-alive
+ * Transfer-Encoding: chunked
+ * ```
+ *
+ * @param {String} headers Headers needing to be parsed
+ * @returns {Object} Headers parsed into an object
+ */
+module.exports = function parseHeaders(headers) {
+  var parsed = {};
+  var key;
+  var val;
+  var i;
+
+  if (!headers) {
+    return parsed;
+  }
+
+  utils.forEach(headers.split('\n'), function parser(line) {
+    i = line.indexOf(':');
+    key = utils.trim(line.substr(0, i)).toLowerCase();
+    val = utils.trim(line.substr(i + 1));
+
+    if (key) {
+      if (parsed[key] && ignoreDuplicateOf.indexOf(key) >= 0) {
+        return;
+      }
+      if (key === 'set-cookie') {
+        parsed[key] = (parsed[key] ? parsed[key] : []).concat([val]);
+      } else {
+        parsed[key] = parsed[key] ? parsed[key] + ', ' + val : val;
+      }
+    }
+  });
+
+  return parsed;
+};
+
+/***/ }),
+/* 99 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(3);
+
+module.exports = utils.isStandardBrowserEnv() ?
+
+// Standard browser envs have full support of the APIs needed to test
+// whether the request URL is of the same origin as current location.
+function standardBrowserEnv() {
+  var msie = /(msie|trident)/i.test(navigator.userAgent);
+  var urlParsingNode = document.createElement('a');
+  var originURL;
+
+  /**
+  * Parse a URL to discover it's components
+  *
+  * @param {String} url The URL to be parsed
+  * @returns {Object}
+  */
+  function resolveURL(url) {
+    var href = url;
+
+    if (msie) {
+      // IE needs attribute set twice to normalize properties
+      urlParsingNode.setAttribute('href', href);
+      href = urlParsingNode.href;
+    }
+
+    urlParsingNode.setAttribute('href', href);
+
+    // urlParsingNode provides the UrlUtils interface - http://url.spec.whatwg.org/#urlutils
+    return {
+      href: urlParsingNode.href,
+      protocol: urlParsingNode.protocol ? urlParsingNode.protocol.replace(/:$/, '') : '',
+      host: urlParsingNode.host,
+      search: urlParsingNode.search ? urlParsingNode.search.replace(/^\?/, '') : '',
+      hash: urlParsingNode.hash ? urlParsingNode.hash.replace(/^#/, '') : '',
+      hostname: urlParsingNode.hostname,
+      port: urlParsingNode.port,
+      pathname: urlParsingNode.pathname.charAt(0) === '/' ? urlParsingNode.pathname : '/' + urlParsingNode.pathname
+    };
+  }
+
+  originURL = resolveURL(window.location.href);
+
+  /**
+  * Determine if a URL shares the same origin as the current location
+  *
+  * @param {String} requestURL The URL to test
+  * @returns {boolean} True if URL shares the same origin, otherwise false
+  */
+  return function isURLSameOrigin(requestURL) {
+    var parsed = utils.isString(requestURL) ? resolveURL(requestURL) : requestURL;
+    return parsed.protocol === originURL.protocol && parsed.host === originURL.host;
+  };
+}() :
+
+// Non standard browser envs (web workers, react-native) lack needed support.
+function nonStandardBrowserEnv() {
+  return function isURLSameOrigin() {
+    return true;
+  };
+}();
+
+/***/ }),
+/* 100 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+// btoa polyfill for IE<10 courtesy https://github.com/davidchambers/Base64.js
+
+var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+
+function E() {
+  this.message = 'String contains an invalid character';
+}
+E.prototype = new Error();
+E.prototype.code = 5;
+E.prototype.name = 'InvalidCharacterError';
+
+function btoa(input) {
+  var str = String(input);
+  var output = '';
+  for (
+  // initialize result and counter
+  var block, charCode, idx = 0, map = chars;
+  // if the next str index does not exist:
+  //   change the mapping table to "="
+  //   check if d has no fractional digits
+  str.charAt(idx | 0) || (map = '=', idx % 1);
+  // "8 - idx % 1 * 8" generates the sequence 2, 4, 6, 8
+  output += map.charAt(63 & block >> 8 - idx % 1 * 8)) {
+    charCode = str.charCodeAt(idx += 3 / 4);
+    if (charCode > 0xFF) {
+      throw new E();
+    }
+    block = block << 8 | charCode;
+  }
+  return output;
+}
+
+module.exports = btoa;
+
+/***/ }),
+/* 101 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(3);
+
+module.exports = utils.isStandardBrowserEnv() ?
+
+// Standard browser envs support document.cookie
+function standardBrowserEnv() {
+  return {
+    write: function write(name, value, expires, path, domain, secure) {
+      var cookie = [];
+      cookie.push(name + '=' + encodeURIComponent(value));
+
+      if (utils.isNumber(expires)) {
+        cookie.push('expires=' + new Date(expires).toGMTString());
+      }
+
+      if (utils.isString(path)) {
+        cookie.push('path=' + path);
+      }
+
+      if (utils.isString(domain)) {
+        cookie.push('domain=' + domain);
+      }
+
+      if (secure === true) {
+        cookie.push('secure');
+      }
+
+      document.cookie = cookie.join('; ');
+    },
+
+    read: function read(name) {
+      var match = document.cookie.match(new RegExp('(^|;\\s*)(' + name + ')=([^;]*)'));
+      return match ? decodeURIComponent(match[3]) : null;
+    },
+
+    remove: function remove(name) {
+      this.write(name, '', Date.now() - 86400000);
+    }
+  };
+}() :
+
+// Non standard browser env (web workers, react-native) lack needed support.
+function nonStandardBrowserEnv() {
+  return {
+    write: function write() {},
+    read: function read() {
+      return null;
+    },
+    remove: function remove() {}
+  };
+}();
+
+/***/ }),
+/* 102 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(3);
+
+function InterceptorManager() {
+  this.handlers = [];
+}
+
+/**
+ * Add a new interceptor to the stack
+ *
+ * @param {Function} fulfilled The function to handle `then` for a `Promise`
+ * @param {Function} rejected The function to handle `reject` for a `Promise`
+ *
+ * @return {Number} An ID used to remove interceptor later
+ */
+InterceptorManager.prototype.use = function use(fulfilled, rejected) {
+  this.handlers.push({
+    fulfilled: fulfilled,
+    rejected: rejected
+  });
+  return this.handlers.length - 1;
+};
+
+/**
+ * Remove an interceptor from the stack
+ *
+ * @param {Number} id The ID that was returned by `use`
+ */
+InterceptorManager.prototype.eject = function eject(id) {
+  if (this.handlers[id]) {
+    this.handlers[id] = null;
+  }
+};
+
+/**
+ * Iterate over all the registered interceptors
+ *
+ * This method is particularly useful for skipping over any
+ * interceptors that may have become `null` calling `eject`.
+ *
+ * @param {Function} fn The function to call for each interceptor
+ */
+InterceptorManager.prototype.forEach = function forEach(fn) {
+  utils.forEach(this.handlers, function forEachHandler(h) {
+    if (h !== null) {
+      fn(h);
+    }
+  });
+};
+
+module.exports = InterceptorManager;
+
+/***/ }),
+/* 103 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(3);
+var transformData = __webpack_require__(104);
+var isCancel = __webpack_require__(32);
+var defaults = __webpack_require__(20);
+var isAbsoluteURL = __webpack_require__(105);
+var combineURLs = __webpack_require__(106);
+
+/**
+ * Throws a `Cancel` if cancellation has been requested.
+ */
+function throwIfCancellationRequested(config) {
+  if (config.cancelToken) {
+    config.cancelToken.throwIfRequested();
+  }
+}
+
+/**
+ * Dispatch a request to the server using the configured adapter.
+ *
+ * @param {object} config The config that is to be used for the request
+ * @returns {Promise} The Promise to be fulfilled
+ */
+module.exports = function dispatchRequest(config) {
+  throwIfCancellationRequested(config);
+
+  // Support baseURL config
+  if (config.baseURL && !isAbsoluteURL(config.url)) {
+    config.url = combineURLs(config.baseURL, config.url);
+  }
+
+  // Ensure headers exist
+  config.headers = config.headers || {};
+
+  // Transform request data
+  config.data = transformData(config.data, config.headers, config.transformRequest);
+
+  // Flatten headers
+  config.headers = utils.merge(config.headers.common || {}, config.headers[config.method] || {}, config.headers || {});
+
+  utils.forEach(['delete', 'get', 'head', 'post', 'put', 'patch', 'common'], function cleanHeaderConfig(method) {
+    delete config.headers[method];
+  });
+
+  var adapter = config.adapter || defaults.adapter;
+
+  return adapter(config).then(function onAdapterResolution(response) {
+    throwIfCancellationRequested(config);
+
+    // Transform response data
+    response.data = transformData(response.data, response.headers, config.transformResponse);
+
+    return response;
+  }, function onAdapterRejection(reason) {
+    if (!isCancel(reason)) {
+      throwIfCancellationRequested(config);
+
+      // Transform response data
+      if (reason && reason.response) {
+        reason.response.data = transformData(reason.response.data, reason.response.headers, config.transformResponse);
+      }
+    }
+
+    return Promise.reject(reason);
+  });
+};
+
+/***/ }),
+/* 104 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(3);
+
+/**
+ * Transform the data for a request or a response
+ *
+ * @param {Object|String} data The data to be transformed
+ * @param {Array} headers The headers for the request or response
+ * @param {Array|Function} fns A single function or Array of functions
+ * @returns {*} The resulting transformed data
+ */
+module.exports = function transformData(data, headers, fns) {
+  /*eslint no-param-reassign:0*/
+  utils.forEach(fns, function transform(fn) {
+    data = fn(data, headers);
+  });
+
+  return data;
+};
+
+/***/ }),
+/* 105 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * Determines whether the specified URL is absolute
+ *
+ * @param {string} url The URL to test
+ * @returns {boolean} True if the specified URL is absolute, otherwise false
+ */
+
+module.exports = function isAbsoluteURL(url) {
+  // A URL is considered absolute if it begins with "<scheme>://" or "//" (protocol-relative URL).
+  // RFC 3986 defines scheme name as a sequence of characters beginning with a letter and followed
+  // by any combination of letters, digits, plus, period, or hyphen.
+  return (/^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(url)
+  );
+};
+
+/***/ }),
+/* 106 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * Creates a new URL by combining the specified URLs
+ *
+ * @param {string} baseURL The base URL
+ * @param {string} relativeURL The relative URL
+ * @returns {string} The combined URL
+ */
+
+module.exports = function combineURLs(baseURL, relativeURL) {
+  return relativeURL ? baseURL.replace(/\/+$/, '') + '/' + relativeURL.replace(/^\/+/, '') : baseURL;
+};
+
+/***/ }),
+/* 107 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var Cancel = __webpack_require__(33);
+
+/**
+ * A `CancelToken` is an object that can be used to request cancellation of an operation.
+ *
+ * @class
+ * @param {Function} executor The executor function.
+ */
+function CancelToken(executor) {
+  if (typeof executor !== 'function') {
+    throw new TypeError('executor must be a function.');
+  }
+
+  var resolvePromise;
+  this.promise = new Promise(function promiseExecutor(resolve) {
+    resolvePromise = resolve;
+  });
+
+  var token = this;
+  executor(function cancel(message) {
+    if (token.reason) {
+      // Cancellation has already been requested
+      return;
+    }
+
+    token.reason = new Cancel(message);
+    resolvePromise(token.reason);
+  });
+}
+
+/**
+ * Throws a `Cancel` if cancellation has been requested.
+ */
+CancelToken.prototype.throwIfRequested = function throwIfRequested() {
+  if (this.reason) {
+    throw this.reason;
+  }
+};
+
+/**
+ * Returns an object that contains a new `CancelToken` and a function that, when called,
+ * cancels the `CancelToken`.
+ */
+CancelToken.source = function source() {
+  var cancel;
+  var token = new CancelToken(function executor(c) {
+    cancel = c;
+  });
+  return {
+    token: token,
+    cancel: cancel
+  };
+};
+
+module.exports = CancelToken;
+
+/***/ }),
+/* 108 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * Syntactic sugar for invoking a function and expanding an array for arguments.
+ *
+ * Common use case would be to use `Function.prototype.apply`.
+ *
+ *  ```js
+ *  function f(x, y, z) {}
+ *  var args = [1, 2, 3];
+ *  f.apply(null, args);
+ *  ```
+ *
+ * With `spread` this example can be re-written.
+ *
+ *  ```js
+ *  spread(function(x, y, z) {})([1, 2, 3]);
+ *  ```
+ *
+ * @param {Function} callback
+ * @returns {Function}
+ */
+
+module.exports = function spread(callback) {
+  return function wrap(arr) {
+    return callback.apply(null, arr);
+  };
+};
+
+/***/ }),
+/* 109 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Error;
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Error(_ref) {
+  var error = _ref.error,
+      ok = _ref.ok;
+
+  return _react2.default.createElement(
+    "div",
+    { className: "error" },
+    _react2.default.createElement(
+      "div",
+      null,
+      _react2.default.createElement(
+        "p",
+        null,
+        error
+      ),
+      _react2.default.createElement(
+        "div",
+        { onClick: function onClick() {
+            return ok("");
+          }, className: "button" },
+        "\u041E\u043A"
+      )
+    )
+  );
+}
 
 /***/ })
 /******/ ]);
