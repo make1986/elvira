@@ -79,7 +79,9 @@ module.exports = require("react");
 module.exports = {
   PORT: process.env.PORT || 3000,
   API_PREFIX: "http://localhost:3000",
-  IMAGES_PREFIX: "http://localhost:3000/Images"
+  IMAGES_PREFIX: "http://localhost:3000/Images",
+  EMAIL: "ivanova.sobitie@gmail.com",
+  PASS: "ivanova2019"
 };
 
 /***/ }),
@@ -171,6 +173,10 @@ var _helmet = __webpack_require__(11);
 
 var _helmet2 = _interopRequireDefault(_helmet);
 
+var _nodemailer = __webpack_require__(30);
+
+var _nodemailer2 = _interopRequireDefault(_nodemailer);
+
 var _App = __webpack_require__(12);
 
 var _App2 = _interopRequireDefault(_App);
@@ -195,7 +201,42 @@ app.use(_bodyParser2.default.json({ limit: "50mb", extended: true }));
 app.use(_express2.default.static("public"));
 
 app.post("/api/addsubscriber", function (req, res) {
-  return res.json("ok");
+  var _req$body = req.body,
+      name = _req$body.name,
+      email = _req$body.email;
+
+  var transporter = _nodemailer2.default.createTransport({
+    service: "gmail",
+    auth: {
+      user: _config2.default.EMAIL,
+      pass: _config2.default.PASS
+    }
+  });
+  var mailOptions = {
+    from: "\u0422\u0430\u0442\u044C\u044F\u043D\u0430 \u0421\u043E\u043B\u043E\u0432\u044C\u0435\u0432\u0430 <" + _config2.default.EMAIL + ">",
+    to: email,
+    subject: "Скидка 10% на семинар",
+    text: "\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435, " + name + ". \u041F\u043E\u043B\u0443\u0447\u0438\u0442\u0435 \u0441\u043A\u0438\u0434\u043A\u0443 10% \u043F\u043E \u043F\u0440\u043E\u043C\u043E\u043A\u043E\u0434\u0443 \"friends\"."
+  };
+  var mailOptions1 = {
+    from: name + " <" + _config2.default.EMAIL + ">",
+    to: "ivanova.sobitie@yandex.ru ",
+    subject: "Новый подписчик",
+    text: "\u0418\u043C\u044F - " + name + ", email - " + email
+  };
+  return transporter.sendMail(mailOptions, function (error, info) {
+    if (error) {
+      return res.status(400).json({ ok: false });
+    } else {
+      return transporter.sendMail(mailOptions1, function (error, info) {
+        if (error) {
+          return res.status(400).json({ ok: false });
+        } else {
+          return res.json({ ok: true });
+        }
+      });
+    }
+  });
 });
 
 app.get("*", function (req, res, next) {
@@ -307,6 +348,14 @@ var _Error = __webpack_require__(27);
 
 var _Error2 = _interopRequireDefault(_Error);
 
+var _DiscBut = __webpack_require__(28);
+
+var _DiscBut2 = _interopRequireDefault(_DiscBut);
+
+var _Discount = __webpack_require__(29);
+
+var _Discount2 = _interopRequireDefault(_Discount);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -329,13 +378,15 @@ var App = function (_React$Component) {
       cssload: false,
       error: "",
       media: "",
-      burger: false
+      burger: false,
+      discount: false
     };
     _this.addError = _this.addError.bind(_this);
     _this.HeaderWithProps = _this.HeaderWithProps.bind(_this);
     _this.FooterWithProps = _this.FooterWithProps.bind(_this);
     _this.defineDevice = _this.defineDevice.bind(_this);
     _this.openBurger = _this.openBurger.bind(_this);
+    _this.openDiscount = _this.openDiscount.bind(_this);
     return _this;
   }
 
@@ -390,15 +441,28 @@ var App = function (_React$Component) {
       this.setState({ burger: !this.state.burger });
     }
   }, {
+    key: "openDiscount",
+    value: function openDiscount() {
+      this.setState({ discount: !this.state.discount }, function () {
+        if (this.state.discount) {
+          document.body.style.overflowY = "hidden";
+        } else {
+          document.body.style.overflowY = "auto";
+        }
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
       var _state = this.state,
           error = _state.error,
           cssload = _state.cssload,
           media = _state.media,
-          burger = _state.burger;
+          burger = _state.burger,
+          discount = _state.discount;
       var addError = this.addError,
-          openBurger = this.openBurger;
+          openBurger = this.openBurger,
+          openDiscount = this.openDiscount;
 
       return _react2.default.createElement(
         "div",
@@ -427,6 +491,8 @@ var App = function (_React$Component) {
             } })
         ),
         _react2.default.createElement(_reactRouterDom.Route, { component: this.FooterWithProps }),
+        _react2.default.createElement(_DiscBut2.default, { openDiscount: openDiscount }),
+        discount ? _react2.default.createElement(_Discount2.default, { addError: addError, openDiscount: openDiscount }) : "",
         error ? _react2.default.createElement(_Error2.default, { ok: addError, error: error }) : "",
         !cssload ? _react2.default.createElement("div", {
           style: {
@@ -1518,6 +1584,171 @@ function Error(_ref) {
     )
   );
 }
+
+/***/ }),
+/* 28 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var DiscBut = function DiscBut(_ref) {
+  var openDiscount = _ref.openDiscount;
+  return _react2.default.createElement(
+    "div",
+    { onClick: openDiscount, className: "disc-but" },
+    "%"
+  );
+};
+
+exports.default = DiscBut;
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _axios = __webpack_require__(26);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+var _config = __webpack_require__(1);
+
+var _config2 = _interopRequireDefault(_config);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Discount = function (_React$Component) {
+  _inherits(Discount, _React$Component);
+
+  function Discount(props) {
+    _classCallCheck(this, Discount);
+
+    var _this = _possibleConstructorReturn(this, (Discount.__proto__ || Object.getPrototypeOf(Discount)).call(this, props));
+
+    _this.state = {
+      name: "",
+      email: ""
+    };
+    _this.change = _this.change.bind(_this);
+    _this.submit = _this.submit.bind(_this);
+    return _this;
+  }
+
+  _createClass(Discount, [{
+    key: "change",
+    value: function change(event) {
+      var _event$target = event.target,
+          name = _event$target.name,
+          value = _event$target.value;
+
+      this.setState(_defineProperty({}, name, value));
+    }
+  }, {
+    key: "submit",
+    value: function submit(event) {
+      var _this2 = this;
+
+      event.preventDefault();
+      var _state = this.state,
+          name = _state.name,
+          email = _state.email;
+
+      var err = [];
+      if (!name || !email) {
+        this.props.addError("Должны быть указаны все поля!");
+      } else {
+        _axios2.default.post(_config2.default.API_PREFIX + "/api/addsubscriber", { name: name, email: email }).then(function (data) {
+          if (data.status === 200) {
+            _this2.props.addError(name + ", \u0432\u044B \u0443\u0441\u043F\u0435\u0448\u043D\u043E \u043F\u043E\u0434\u043F\u0438\u0441\u0430\u043B\u0438\u0441\u044C \u043D\u0430 \u0440\u0430\u0441\u0441\u044B\u043B\u043A\u0443! \u041F\u0440\u043E\u043C\u043E\u043A\u043E\u0434 \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u0435\u043D \u043D\u0430 \u0432\u0430\u0448 email \u0430\u0434\u0440\u0435\u0441.");
+            _this2.props.openDiscount();
+          }
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        { className: "discount" },
+        _react2.default.createElement(
+          "form",
+          { onSubmit: this.submit },
+          _react2.default.createElement(
+            "h2",
+            null,
+            "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u0435 \u0441\u043A\u0438\u0434\u043A\u0443 10% \u043D\u0430 \u0441\u0435\u043C\u0438\u043D\u0430\u0440 \"\u0421\u0442\u0440\u0430\u0442\u0435\u0433\u0438\u044F \u0441\u0447\u0430\u0441\u0442\u044C\u044F\" \u0437\u0430 \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0443."
+          ),
+          _react2.default.createElement("input", {
+            value: this.state.name,
+            name: "name",
+            type: "text",
+            placeholder: "\u0418\u043C\u044F",
+            onChange: this.change
+          }),
+          _react2.default.createElement("input", {
+            value: this.state.email,
+            name: "email",
+            type: "text",
+            placeholder: "Email",
+            onChange: this.change
+          }),
+          _react2.default.createElement(
+            "button",
+            { type: "submit" },
+            "\u041F\u043E\u0434\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F"
+          )
+        ),
+        _react2.default.createElement(
+          "span",
+          { onClick: this.props.openDiscount },
+          "\xD7"
+        )
+      );
+    }
+  }]);
+
+  return Discount;
+}(_react2.default.Component);
+
+exports.default = Discount;
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports) {
+
+module.exports = require("nodemailer");
 
 /***/ })
 /******/ ]);

@@ -10,6 +10,105 @@
   margin-top: $header_height;
   background-color: $color_grey;
 }
+.disc-but {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  border: 2px solid $color_font;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color_font;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    -webkit-box-shadow: 0px 0px 14px 2px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 0px 0px 14px 2px rgba(50, 50, 50, 0.5);
+    box-shadow: 0px 0px 14px 2px rgba(50, 50, 50, 0.5);
+  }
+}
+.discount {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 500;
+
+  span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px;
+    background-color: $color_general;
+
+    h2 {
+      margin: 0 auto;
+      color: $color_font;
+      font-size: 18px;
+      font-family: $font_title;
+      margin-bottom: 30px;
+      width: 240px;
+      text-align: center;
+    }
+    input {
+      width: 200px;
+      border: none;
+      border-radius: 5px;
+      background-color: #fff;
+      height: 40px;
+      padding: 0 20px;
+      font-family: $font_general;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    button {
+      width: 240px;
+      border-radius: 5px;
+      background-color: $color_secondary;
+      height: 40px;
+      cursor: pointer;
+      font-family: $font_general;
+      font-size: 14px;
+      color: $color_general;
+      font-weight: bold;
+      border: 1px solid $color_secondary;
+      text-transform: uppercase;
+      &:hover {
+        background-color: $color_general;
+        color: $color_secondary;
+      }
+    }
+  }
+}
 .error {
   position: fixed;
   width: 100%;

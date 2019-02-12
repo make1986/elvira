@@ -8,6 +8,8 @@ import P404 from "./Pages/404";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Error from "./Components/Error";
+import DiscBut from "./Components/DiscBut";
+import Discount from "./Components/Discount";
 
 export default class App extends React.Component {
   constructor(props) {
@@ -16,13 +18,15 @@ export default class App extends React.Component {
       cssload: false,
       error: "",
       media: "",
-      burger: false
+      burger: false,
+      discount: false
     };
     this.addError = this.addError.bind(this);
     this.HeaderWithProps = this.HeaderWithProps.bind(this);
     this.FooterWithProps = this.FooterWithProps.bind(this);
     this.defineDevice = this.defineDevice.bind(this);
     this.openBurger = this.openBurger.bind(this);
+    this.openDiscount = this.openDiscount.bind(this);
   }
   componentDidMount() {
     this.setState({ cssload: true });
@@ -64,9 +68,19 @@ export default class App extends React.Component {
     this.setState({ burger: !this.state.burger });
   }
 
+  openDiscount() {
+    this.setState({ discount: !this.state.discount }, function() {
+      if (this.state.discount) {
+        document.body.style.overflowY = "hidden";
+      } else {
+        document.body.style.overflowY = "auto";
+      }
+    });
+  }
+
   render() {
-    const { error, cssload, media, burger } = this.state;
-    const { addError, openBurger } = this;
+    const { error, cssload, media, burger, discount } = this.state;
+    const { addError, openBurger, openDiscount } = this;
     return (
       <div className="page">
         <Route component={this.HeaderWithProps} />
@@ -84,6 +98,12 @@ export default class App extends React.Component {
           <Route render={props => <P404 {...props} />} />
         </Switch>
         <Route component={this.FooterWithProps} />
+        <DiscBut openDiscount={openDiscount} />
+        {discount ? (
+          <Discount addError={addError} openDiscount={openDiscount} />
+        ) : (
+          ""
+        )}
         {error ? <Error ok={addError} error={error} /> : ""}
         {!cssload ? (
           <div

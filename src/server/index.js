@@ -7,6 +7,7 @@ import { matchPath, StaticRouter } from "react-router-dom";
 import compression from "compression";
 import bodyParser from "body-parser";
 import helmet from "helmet";
+import nodemailer from "nodemailer";
 
 import App from "../shared/App";
 import config from "../etc/config";
@@ -24,7 +25,39 @@ app.use(bodyParser.json({ limit: "50mb", extended: true }));
 app.use(express.static("public"));
 
 app.post("/api/addsubscriber", (req, res) => {
-  return res.json("ok");
+  let { name, email } = req.body;
+  let transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: config.EMAIL,
+      pass: config.PASS
+    }
+  });
+  let mailOptions = {
+    from: `Татьяна Соловьева <${config.EMAIL}>`,
+    to: email,
+    subject: "Скидка 10% на семинар",
+    text: `Здравствуйте, ${name}. Получите скидку 10% по промокоду "friends".`
+  };
+  let mailOptions1 = {
+    from: `${name} <${config.EMAIL}>`,
+    to: "ivanova.sobitie@yandex.ru ",
+    subject: "Новый подписчик",
+    text: `Имя - ${name}, email - ${email}`
+  };
+  return transporter.sendMail(mailOptions, function(error, info) {
+    if (error) {
+      return res.status(400).json({ ok: false });
+    } else {
+      return transporter.sendMail(mailOptions1, function(error, info) {
+        if (error) {
+          return res.status(400).json({ ok: false });
+        } else {
+          return res.json({ ok: true });
+        }
+      });
+    }
+  });
 });
 
 app.get("*", (req, res, next) => {

@@ -1203,7 +1203,9 @@ module.exports = warning;
 module.exports = {
   PORT: process.env.PORT || 3000,
   API_PREFIX: "http://localhost:3000",
-  IMAGES_PREFIX: "http://localhost:3000/Images"
+  IMAGES_PREFIX: "http://localhost:3000/Images",
+  EMAIL: "ivanova.sobitie@gmail.com",
+  PASS: "ivanova2019"
 };
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
@@ -17313,7 +17315,7 @@ exports = module.exports = __webpack_require__(73)(false);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Play:400,700&subset=cyrillic);", ""]);
 
 // module
-exports.push([module.i, "body {\n  margin: 0;\n  font-family: \"Montserrat\", sans-serif; }\n\na {\n  text-decoration: none; }\n\n.header {\n  width: 100%;\n  background-color: #fff;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 90px;\n  position: fixed;\n  left: 0;\n  top: 0;\n  z-index: 500; }\n\n.footer {\n  width: 100%; }\n  .footer .subscribe {\n    width: 100%;\n    height: 200px;\n    background-color: #f7c9df;\n    display: flex;\n    flex-direction: column; }\n    .footer .subscribe h4 {\n      padding-top: 40px;\n      margin: 0 auto;\n      width: 1140px;\n      color: #1a1a1a;\n      font-size: 24px;\n      font-family: \"Play\", sans-serif; }\n    .footer .subscribe form {\n      margin: 0 auto;\n      width: 1140px;\n      margin-top: 20px;\n      display: flex;\n      align-items: center;\n      justify-content: space-between; }\n      .footer .subscribe form input {\n        width: calc(100% / 3 - 70px);\n        border: none;\n        border-radius: 5px;\n        background-color: #fff;\n        height: 40px;\n        padding: 0 20px;\n        font-family: \"Montserrat\", sans-serif;\n        font-size: 14px; }\n      .footer .subscribe form button {\n        width: calc(100% / 3 - 30px);\n        border-radius: 5px;\n        background-color: #82cde7;\n        height: 40px;\n        cursor: pointer;\n        font-family: \"Montserrat\", sans-serif;\n        font-size: 14px;\n        color: #f7c9df;\n        font-weight: bold;\n        border: 1px solid #82cde7;\n        text-transform: uppercase; }\n        .footer .subscribe form button:hover {\n          background-color: #f7c9df;\n          color: #82cde7; }\n    .footer .subscribe p {\n      color: #1a1a1a;\n      width: 1140px;\n      margin: 0 auto;\n      margin-top: 15px;\n      font-size: 14px; }\n  .footer .foot {\n    width: 1140px;\n    margin: 0 auto;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    height: 90px; }\n    .footer .foot__left p {\n      margin: 0;\n      color: #1a1a1a;\n      font-size: 14px; }\n    .footer .foot__right p {\n      margin: 0;\n      color: #1a1a1a;\n      font-size: 14px;\n      width: 400px; }\n\n.home-page {\n  width: 100%; }\n  .home-page__top {\n    width: 100%;\n    height: calc(100vh - 90px);\n    background-color: #82cde7;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    flex-direction: column; }\n    .home-page__top h2 {\n      font-family: \"Play\", sans-serif;\n      color: #1a1a1a;\n      font-weight: bold;\n      font-size: 40px;\n      margin: 0;\n      width: 600px;\n      text-align: center; }\n    .home-page__top a {\n      width: 300px;\n      height: 40px;\n      border: 1px solid #fff;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      color: #fff;\n      border-radius: 3px;\n      margin-top: 40px;\n      font-weight: 600;\n      font-size: 16px;\n      text-transform: uppercase; }\n      .home-page__top a:hover {\n        background-color: #fff;\n        color: #82cde7; }\n  .home-page__events {\n    width: 1140px;\n    display: flex;\n    align-items: flex-start;\n    justify-content: space-between;\n    margin: auto;\n    padding-top: 80px;\n    padding-bottom: 80px; }\n    .home-page__events .speaker {\n      width: 500px;\n      height: 570px;\n      background-color: #82cde7;\n      overflow: hidden;\n      border-radius: 5px; }\n      .home-page__events .speaker:hover .speaker__img > .area {\n        display: flex; }\n      .home-page__events .speaker__img {\n        width: 100%;\n        height: 400px; }\n        .home-page__events .speaker__img .area {\n          margin: 0;\n          height: 100%;\n          background-color: rgba(0, 0, 0, 0.6);\n          align-items: center;\n          justify-content: center;\n          text-align: center;\n          color: #fff;\n          display: none;\n          padding: 0 30px; }\n      .home-page__events .speaker__info {\n        padding: 30px; }\n        .home-page__events .speaker__info .name {\n          margin: 0;\n          font-family: \"Play\", sans-serif;\n          color: #1a1a1a;\n          font-size: 28px;\n          font-weight: normal; }\n        .home-page__events .speaker__info .city {\n          margin: 0;\n          margin-top: 12px;\n          font-size: 16px;\n          color: #1a1a1a;\n          opacity: 0.8;\n          font-weight: bold; }\n        .home-page__events .speaker__info .date {\n          margin: 0;\n          margin-top: 8px;\n          font-size: 16px;\n          color: #1a1a1a;\n          opacity: 0.8;\n          font-weight: bold; }\n\n.event-page {\n  width: 100%; }\n  .event-page__top {\n    width: 100%;\n    height: 480px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .event-page__top .wrap {\n      width: 100%;\n      height: 100%;\n      background-color: rgba(0, 0, 0, 0.6);\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      flex-direction: column; }\n      .event-page__top .wrap h1 {\n        color: #fff;\n        font-family: \"Play\", sans-serif;\n        font-size: 42px;\n        margin: 0; }\n      .event-page__top .wrap p {\n        color: #fff;\n        margin: 0;\n        margin-top: 10px;\n        font-size: 20px; }\n      .event-page__top .wrap a {\n        background-color: #82cde7;\n        width: 200px;\n        height: 40px;\n        color: rgba(0, 0, 0, 0.6);\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        font-size: 14px;\n        text-transform: uppercase;\n        border-radius: 5px;\n        font-weight: bold;\n        border: 1px solid #82cde7;\n        margin-top: 20px; }\n        .event-page__top .wrap a:hover {\n          background: none;\n          color: #82cde7; }\n  .event-page__top-slogan {\n    width: 100%;\n    height: 80px;\n    background-color: #f7c9df;\n    display: flex;\n    align-items: center;\n    justify-content: center; }\n    .event-page__top-slogan span {\n      font-size: 18px;\n      color: #1a1a1a; }\n  .event-page__section1 {\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    padding-top: 60px;\n    padding-bottom: 60px; }\n    .event-page__section1 h2 {\n      margin: 0;\n      font-size: 32px;\n      color: #1a1a1a;\n      font-family: \"Play\", sans-serif; }\n    .event-page__section1 .list {\n      width: 1140px;\n      display: flex;\n      flex-wrap: wrap;\n      margin-top: 40px;\n      justify-content: space-between; }\n      .event-page__section1 .list__item {\n        width: calc(100% / 3 - 20px);\n        margin-bottom: 30px; }\n        .event-page__section1 .list__item svg {\n          width: 40px;\n          height: 40px;\n          color: #82cde7;\n          transition: all 0.4 linear; }\n        .event-page__section1 .list__item p {\n          margin: 0;\n          margin-top: 20px;\n          color: #1a1a1a;\n          font-size: 16px;\n          cursor: default; }\n        .event-page__section1 .list__item:hover svg {\n          color: #f7c9df; }\n  .event-page__section2 {\n    width: 100%;\n    background-color: #fff;\n    display: flex;\n    align-items: center;\n    justify-content: center; }\n    .event-page__section2 .wrap {\n      width: 1140px;\n      padding-top: 60px;\n      padding-bottom: 60px; }\n      .event-page__section2 .wrap h2 {\n        margin: 0;\n        font-size: 32px;\n        color: #1a1a1a;\n        font-family: \"Play\", sans-serif;\n        width: 100%;\n        text-align: center; }\n      .event-page__section2 .wrap p {\n        margin: 0;\n        margin-top: 40px;\n        color: #1a1a1a; }\n  .event-page__section3 {\n    width: 100%;\n    background-color: #f7c9df;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: 60px 0; }\n    .event-page__section3 .wrap {\n      width: 1140px;\n      display: flex; }\n      .event-page__section3 .wrap .img {\n        width: 50%;\n        display: flex;\n        align-items: center;\n        justify-content: center; }\n        .event-page__section3 .wrap .img img {\n          width: 360px; }\n      .event-page__section3 .wrap .info {\n        width: 50%; }\n        .event-page__section3 .wrap .info h3 {\n          font-size: 18px;\n          color: #1a1a1a;\n          opacity: 0.8;\n          text-transform: uppercase;\n          margin: 0; }\n        .event-page__section3 .wrap .info h2 {\n          font-size: 28px;\n          color: #1a1a1a;\n          font-family: \"Play\", sans-serif;\n          margin: 0; }\n        .event-page__section3 .wrap .info p {\n          font-size: 16px;\n          color: #1a1a1a;\n          opacity: 0.9;\n          margin: 0;\n          margin-top: 30px; }\n  .event-page__section4 {\n    width: 100%;\n    background-color: #fff;\n    padding: 60px 0;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .event-page__section4 h2 {\n      margin: 0;\n      font-size: 32px;\n      color: #1a1a1a;\n      font-family: \"Play\", sans-serif; }\n    .event-page__section4 .list {\n      width: 1140px;\n      display: flex;\n      align-items: flex-start;\n      justify-content: space-between;\n      margin-top: 40px; }\n      .event-page__section4 .list__item {\n        width: calc(100% / 4 - 20px); }\n        .event-page__section4 .list__item svg {\n          width: 40px;\n          height: 40px;\n          color: #82cde7;\n          transition: all 0.4 linear; }\n        .event-page__section4 .list__item p {\n          margin: 0;\n          margin-top: 20px;\n          color: #1a1a1a;\n          font-size: 16px;\n          cursor: default; }\n        .event-page__section4 .list__item:hover svg {\n          color: #f7c9df; }\n  .event-page__section5 {\n    width: 100%;\n    padding: 60px 0;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    flex-direction: column; }\n    .event-page__section5 h2 {\n      margin: 0;\n      font-size: 32px;\n      color: #1a1a1a;\n      font-family: \"Play\", sans-serif; }\n    .event-page__section5 .list {\n      width: 1140px;\n      display: flex;\n      align-items: flex-start;\n      justify-content: space-between;\n      margin-top: 40px; }\n      .event-page__section5 .list__item {\n        width: calc(100% / 2 - 20px);\n        background-color: #fff;\n        border-radius: 18px;\n        padding-top: 30px;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        flex-direction: column;\n        overflow: hidden; }\n        .event-page__section5 .list__item h4 {\n          margin: 0;\n          width: 100%;\n          text-transform: uppercase;\n          color: #1a1a1a;\n          opacity: 0.8;\n          font-size: 14px;\n          padding-bottom: 30px;\n          border-bottom: 1px solid #ebebeb;\n          display: flex;\n          align-items: center;\n          justify-content: center; }\n        .event-page__section5 .list__item h3 {\n          font-family: \"Play\", sans-serif;\n          color: #1a1a1a;\n          margin: 0;\n          margin-top: 20px;\n          font-size: 28px;\n          opacity: 0.95;\n          padding-bottom: 15px;\n          border-bottom: 1px solid #ebebeb;\n          width: 100%;\n          text-align: center; }\n        .event-page__section5 .list__item p {\n          margin: 0;\n          padding: 20px 0;\n          border-bottom: 1px solid #ebebeb;\n          width: 100%;\n          text-align: center; }\n        .event-page__section5 .list__item a {\n          width: 100%;\n          height: 80px;\n          background-color: #82cde7;\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          color: #fff;\n          font-size: 14px;\n          text-transform: uppercase;\n          font-weight: bold; }\n          .event-page__section5 .list__item a:hover {\n            background-color: #fff;\n            color: #82cde7; }\n        .event-page__section5 .list__item:hover {\n          -webkit-box-shadow: 0px 0px 14px 2px rgba(50, 50, 50, 0.2);\n          -moz-box-shadow: 0px 0px 14px 2px rgba(50, 50, 50, 0.2);\n          box-shadow: 0px 0px 14px 2px rgba(50, 50, 50, 0.2); }\n  .event-page__section6 {\n    width: 100%;\n    padding: 60px 0;\n    display: flex;\n    align-items: center;\n    justify-content: center; }\n\n@media screen and (min-device-width: 992px) and (max-device-width: 1199px) {\n  .event-page__section1 .list {\n    width: 90%; }\n  .event-page__section2 .wrap {\n    width: 90%; }\n  .event-page__section3 .wrap {\n    width: 90%; }\n  .event-page__section4 .list {\n    width: 90%; }\n  .event-page__section5 .list {\n    width: 90%; }\n  .footer .subscribe h4 {\n    width: 90%; }\n  .footer .subscribe form {\n    width: 90%; }\n  .footer .subscribe p {\n    width: 90%; }\n  .footer .foot {\n    width: 90%; } }\n\n@media screen and (min-device-width: 768px) and (max-device-width: 991px) {\n  .event-page__section1 .list {\n    width: 90%; }\n  .event-page__section2 .wrap {\n    width: 90%; }\n  .event-page__section3 .wrap {\n    width: 90%;\n    justify-content: center; }\n    .event-page__section3 .wrap .img {\n      width: 80px;\n      height: 80px;\n      overflow: hidden;\n      border-radius: 50%;\n      position: relative;\n      margin-right: 30px; }\n      .event-page__section3 .wrap .img img {\n        width: 100%;\n        position: absolute;\n        top: 0;\n        left: 0; }\n  .event-page__section4 .list {\n    width: 90%;\n    flex-wrap: wrap; }\n    .event-page__section4 .list__item {\n      width: calc(100% / 2 - 15px);\n      margin-bottom: 30px; }\n  .event-page__section5 .list {\n    width: 90%; }\n  .footer .subscribe h4 {\n    width: 90%; }\n  .footer .subscribe form {\n    width: 90%; }\n  .footer .subscribe p {\n    width: 90%; }\n  .footer .foot {\n    width: 90%; } }\n\n@media screen and (min-device-width: 481px) and (max-device-width: 767px) {\n  .event-page__section1 h2 {\n    width: 90%; }\n  .event-page__section1 .list {\n    width: 90%; }\n    .event-page__section1 .list__item {\n      width: calc(100% / 2 - 15px); }\n  .event-page__section2 .wrap {\n    width: 90%; }\n  .event-page__section3 .wrap {\n    width: 90%;\n    justify-content: center; }\n    .event-page__section3 .wrap .img {\n      width: 80px;\n      height: 80px;\n      overflow: hidden;\n      border-radius: 50%;\n      position: relative;\n      margin-right: 30px; }\n      .event-page__section3 .wrap .img img {\n        width: 175%;\n        position: absolute;\n        top: -14px;\n        left: -32px; }\n  .event-page__section4 h2 {\n    width: 90%; }\n  .event-page__section4 .list {\n    width: 90%;\n    flex-wrap: wrap; }\n    .event-page__section4 .list__item {\n      width: calc(100% / 2 - 15px);\n      margin-bottom: 30px; }\n  .event-page__section5 .list {\n    flex-direction: column;\n    width: 90%; }\n    .event-page__section5 .list__item {\n      width: 100%;\n      margin-bottom: 15px; }\n  .event-page__section6 iframe {\n    width: 400px;\n    height: 300px; }\n  .footer .subscribe {\n    height: auto;\n    padding-bottom: 30px; }\n    .footer .subscribe h4 {\n      width: 90%; }\n    .footer .subscribe form {\n      width: 90%;\n      flex-direction: column; }\n      .footer .subscribe form input {\n        width: calc(100% - 40px);\n        margin-bottom: 20px; }\n      .footer .subscribe form button {\n        width: 100%; }\n    .footer .subscribe p {\n      width: 90%; }\n  .footer .foot {\n    width: 90%;\n    height: auto;\n    flex-direction: column;\n    padding: 30px 0; }\n    .footer .foot__left {\n      margin-bottom: 15px; } }\n\n@media screen and (max-device-width: 480px) {\n  .event-page__top {\n    height: 300px; }\n    .event-page__top .wrap h1 {\n      width: 90%;\n      text-align: center; }\n    .event-page__top .wrap p {\n      width: 90%;\n      text-align: center; }\n  .event-page__top-slogan {\n    display: none; }\n  .event-page__section1 h2 {\n    width: 90%; }\n  .event-page__section1 .list {\n    width: 90%; }\n    .event-page__section1 .list__item {\n      width: 100%; }\n  .event-page__section2 .wrap {\n    width: 90%; }\n  .event-page__section3 .wrap {\n    width: 90%;\n    justify-content: center;\n    flex-direction: column;\n    align-items: center; }\n    .event-page__section3 .wrap .img {\n      width: 80px;\n      height: 80px;\n      overflow: hidden;\n      border-radius: 50%;\n      position: relative;\n      margin-right: 0;\n      margin-bottom: 30px; }\n      .event-page__section3 .wrap .img img {\n        width: 175%;\n        position: absolute;\n        top: -14px;\n        left: -32px; }\n    .event-page__section3 .wrap .info {\n      width: 100%; }\n      .event-page__section3 .wrap .info h3,\n      .event-page__section3 .wrap .info h2 {\n        text-align: center; }\n  .event-page__section4 h2 {\n    width: 90%;\n    text-align: center; }\n  .event-page__section4 .list {\n    width: 90%;\n    flex-wrap: wrap; }\n    .event-page__section4 .list__item {\n      width: 100%;\n      margin-bottom: 30px;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center; }\n      .event-page__section4 .list__item p {\n        text-align: center; }\n  .event-page__section5 .list {\n    flex-direction: column;\n    width: 90%; }\n    .event-page__section5 .list__item {\n      width: 100%;\n      margin-bottom: 15px; }\n  .event-page__section6 iframe {\n    width: 280px;\n    height: 140px; }\n  .footer .subscribe {\n    height: auto;\n    padding-bottom: 30px; }\n    .footer .subscribe h4 {\n      width: 90%; }\n    .footer .subscribe form {\n      width: 90%;\n      flex-direction: column; }\n      .footer .subscribe form input {\n        width: calc(100% - 40px);\n        margin-bottom: 20px; }\n      .footer .subscribe form button {\n        width: 100%; }\n    .footer .subscribe p {\n      width: 90%; }\n  .footer .foot {\n    width: 90%;\n    height: auto;\n    flex-direction: column;\n    padding: 30px 0; }\n    .footer .foot__left {\n      margin-bottom: 15px; }\n      .footer .foot__left p {\n        font-size: 12px; }\n    .footer .foot__right p {\n      width: 100%;\n      font-size: 12px;\n      text-align: center; } }\n\n.page {\n  margin: 0 auto;\n  width: 100%;\n  max-width: 1440px;\n  margin-top: 90px;\n  background-color: #ebebeb; }\n\n.error {\n  position: fixed;\n  width: 100%;\n  height: 100vh;\n  left: 0;\n  top: 0;\n  background-color: rgba(0, 0, 0, 0.7);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  z-index: 700; }\n  .error div {\n    padding: 30px;\n    background-color: #fff;\n    border-radius: 24px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .error div p {\n      color: #17181a;\n      font-size: 16px; }\n    .error div .button {\n      padding: 0;\n      border-radius: 100px;\n      background-color: #82cde7;\n      color: #fff;\n      height: 40px;\n      width: 100px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      font-weight: bold;\n      cursor: pointer; }\n      .error div .button:hover {\n        -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);\n        -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);\n        box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75); }\n", ""]);
+exports.push([module.i, "body {\n  margin: 0;\n  font-family: \"Montserrat\", sans-serif; }\n\na {\n  text-decoration: none; }\n\n.header {\n  width: 100%;\n  background-color: #fff;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 90px;\n  position: fixed;\n  left: 0;\n  top: 0;\n  z-index: 500; }\n\n.footer {\n  width: 100%; }\n  .footer .subscribe {\n    width: 100%;\n    height: 200px;\n    background-color: #f7c9df;\n    display: flex;\n    flex-direction: column; }\n    .footer .subscribe h4 {\n      padding-top: 40px;\n      margin: 0 auto;\n      width: 1140px;\n      color: #1a1a1a;\n      font-size: 24px;\n      font-family: \"Play\", sans-serif; }\n    .footer .subscribe form {\n      margin: 0 auto;\n      width: 1140px;\n      margin-top: 20px;\n      display: flex;\n      align-items: center;\n      justify-content: space-between; }\n      .footer .subscribe form input {\n        width: calc(100% / 3 - 70px);\n        border: none;\n        border-radius: 5px;\n        background-color: #fff;\n        height: 40px;\n        padding: 0 20px;\n        font-family: \"Montserrat\", sans-serif;\n        font-size: 14px; }\n      .footer .subscribe form button {\n        width: calc(100% / 3 - 30px);\n        border-radius: 5px;\n        background-color: #82cde7;\n        height: 40px;\n        cursor: pointer;\n        font-family: \"Montserrat\", sans-serif;\n        font-size: 14px;\n        color: #f7c9df;\n        font-weight: bold;\n        border: 1px solid #82cde7;\n        text-transform: uppercase; }\n        .footer .subscribe form button:hover {\n          background-color: #f7c9df;\n          color: #82cde7; }\n    .footer .subscribe p {\n      color: #1a1a1a;\n      width: 1140px;\n      margin: 0 auto;\n      margin-top: 15px;\n      font-size: 14px; }\n  .footer .foot {\n    width: 1140px;\n    margin: 0 auto;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    height: 90px; }\n    .footer .foot__left p {\n      margin: 0;\n      color: #1a1a1a;\n      font-size: 14px; }\n    .footer .foot__right p {\n      margin: 0;\n      color: #1a1a1a;\n      font-size: 14px;\n      width: 400px; }\n\n.home-page {\n  width: 100%; }\n  .home-page__top {\n    width: 100%;\n    height: calc(100vh - 90px);\n    background-color: #82cde7;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    flex-direction: column; }\n    .home-page__top h2 {\n      font-family: \"Play\", sans-serif;\n      color: #1a1a1a;\n      font-weight: bold;\n      font-size: 40px;\n      margin: 0;\n      width: 600px;\n      text-align: center; }\n    .home-page__top a {\n      width: 300px;\n      height: 40px;\n      border: 1px solid #fff;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      color: #fff;\n      border-radius: 3px;\n      margin-top: 40px;\n      font-weight: 600;\n      font-size: 16px;\n      text-transform: uppercase; }\n      .home-page__top a:hover {\n        background-color: #fff;\n        color: #82cde7; }\n  .home-page__events {\n    width: 1140px;\n    display: flex;\n    align-items: flex-start;\n    justify-content: space-between;\n    margin: auto;\n    padding-top: 80px;\n    padding-bottom: 80px; }\n    .home-page__events .speaker {\n      width: 500px;\n      height: 570px;\n      background-color: #82cde7;\n      overflow: hidden;\n      border-radius: 5px; }\n      .home-page__events .speaker:hover .speaker__img > .area {\n        display: flex; }\n      .home-page__events .speaker__img {\n        width: 100%;\n        height: 400px; }\n        .home-page__events .speaker__img .area {\n          margin: 0;\n          height: 100%;\n          background-color: rgba(0, 0, 0, 0.6);\n          align-items: center;\n          justify-content: center;\n          text-align: center;\n          color: #fff;\n          display: none;\n          padding: 0 30px; }\n      .home-page__events .speaker__info {\n        padding: 30px; }\n        .home-page__events .speaker__info .name {\n          margin: 0;\n          font-family: \"Play\", sans-serif;\n          color: #1a1a1a;\n          font-size: 28px;\n          font-weight: normal; }\n        .home-page__events .speaker__info .city {\n          margin: 0;\n          margin-top: 12px;\n          font-size: 16px;\n          color: #1a1a1a;\n          opacity: 0.8;\n          font-weight: bold; }\n        .home-page__events .speaker__info .date {\n          margin: 0;\n          margin-top: 8px;\n          font-size: 16px;\n          color: #1a1a1a;\n          opacity: 0.8;\n          font-weight: bold; }\n\n.event-page {\n  width: 100%; }\n  .event-page__top {\n    width: 100%;\n    height: 480px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .event-page__top .wrap {\n      width: 100%;\n      height: 100%;\n      background-color: rgba(0, 0, 0, 0.6);\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      flex-direction: column; }\n      .event-page__top .wrap h1 {\n        color: #fff;\n        font-family: \"Play\", sans-serif;\n        font-size: 42px;\n        margin: 0; }\n      .event-page__top .wrap p {\n        color: #fff;\n        margin: 0;\n        margin-top: 10px;\n        font-size: 20px; }\n      .event-page__top .wrap a {\n        background-color: #82cde7;\n        width: 200px;\n        height: 40px;\n        color: rgba(0, 0, 0, 0.6);\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        font-size: 14px;\n        text-transform: uppercase;\n        border-radius: 5px;\n        font-weight: bold;\n        border: 1px solid #82cde7;\n        margin-top: 20px; }\n        .event-page__top .wrap a:hover {\n          background: none;\n          color: #82cde7; }\n  .event-page__top-slogan {\n    width: 100%;\n    height: 80px;\n    background-color: #f7c9df;\n    display: flex;\n    align-items: center;\n    justify-content: center; }\n    .event-page__top-slogan span {\n      font-size: 18px;\n      color: #1a1a1a; }\n  .event-page__section1 {\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    padding-top: 60px;\n    padding-bottom: 60px; }\n    .event-page__section1 h2 {\n      margin: 0;\n      font-size: 32px;\n      color: #1a1a1a;\n      font-family: \"Play\", sans-serif; }\n    .event-page__section1 .list {\n      width: 1140px;\n      display: flex;\n      flex-wrap: wrap;\n      margin-top: 40px;\n      justify-content: space-between; }\n      .event-page__section1 .list__item {\n        width: calc(100% / 3 - 20px);\n        margin-bottom: 30px; }\n        .event-page__section1 .list__item svg {\n          width: 40px;\n          height: 40px;\n          color: #82cde7;\n          transition: all 0.4 linear; }\n        .event-page__section1 .list__item p {\n          margin: 0;\n          margin-top: 20px;\n          color: #1a1a1a;\n          font-size: 16px;\n          cursor: default; }\n        .event-page__section1 .list__item:hover svg {\n          color: #f7c9df; }\n  .event-page__section2 {\n    width: 100%;\n    background-color: #fff;\n    display: flex;\n    align-items: center;\n    justify-content: center; }\n    .event-page__section2 .wrap {\n      width: 1140px;\n      padding-top: 60px;\n      padding-bottom: 60px; }\n      .event-page__section2 .wrap h2 {\n        margin: 0;\n        font-size: 32px;\n        color: #1a1a1a;\n        font-family: \"Play\", sans-serif;\n        width: 100%;\n        text-align: center; }\n      .event-page__section2 .wrap p {\n        margin: 0;\n        margin-top: 40px;\n        color: #1a1a1a; }\n  .event-page__section3 {\n    width: 100%;\n    background-color: #f7c9df;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: 60px 0; }\n    .event-page__section3 .wrap {\n      width: 1140px;\n      display: flex; }\n      .event-page__section3 .wrap .img {\n        width: 50%;\n        display: flex;\n        align-items: center;\n        justify-content: center; }\n        .event-page__section3 .wrap .img img {\n          width: 360px; }\n      .event-page__section3 .wrap .info {\n        width: 50%; }\n        .event-page__section3 .wrap .info h3 {\n          font-size: 18px;\n          color: #1a1a1a;\n          opacity: 0.8;\n          text-transform: uppercase;\n          margin: 0; }\n        .event-page__section3 .wrap .info h2 {\n          font-size: 28px;\n          color: #1a1a1a;\n          font-family: \"Play\", sans-serif;\n          margin: 0; }\n        .event-page__section3 .wrap .info p {\n          font-size: 16px;\n          color: #1a1a1a;\n          opacity: 0.9;\n          margin: 0;\n          margin-top: 30px; }\n  .event-page__section4 {\n    width: 100%;\n    background-color: #fff;\n    padding: 60px 0;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .event-page__section4 h2 {\n      margin: 0;\n      font-size: 32px;\n      color: #1a1a1a;\n      font-family: \"Play\", sans-serif; }\n    .event-page__section4 .list {\n      width: 1140px;\n      display: flex;\n      align-items: flex-start;\n      justify-content: space-between;\n      margin-top: 40px; }\n      .event-page__section4 .list__item {\n        width: calc(100% / 4 - 20px); }\n        .event-page__section4 .list__item svg {\n          width: 40px;\n          height: 40px;\n          color: #82cde7;\n          transition: all 0.4 linear; }\n        .event-page__section4 .list__item p {\n          margin: 0;\n          margin-top: 20px;\n          color: #1a1a1a;\n          font-size: 16px;\n          cursor: default; }\n        .event-page__section4 .list__item:hover svg {\n          color: #f7c9df; }\n  .event-page__section5 {\n    width: 100%;\n    padding: 60px 0;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    flex-direction: column; }\n    .event-page__section5 h2 {\n      margin: 0;\n      font-size: 32px;\n      color: #1a1a1a;\n      font-family: \"Play\", sans-serif; }\n    .event-page__section5 .list {\n      width: 1140px;\n      display: flex;\n      align-items: flex-start;\n      justify-content: space-between;\n      margin-top: 40px; }\n      .event-page__section5 .list__item {\n        width: calc(100% / 2 - 20px);\n        background-color: #fff;\n        border-radius: 18px;\n        padding-top: 30px;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        flex-direction: column;\n        overflow: hidden; }\n        .event-page__section5 .list__item h4 {\n          margin: 0;\n          width: 100%;\n          text-transform: uppercase;\n          color: #1a1a1a;\n          opacity: 0.8;\n          font-size: 14px;\n          padding-bottom: 30px;\n          border-bottom: 1px solid #ebebeb;\n          display: flex;\n          align-items: center;\n          justify-content: center; }\n        .event-page__section5 .list__item h3 {\n          font-family: \"Play\", sans-serif;\n          color: #1a1a1a;\n          margin: 0;\n          margin-top: 20px;\n          font-size: 28px;\n          opacity: 0.95;\n          padding-bottom: 15px;\n          border-bottom: 1px solid #ebebeb;\n          width: 100%;\n          text-align: center; }\n        .event-page__section5 .list__item p {\n          margin: 0;\n          padding: 20px 0;\n          border-bottom: 1px solid #ebebeb;\n          width: 100%;\n          text-align: center; }\n        .event-page__section5 .list__item a {\n          width: 100%;\n          height: 80px;\n          background-color: #82cde7;\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          color: #fff;\n          font-size: 14px;\n          text-transform: uppercase;\n          font-weight: bold; }\n          .event-page__section5 .list__item a:hover {\n            background-color: #fff;\n            color: #82cde7; }\n        .event-page__section5 .list__item:hover {\n          -webkit-box-shadow: 0px 0px 14px 2px rgba(50, 50, 50, 0.2);\n          -moz-box-shadow: 0px 0px 14px 2px rgba(50, 50, 50, 0.2);\n          box-shadow: 0px 0px 14px 2px rgba(50, 50, 50, 0.2); }\n  .event-page__section6 {\n    width: 100%;\n    padding: 60px 0;\n    display: flex;\n    align-items: center;\n    justify-content: center; }\n\n@media screen and (min-device-width: 992px) and (max-device-width: 1199px) {\n  .event-page__section1 .list {\n    width: 90%; }\n  .event-page__section2 .wrap {\n    width: 90%; }\n  .event-page__section3 .wrap {\n    width: 90%; }\n  .event-page__section4 .list {\n    width: 90%; }\n  .event-page__section5 .list {\n    width: 90%; }\n  .footer .subscribe h4 {\n    width: 90%; }\n  .footer .subscribe form {\n    width: 90%; }\n  .footer .subscribe p {\n    width: 90%; }\n  .footer .foot {\n    width: 90%; } }\n\n@media screen and (min-device-width: 768px) and (max-device-width: 991px) {\n  .event-page__section1 .list {\n    width: 90%; }\n  .event-page__section2 .wrap {\n    width: 90%; }\n  .event-page__section3 .wrap {\n    width: 90%;\n    justify-content: center; }\n    .event-page__section3 .wrap .img {\n      width: 80px;\n      height: 80px;\n      overflow: hidden;\n      border-radius: 50%;\n      position: relative;\n      margin-right: 30px; }\n      .event-page__section3 .wrap .img img {\n        width: 100%;\n        position: absolute;\n        top: 0;\n        left: 0; }\n  .event-page__section4 .list {\n    width: 90%;\n    flex-wrap: wrap; }\n    .event-page__section4 .list__item {\n      width: calc(100% / 2 - 15px);\n      margin-bottom: 30px; }\n  .event-page__section5 .list {\n    width: 90%; }\n  .footer .subscribe h4 {\n    width: 90%; }\n  .footer .subscribe form {\n    width: 90%; }\n  .footer .subscribe p {\n    width: 90%; }\n  .footer .foot {\n    width: 90%; } }\n\n@media screen and (min-device-width: 481px) and (max-device-width: 767px) {\n  .event-page__section1 h2 {\n    width: 90%; }\n  .event-page__section1 .list {\n    width: 90%; }\n    .event-page__section1 .list__item {\n      width: calc(100% / 2 - 15px); }\n  .event-page__section2 .wrap {\n    width: 90%; }\n  .event-page__section3 .wrap {\n    width: 90%;\n    justify-content: center; }\n    .event-page__section3 .wrap .img {\n      width: 80px;\n      height: 80px;\n      overflow: hidden;\n      border-radius: 50%;\n      position: relative;\n      margin-right: 30px; }\n      .event-page__section3 .wrap .img img {\n        width: 175%;\n        position: absolute;\n        top: -14px;\n        left: -32px; }\n  .event-page__section4 h2 {\n    width: 90%; }\n  .event-page__section4 .list {\n    width: 90%;\n    flex-wrap: wrap; }\n    .event-page__section4 .list__item {\n      width: calc(100% / 2 - 15px);\n      margin-bottom: 30px; }\n  .event-page__section5 .list {\n    flex-direction: column;\n    width: 90%; }\n    .event-page__section5 .list__item {\n      width: 100%;\n      margin-bottom: 15px; }\n  .event-page__section6 iframe {\n    width: 400px;\n    height: 300px; }\n  .footer .subscribe {\n    height: auto;\n    padding-bottom: 30px; }\n    .footer .subscribe h4 {\n      width: 90%; }\n    .footer .subscribe form {\n      width: 90%;\n      flex-direction: column; }\n      .footer .subscribe form input {\n        width: calc(100% - 40px);\n        margin-bottom: 20px; }\n      .footer .subscribe form button {\n        width: 100%; }\n    .footer .subscribe p {\n      width: 90%; }\n  .footer .foot {\n    width: 90%;\n    height: auto;\n    flex-direction: column;\n    padding: 30px 0; }\n    .footer .foot__left {\n      margin-bottom: 15px; } }\n\n@media screen and (max-device-width: 480px) {\n  .event-page__top {\n    height: 300px; }\n    .event-page__top .wrap h1 {\n      width: 90%;\n      text-align: center; }\n    .event-page__top .wrap p {\n      width: 90%;\n      text-align: center; }\n  .event-page__top-slogan {\n    display: none; }\n  .event-page__section1 h2 {\n    width: 90%; }\n  .event-page__section1 .list {\n    width: 90%; }\n    .event-page__section1 .list__item {\n      width: 100%; }\n  .event-page__section2 .wrap {\n    width: 90%; }\n  .event-page__section3 .wrap {\n    width: 90%;\n    justify-content: center;\n    flex-direction: column;\n    align-items: center; }\n    .event-page__section3 .wrap .img {\n      width: 80px;\n      height: 80px;\n      overflow: hidden;\n      border-radius: 50%;\n      position: relative;\n      margin-right: 0;\n      margin-bottom: 30px; }\n      .event-page__section3 .wrap .img img {\n        width: 175%;\n        position: absolute;\n        top: -14px;\n        left: -32px; }\n    .event-page__section3 .wrap .info {\n      width: 100%; }\n      .event-page__section3 .wrap .info h3,\n      .event-page__section3 .wrap .info h2 {\n        text-align: center; }\n  .event-page__section4 h2 {\n    width: 90%;\n    text-align: center; }\n  .event-page__section4 .list {\n    width: 90%;\n    flex-wrap: wrap; }\n    .event-page__section4 .list__item {\n      width: 100%;\n      margin-bottom: 30px;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center; }\n      .event-page__section4 .list__item p {\n        text-align: center; }\n  .event-page__section5 .list {\n    flex-direction: column;\n    width: 90%; }\n    .event-page__section5 .list__item {\n      width: 100%;\n      margin-bottom: 15px; }\n  .event-page__section6 iframe {\n    width: 280px;\n    height: 140px; }\n  .footer .subscribe {\n    height: auto;\n    padding-bottom: 30px; }\n    .footer .subscribe h4 {\n      width: 90%; }\n    .footer .subscribe form {\n      width: 90%;\n      flex-direction: column; }\n      .footer .subscribe form input {\n        width: calc(100% - 40px);\n        margin-bottom: 20px; }\n      .footer .subscribe form button {\n        width: 100%; }\n    .footer .subscribe p {\n      width: 90%; }\n  .footer .foot {\n    width: 90%;\n    height: auto;\n    flex-direction: column;\n    padding: 30px 0; }\n    .footer .foot__left {\n      margin-bottom: 15px; }\n      .footer .foot__left p {\n        font-size: 12px; }\n    .footer .foot__right p {\n      width: 100%;\n      font-size: 12px;\n      text-align: center; } }\n\n.page {\n  margin: 0 auto;\n  width: 100%;\n  max-width: 1440px;\n  margin-top: 90px;\n  background-color: #ebebeb; }\n\n.disc-but {\n  position: fixed;\n  bottom: 20px;\n  right: 20px;\n  background-color: #fff;\n  border: 2px solid #1a1a1a;\n  width: 60px;\n  height: 60px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #1a1a1a;\n  font-size: 20px;\n  font-weight: bold;\n  border-radius: 50%;\n  cursor: pointer; }\n  .disc-but:hover {\n    -webkit-box-shadow: 0px 0px 14px 2px rgba(50, 50, 50, 0.5);\n    -moz-box-shadow: 0px 0px 14px 2px rgba(50, 50, 50, 0.5);\n    box-shadow: 0px 0px 14px 2px rgba(50, 50, 50, 0.5); }\n\n.discount {\n  position: fixed;\n  width: 100%;\n  height: 100vh;\n  background-color: rgba(0, 0, 0, 0.5);\n  top: 0;\n  left: 0;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  z-index: 500; }\n  .discount span {\n    position: absolute;\n    right: 0;\n    top: 0;\n    width: 60px;\n    height: 60px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    background-color: #fff;\n    cursor: pointer;\n    font-size: 24px;\n    font-weight: bold; }\n  .discount form {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    background-color: #fff;\n    border-radius: 5px;\n    padding: 30px;\n    background-color: #f7c9df; }\n    .discount form h2 {\n      margin: 0 auto;\n      color: #1a1a1a;\n      font-size: 18px;\n      font-family: \"Play\", sans-serif;\n      margin-bottom: 30px;\n      width: 240px;\n      text-align: center; }\n    .discount form input {\n      width: 200px;\n      border: none;\n      border-radius: 5px;\n      background-color: #fff;\n      height: 40px;\n      padding: 0 20px;\n      font-family: \"Montserrat\", sans-serif;\n      font-size: 14px;\n      margin-bottom: 15px; }\n    .discount form button {\n      width: 240px;\n      border-radius: 5px;\n      background-color: #82cde7;\n      height: 40px;\n      cursor: pointer;\n      font-family: \"Montserrat\", sans-serif;\n      font-size: 14px;\n      color: #f7c9df;\n      font-weight: bold;\n      border: 1px solid #82cde7;\n      text-transform: uppercase; }\n      .discount form button:hover {\n        background-color: #f7c9df;\n        color: #82cde7; }\n\n.error {\n  position: fixed;\n  width: 100%;\n  height: 100vh;\n  left: 0;\n  top: 0;\n  background-color: rgba(0, 0, 0, 0.7);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  z-index: 700; }\n  .error div {\n    padding: 30px;\n    background-color: #fff;\n    border-radius: 24px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .error div p {\n      color: #17181a;\n      font-size: 16px; }\n    .error div .button {\n      padding: 0;\n      border-radius: 100px;\n      background-color: #82cde7;\n      color: #fff;\n      height: 40px;\n      width: 100px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      font-weight: bold;\n      cursor: pointer; }\n      .error div .button:hover {\n        -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);\n        -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);\n        box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75); }\n", ""]);
 
 // exports
 
@@ -17944,6 +17946,14 @@ var _Error = __webpack_require__(109);
 
 var _Error2 = _interopRequireDefault(_Error);
 
+var _DiscBut = __webpack_require__(110);
+
+var _DiscBut2 = _interopRequireDefault(_DiscBut);
+
+var _Discount = __webpack_require__(111);
+
+var _Discount2 = _interopRequireDefault(_Discount);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -17966,13 +17976,15 @@ var App = function (_React$Component) {
       cssload: false,
       error: "",
       media: "",
-      burger: false
+      burger: false,
+      discount: false
     };
     _this.addError = _this.addError.bind(_this);
     _this.HeaderWithProps = _this.HeaderWithProps.bind(_this);
     _this.FooterWithProps = _this.FooterWithProps.bind(_this);
     _this.defineDevice = _this.defineDevice.bind(_this);
     _this.openBurger = _this.openBurger.bind(_this);
+    _this.openDiscount = _this.openDiscount.bind(_this);
     return _this;
   }
 
@@ -18027,15 +18039,28 @@ var App = function (_React$Component) {
       this.setState({ burger: !this.state.burger });
     }
   }, {
+    key: "openDiscount",
+    value: function openDiscount() {
+      this.setState({ discount: !this.state.discount }, function () {
+        if (this.state.discount) {
+          document.body.style.overflowY = "hidden";
+        } else {
+          document.body.style.overflowY = "auto";
+        }
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
       var _state = this.state,
           error = _state.error,
           cssload = _state.cssload,
           media = _state.media,
-          burger = _state.burger;
+          burger = _state.burger,
+          discount = _state.discount;
       var addError = this.addError,
-          openBurger = this.openBurger;
+          openBurger = this.openBurger,
+          openDiscount = this.openDiscount;
 
       return _react2.default.createElement(
         "div",
@@ -18064,6 +18089,8 @@ var App = function (_React$Component) {
             } })
         ),
         _react2.default.createElement(_reactRouterDom.Route, { component: this.FooterWithProps }),
+        _react2.default.createElement(_DiscBut2.default, { openDiscount: openDiscount }),
+        discount ? _react2.default.createElement(_Discount2.default, { addError: addError, openDiscount: openDiscount }) : "",
         error ? _react2.default.createElement(_Error2.default, { ok: addError, error: error }) : "",
         !cssload ? _react2.default.createElement("div", {
           style: {
@@ -21557,6 +21584,165 @@ function Error(_ref) {
     )
   );
 }
+
+/***/ }),
+/* 110 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var DiscBut = function DiscBut(_ref) {
+  var openDiscount = _ref.openDiscount;
+  return _react2.default.createElement(
+    "div",
+    { onClick: openDiscount, className: "disc-but" },
+    "%"
+  );
+};
+
+exports.default = DiscBut;
+
+/***/ }),
+/* 111 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _axios = __webpack_require__(90);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+var _config = __webpack_require__(12);
+
+var _config2 = _interopRequireDefault(_config);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Discount = function (_React$Component) {
+  _inherits(Discount, _React$Component);
+
+  function Discount(props) {
+    _classCallCheck(this, Discount);
+
+    var _this = _possibleConstructorReturn(this, (Discount.__proto__ || Object.getPrototypeOf(Discount)).call(this, props));
+
+    _this.state = {
+      name: "",
+      email: ""
+    };
+    _this.change = _this.change.bind(_this);
+    _this.submit = _this.submit.bind(_this);
+    return _this;
+  }
+
+  _createClass(Discount, [{
+    key: "change",
+    value: function change(event) {
+      var _event$target = event.target,
+          name = _event$target.name,
+          value = _event$target.value;
+
+      this.setState(_defineProperty({}, name, value));
+    }
+  }, {
+    key: "submit",
+    value: function submit(event) {
+      var _this2 = this;
+
+      event.preventDefault();
+      var _state = this.state,
+          name = _state.name,
+          email = _state.email;
+
+      var err = [];
+      if (!name || !email) {
+        this.props.addError("Должны быть указаны все поля!");
+      } else {
+        _axios2.default.post(_config2.default.API_PREFIX + "/api/addsubscriber", { name: name, email: email }).then(function (data) {
+          if (data.status === 200) {
+            _this2.props.addError(name + ", \u0432\u044B \u0443\u0441\u043F\u0435\u0448\u043D\u043E \u043F\u043E\u0434\u043F\u0438\u0441\u0430\u043B\u0438\u0441\u044C \u043D\u0430 \u0440\u0430\u0441\u0441\u044B\u043B\u043A\u0443! \u041F\u0440\u043E\u043C\u043E\u043A\u043E\u0434 \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u0435\u043D \u043D\u0430 \u0432\u0430\u0448 email \u0430\u0434\u0440\u0435\u0441.");
+            _this2.props.openDiscount();
+          }
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        { className: "discount" },
+        _react2.default.createElement(
+          "form",
+          { onSubmit: this.submit },
+          _react2.default.createElement(
+            "h2",
+            null,
+            "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u0435 \u0441\u043A\u0438\u0434\u043A\u0443 10% \u043D\u0430 \u0441\u0435\u043C\u0438\u043D\u0430\u0440 \"\u0421\u0442\u0440\u0430\u0442\u0435\u0433\u0438\u044F \u0441\u0447\u0430\u0441\u0442\u044C\u044F\" \u0437\u0430 \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0443."
+          ),
+          _react2.default.createElement("input", {
+            value: this.state.name,
+            name: "name",
+            type: "text",
+            placeholder: "\u0418\u043C\u044F",
+            onChange: this.change
+          }),
+          _react2.default.createElement("input", {
+            value: this.state.email,
+            name: "email",
+            type: "text",
+            placeholder: "Email",
+            onChange: this.change
+          }),
+          _react2.default.createElement(
+            "button",
+            { type: "submit" },
+            "\u041F\u043E\u0434\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F"
+          )
+        ),
+        _react2.default.createElement(
+          "span",
+          { onClick: this.props.openDiscount },
+          "\xD7"
+        )
+      );
+    }
+  }]);
+
+  return Discount;
+}(_react2.default.Component);
+
+exports.default = Discount;
 
 /***/ })
 /******/ ]);
